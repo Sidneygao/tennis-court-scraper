@@ -3,6 +3,8 @@
 
 import asyncio
 import logging
+import json
+import hashlib
 from typing import Dict, List, Optional, Any
 from .xiaohongshu_smart import XiaohongshuSmartScraper
 
@@ -22,6 +24,70 @@ class DetailScraper:
         if not last_update:
             return False
         return (datetime.now() - last_update) < timedelta(hours=24)
+    
+    def generate_data_hash(self, data: Dict[str, Any]) -> str:
+        """生成数据的哈希值用于比较"""
+        # 对数据进行排序和序列化，确保哈希一致性
+        def sort_dict(d):
+            if isinstance(d, dict):
+                return {k: sort_dict(v) for k, v in sorted(d.items())}
+            elif isinstance(d, list):
+                return [sort_dict(item) for item in sorted(d, key=lambda x: str(x))]
+            else:
+                return d
+        
+        sorted_data = sort_dict(data)
+        data_str = json.dumps(sorted_data, ensure_ascii=False, sort_keys=True)
+        return hashlib.md5(data_str.encode('utf-8')).hexdigest()
+    
+    def compare_data(self, old_data: Dict[str, Any], new_data: Dict[str, Any]) -> Dict[str, bool]:
+        """比较新旧数据，返回哪些字段发生了变化"""
+        changes = {
+            'description': False,
+            'facilities': False,
+            'business_hours': False,
+            'prices': False,
+            'rating': False,
+            'reviews': False,
+            'images': False
+        }
+        
+        # 比较各个字段
+        if old_data.get('description') != new_data.get('description'):
+            changes['description'] = True
+            
+        if old_data.get('facilities') != new_data.get('facilities'):
+            changes['facilities'] = True
+            
+        if old_data.get('business_hours') != new_data.get('business_hours'):
+            changes['business_hours'] = True
+            
+        # 比较价格（JSON格式）
+        old_prices = old_data.get('prices', [])
+        new_prices = new_data.get('prices', [])
+        if self.generate_data_hash(old_prices) != self.generate_data_hash(new_prices):
+            changes['prices'] = True
+            
+        if old_data.get('rating', 0) != new_data.get('rating', 0):
+            changes['rating'] = True
+            
+        # 比较评论（JSON格式）
+        old_reviews = old_data.get('reviews', [])
+        new_reviews = new_data.get('reviews', [])
+        if self.generate_data_hash(old_reviews) != self.generate_data_hash(new_reviews):
+            changes['reviews'] = True
+            
+        # 比较图片（JSON格式）
+        old_images = old_data.get('images', [])
+        new_images = new_data.get('images', [])
+        if self.generate_data_hash(old_images) != self.generate_data_hash(new_images):
+            changes['images'] = True
+            
+        return changes
+    
+    def has_changes(self, changes: Dict[str, bool]) -> bool:
+        """检查是否有任何变化"""
+        return any(changes.values())
     
     async def scrape_all_platforms(self, venue_name: str, venue_address: str = "") -> Dict[str, Any]:
         """爬取所有平台的数据"""

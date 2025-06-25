@@ -180,10 +180,18 @@ tennis_court_scraper/
 
 ## 📞 联系方式
 
-- 项目主页: https://github.com/yourusername/tennis-court-scraper
-- 问题反馈: https://github.com/yourusername/tennis-court-scraper/issues
+- 项目主页: https://github.com/sidneygao/tennis-court-scraper
+- 问题反馈: https://github.com/sidneygao/tennis-court-scraper/issues
 - 邮箱: your.email@example.com
+- 微信联系：
+  ![微信联系](https://cdn.jsdelivr.net/gh/Stringer-OpenSource/Stringer@main/assets/wechat_contact.png)
+- 微信捐赠：
+  ![微信捐赠](https://cdn.jsdelivr.net/gh/Stringer-OpenSource/Stringer@main/assets/wechat_donate.png)
 
 ---
 
-⭐ 如果这个项目对你有帮助，请给它一个星标！ 
+⭐ 如果这个项目对你有帮助，请给它一个星标！
+
+---
+
+© 2025 SIDNEYGAO 保留所有权利。 

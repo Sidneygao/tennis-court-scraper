@@ -1,0 +1,156 @@
+{
+  "朝阳公园网球场": {
+    "success": true,
+    "rating": 4.6,
+    "prices": [
+      {
+        "type": "平日价（非高峰）",
+        "price": "80-120元/小时",
+        "time_range": "09:00-18:00"
+      },
+      {
+        "type": "周末/高峰价",
+        "price": "150-200元/小时",
+        "time_range": "18:00-22:00"
+      },
+      {
+        "type": "灯光费",
+        "price": "含",
+        "time_range": "夜间"
+      }
+    ],
+    "location": "朝阳公园内（近南门）"
+  },
+  "国家网球中心": {
+    "success": true,
+    "rating": 5.0,
+    "prices": [
+      {
+        "type": "平日价（非高峰）",
+        "price": "200-300元/小时",
+        "time_range": "09:00-18:00"
+      },
+      {
+        "type": "周末/高峰价",
+        "price": "300-400元/小时",
+        "time_range": "18:00-22:00"
+      },
+      {
+        "type": "灯光费",
+        "price": "另收50元",
+        "time_range": "夜间"
+      }
+    ],
+    "location": "林萃桥（奥林匹克公园）"
+  },
+  "北工大奥林匹克体育馆网球场": {
+    "success": true,
+    "rating": 4.2,
+    "prices": [
+      {
+        "type": "平日价（非高峰）",
+        "price": "60-100元/小时",
+        "time_range": "09:00-18:00"
+      },
+      {
+        "type": "周末/高峰价",
+        "price": "100-150元/小时",
+        "time_range": "18:00-22:00"
+      },
+      {
+        "type": "灯光费",
+        "price": "含",
+        "time_range": "夜间"
+      }
+    ],
+    "location": "西大望路"
+  },
+  "朝阳体育中心网球场": {
+    "success": true,
+    "rating": 4.2,
+    "prices": [
+      {
+        "type": "平日价（非高峰）",
+        "price": "50-80元/小时",
+        "time_range": "09:00-18:00"
+      },
+      {
+        "type": "周末/高峰价",
+        "price": "80-120元/小时",
+        "time_range": "18:00-22:00"
+      },
+      {
+        "type": "灯光费",
+        "price": "含",
+        "time_range": "夜间"
+      }
+    ],
+    "location": "东坝乡"
+  },
+  "798艺术区网球场": {
+    "success": true,
+    "rating": 4.2,
+    "prices": [
+      {
+        "type": "平日价（非高峰）",
+        "price": "150-200元/小时",
+        "time_range": "09:00-18:00"
+      },
+      {
+        "type": "周末/高峰价",
+        "price": "200-250元/小时",
+        "time_range": "18:00-22:00"
+      },
+      {
+        "type": "灯光费",
+        "price": "含",
+        "time_range": "夜间"
+      }
+    ],
+    "location": "798园区内"
+  },
+  "蓝色港湾网球场": {
+    "success": true,
+    "rating": 4.7,
+    "prices": [
+      {
+        "type": "平日价（非高峰）",
+        "price": "180-250元/小时",
+        "time_range": "09:00-18:00"
+      },
+      {
+        "type": "周末/高峰价",
+        "price": "250-350元/小时",
+        "time_range": "18:00-22:00"
+      },
+      {
+        "type": "灯光费",
+        "price": "另收80元",
+        "time_range": "夜间"
+      }
+    ],
+    "location": "朝阳公园路6号"
+  },
+  "东枫国际体育园网球场": {
+    "success": true,
+    "rating": 4.6,
+    "prices": [
+      {
+        "type": "平日价（非高峰）",
+        "price": "100-150元/小时",
+        "time_range": "09:00-18:00"
+      },
+      {
+        "type": "周末/高峰价",
+        "price": "150-200元/小时",
+        "time_range": "18:00-22:00"
+      },
+      {
+        "type": "灯光费",
+        "price": "含",
+        "time_range": "夜间"
+      }
+    ],
+    "location": "东坝南二街"
+  }
+}

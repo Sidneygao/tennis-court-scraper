@@ -1,0 +1,132 @@
+[
+  {
+    "court_name": "朝阳公园网球场",
+    "search_keywords": [
+      "朝阳公园网球场 价格 2024",
+      "朝阳公园网球场 收费 2024",
+      "朝阳公园网球场 网球 价格",
+      "朝阳公园网球场 网球场 价格",
+      "朝阳公园网球场 收费标准",
+      "北京 朝阳公园网球场 价格",
+      "朝阳公园网球场 场地费",
+      "朝阳公园网球场 预订价格"
+    ],
+    "total_results": 4,
+    "engine_results": {
+      "sogou": [
+        {
+          "title": "朝阳公园网球中心丨室外网球场地价格调整的通知",
+          "url": "http://mp.weixin.qq.com/s?src=11&timestamp=1750825893&ver=6073&signature=DXtgzhJ6aORms8mjZKrOdJDCJwrWuYFKvh5sTuyiqL8uzqZg59mpqeuFeqnqe-zPeJlmP0byal7encg2nFCYmISN3Jw2Ht*pXeS3QhxVKPE1HZ3Fj1POJ0eA9MY51-6p&new=1",
+          "snippet": "",
+          "prices": [],
+          "price_contexts": [],
+          "engine": "sogou"
+        },
+        {
+          "title": "郑钦文点燃“网球经济”-中国经营网",
+          "url": "https://www.sogou.com/link?url=DSOYnZeCC_qqsQMulblWRfs8JiY5pi3VLL7rKTLCg7lOiXHoLUyhoKqQtvlyVlr2rCOcg3klgQs.",
+          "snippet": "",
+          "prices": [],
+          "price_contexts": [],
+          "engine": "sogou"
+        },
+        {
+          "title": "涨价!热度急速飙升!很多人表示:预约不上了_澎湃号·媒体_澎湃新...",
+          "url": "https://www.sogou.com/link?url=hedJjaC291MxGeA-SVBACwNdbrwv1ozqnY8kqmjk2QVYEjW4L09UpBdvYEqHB5mvSE_Yq9Z2ZE8.",
+          "snippet": "",
+          "prices": [],
+          "price_contexts": [],
+          "engine": "sogou"
+        },
+        {
+          "title": "全北京最chill的年轻人,都在朝阳公园|街区|朝阳区|北京市|中央公园_网...",
+          "url": "https://www.sogou.com/link?url=hedJjaC291NbWrwHYHKCyPQj_ei8OKC1mozqur8NczY9gYZXlidXV5K6Kzt6SPYc0ztd7q5nl6o.",
+          "snippet": "",
+          "prices": [],
+          "price_contexts": [],
+          "engine": "sogou"
+        }
+      ],
+      "bing": [],
+      "duckduckgo": []
+    },
+    "analysis": {
+      "status": "no_prices",
+      "message": "找到 4 个结果，但未提取到价格信息",
+      "total_results": 4
+    },
+    "timestamp": "2025-06-25T12:33:02.557351"
+  },
+  {
+    "court_name": "金地网球",
+    "search_keywords": [
+      "金地网球 价格 2024",
+      "金地网球 收费 2024",
+      "金地网球 网球 价格",
+      "金地网球 网球场 价格",
+      "金地网球 收费标准",
+      "北京 金地网球 价格",
+      "金地网球 场地费",
+      "金地网球 预订价格"
+    ],
+    "total_results": 0,
+    "engine_results": {
+      "sogou": [],
+      "bing": [],
+      "duckduckgo": []
+    },
+    "analysis": {
+      "status": "no_results",
+      "message": "未找到 金地网球 的价格信息"
+    },
+    "timestamp": "2025-06-25T12:34:40.941994"
+  },
+  {
+    "court_name": "嘉里中心网球场",
+    "search_keywords": [
+      "嘉里中心网球场 价格 2024",
+      "嘉里中心网球场 收费 2024",
+      "嘉里中心网球场 网球 价格",
+      "嘉里中心网球场 网球场 价格",
+      "嘉里中心网球场 收费标准",
+      "北京 嘉里中心网球场 价格",
+      "嘉里中心网球场 场地费",
+      "嘉里中心网球场 预订价格"
+    ],
+    "total_results": 0,
+    "engine_results": {
+      "sogou": [],
+      "bing": [],
+      "duckduckgo": []
+    },
+    "analysis": {
+      "status": "no_results",
+      "message": "未找到 嘉里中心网球场 的价格信息"
+    },
+    "timestamp": "2025-06-25T12:36:12.833458"
+  },
+  {
+    "court_name": "国家网球中心",
+    "search_keywords": [
+      "国家网球中心 价格 2024",
+      "国家网球中心 收费 2024",
+      "国家网球中心 网球 价格",
+      "国家网球中心 网球场 价格",
+      "国家网球中心 收费标准",
+      "北京 国家网球中心 价格",
+      "国家网球中心 场地费",
+      "国家网球中心 预订价格"
+    ],
+    "total_results": 0,
+    "engine_results": {
+      "sogou": [],
+      "bing": [],
+      "duckduckgo": []
+    },
+    "analysis": {
+      "status": "no_results",
+      "message": "未找到 国家网球中心 的价格信息"
+    },
+    "timestamp": "2025-06-25T12:37:43.769865"
+  }
+]

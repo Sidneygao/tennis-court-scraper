@@ -1,10 +1,11 @@
-from sqlalchemy import Column, Integer, String, Float, DateTime, Boolean, Text
+from sqlalchemy import Column, Integer, String, Float, DateTime, Boolean, Text, ForeignKey
 # from sqlalchemy.ext.declarative import declarative_base  # 删除本地Base定义
 from sqlalchemy.sql import func
 from datetime import datetime
 from typing import Optional
 from pydantic import BaseModel
 from app.database import Base  # 统一使用 app.database.Base
+from sqlalchemy.orm import relationship
 
 class TennisCourt(Base):
     """网球场馆数据库模型"""
@@ -49,6 +50,8 @@ class TennisCourt(Base):
     created_at = Column(DateTime, default=func.now())
     updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
     price_updated_at = Column(DateTime)  # 价格更新时间
+
+    details = relationship("CourtDetail", back_populates="court", uselist=False)
 
 # Pydantic模型用于API
 class TennisCourtBase(BaseModel):
@@ -137,40 +140,39 @@ class CourtDetail(Base):
     __tablename__ = "court_details"
     
     id = Column(Integer, primary_key=True, index=True)
-    court_id = Column(Integer, nullable=False, index=True)  # 关联的场馆ID
+    court_id = Column(Integer, ForeignKey("tennis_courts.id"))
+    court = relationship("TennisCourt", back_populates="details")
+    rating = Column(Float)
+    review_count = Column(Integer)
+    facilities = Column(String)
+    business_hours = Column(String)
+    description = Column(Text)
+    prices = Column(Text)  # JSON格式存储价格信息
+    images = Column(Text)  # JSON格式存储图片URL
+    court_type = Column(String, default="气膜")  # 场地类型：室内、气膜、室外
+    predicted_prices = Column(Text)  # JSON格式存储预测价格信息
     
-    # 融合信息
-    merged_description = Column(Text)  # 融合后的描述
-    merged_facilities = Column(Text)   # 融合后的设施信息
-    merged_traffic_info = Column(Text) # 融合后的交通信息
-    merged_business_hours = Column(String(200))  # 融合后的营业时间
+    # 兼容旧字段
+    merged_description = Column(Text)
+    merged_facilities = Column(Text)
+    merged_traffic_info = Column(Text)
+    merged_business_hours = Column(Text)
+    dianping_prices = Column(Text)
+    meituan_prices = Column(Text)
+    merged_prices = Column(Text)
+    dianping_rating = Column(Float)
+    meituan_rating = Column(Float)
+    merged_rating = Column(Float)
+    dianping_reviews = Column(Text)
+    meituan_reviews = Column(Text)
+    dianping_images = Column(Text)
+    meituan_images = Column(Text)
+    last_dianping_update = Column(DateTime)
+    last_meituan_update = Column(DateTime)
+    cache_expires_at = Column(DateTime)
     
-    # 价格信息（从点评/美团获取）
-    dianping_prices = Column(Text)  # 点评价格信息（JSON格式）
-    meituan_prices = Column(Text)   # 美团价格信息（JSON格式）
-    merged_prices = Column(Text)    # 融合后的价格信息（JSON格式）
-    
-    # 评分信息
-    dianping_rating = Column(Float)  # 点评评分
-    meituan_rating = Column(Float)   # 美团评分
-    merged_rating = Column(Float)    # 融合评分
-    
-    # 评论信息
-    dianping_reviews = Column(Text)  # 点评评论（JSON格式）
-    meituan_reviews = Column(Text)   # 美团评论（JSON格式）
-    
-    # 图片信息
-    dianping_images = Column(Text)   # 点评图片（JSON格式）
-    meituan_images = Column(Text)    # 美团图片（JSON格式）
-    
-    # 缓存信息
-    last_dianping_update = Column(DateTime)  # 最后更新点评数据时间
-    last_meituan_update = Column(DateTime)   # 最后更新美团数据时间
-    cache_expires_at = Column(DateTime)      # 缓存过期时间
-    
-    # 时间戳
-    created_at = Column(DateTime, default=func.now())
-    updated_at = Column(DateTime, default=func.now(), onupdate=func.now())
+    created_at = Column(DateTime, default=datetime.utcnow)
+    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
 
 class CourtDetailCreate(BaseModel):
     court_id: int

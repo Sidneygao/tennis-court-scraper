@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 from typing import Dict, List
 from datetime import datetime
 from ..database import get_db
-from ..models import TennisCourt, ScrapedCourtData
+from ..models import TennisCourt, CourtDetail
 from ..scrapers.amap_scraper import AmapScraper
 from ..config import settings
 
