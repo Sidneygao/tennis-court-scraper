@@ -56,6 +56,9 @@ def get_template_directory():
     logger.warning(f"使用默认模板目录: {default_path}")
     return default_path
 
+# 获取模板目录并记录
+TEMPLATE_DIR = get_template_directory()
+
 # 挂载静态文件
 static_dir = os.path.join(BASE_DIR, "static")
 if os.path.exists(static_dir):
@@ -77,9 +80,8 @@ else:
 
 # 设置模板
 try:
-    template_dir = get_template_directory()
-    templates = Jinja2Templates(directory=template_dir)
-    logger.info(f"模板目录设置成功: {template_dir}")
+    templates = Jinja2Templates(directory=TEMPLATE_DIR)
+    logger.info(f"模板目录设置成功: {TEMPLATE_DIR}")
 except Exception as e:
     logger.error(f"设置模板目录失败: {e}")
     # 使用一个基本的模板目录作为后备
@@ -103,8 +105,7 @@ async def startup_event():
         logger.info("数据库初始化完成")
         
         # 检查关键文件
-        template_dir = get_template_directory()
-        logger.info(f"模板目录: {template_dir}")
+        logger.info(f"模板目录: {TEMPLATE_DIR}")
         
         static_dir = os.path.join(BASE_DIR, "static")
         logger.info(f"静态文件目录: {static_dir}")
@@ -179,20 +180,17 @@ async def read_root(request: Request):
         # 收集诊断信息
         cwd = os.getcwd()
         base_dir = os.path.dirname(os.path.abspath(__file__))
-        template_dir = templates.directory if templates else "未设置"
         
         # 检查文件存在性
-        template_exists = False
-        if templates and hasattr(templates, 'directory'):
-            template_exists = os.path.exists(os.path.join(templates.directory, 'index.html'))
+        template_exists = os.path.exists(os.path.join(TEMPLATE_DIR, 'index.html'))
         
         diagnostic_info = f"""
         <h3>诊断信息:</h3>
         <ul>
             <li>当前工作目录: {cwd}</li>
             <li>应用目录: {base_dir}</li>
-            <li>模板目录: {template_dir}</li>
-            <li>模板目录存在: {os.path.exists(template_dir) if template_dir != '未设置' else 'N/A'}</li>
+            <li>模板目录: {TEMPLATE_DIR}</li>
+            <li>模板目录存在: {os.path.exists(TEMPLATE_DIR)}</li>
             <li>index.html存在: {template_exists}</li>
             <li>错误信息: {str(e)}</li>
         </ul>
@@ -232,9 +230,11 @@ async def health_check():
     """健康检查"""
     return {
         "status": "healthy",
-        "app_name": settings.app_name,
+        "timestamp": datetime.now().isoformat(),
         "version": settings.app_version,
-        "debug": settings.debug
+        "template_dir": TEMPLATE_DIR,
+        "template_exists": os.path.exists(TEMPLATE_DIR),
+        "index_exists": os.path.exists(os.path.join(TEMPLATE_DIR, 'index.html')) if os.path.exists(TEMPLATE_DIR) else False
     }
 
 @app.get("/api/info")
