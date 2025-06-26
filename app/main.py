@@ -30,11 +30,44 @@ app.add_middleware(
 # 获取当前文件所在目录的绝对路径
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+# 尝试多种可能的模板路径
+def get_template_directory():
+    """获取模板目录路径"""
+    possible_paths = [
+        os.path.join(BASE_DIR, "templates"),  # app/templates
+        os.path.join(os.getcwd(), "app", "templates"),  # ./app/templates
+        os.path.join(os.getcwd(), "templates"),  # ./templates
+        "/opt/render/project/src/app/templates",  # Render环境
+    ]
+    
+    for path in possible_paths:
+        if os.path.exists(path) and os.path.exists(os.path.join(path, "index.html")):
+            print(f"找到模板目录: {path}")
+            return path
+    
+    # 如果都找不到，返回默认路径
+    default_path = os.path.join(BASE_DIR, "templates")
+    print(f"使用默认模板目录: {default_path}")
+    return default_path
+
 # 挂载静态文件
-app.mount("/static", StaticFiles(directory=os.path.join(BASE_DIR, "static")), name="static")
+static_dir = os.path.join(BASE_DIR, "static")
+if os.path.exists(static_dir):
+    app.mount("/static", StaticFiles(directory=static_dir), name="static")
+else:
+    # 尝试其他可能的静态文件路径
+    static_paths = [
+        os.path.join(os.getcwd(), "app", "static"),
+        os.path.join(os.getcwd(), "static"),
+    ]
+    for path in static_paths:
+        if os.path.exists(path):
+            app.mount("/static", StaticFiles(directory=path), name="static")
+            break
 
 # 设置模板
-templates = Jinja2Templates(directory=os.path.join(BASE_DIR, "templates"))
+template_dir = get_template_directory()
+templates = Jinja2Templates(directory=template_dir)
 
 # 包含API路由
 app.include_router(courts.router)
@@ -59,20 +92,49 @@ async def read_root(request: Request):
     try:
         return templates.TemplateResponse("index.html", {"request": request})
     except Exception as e:
-        # 如果模板加载失败，返回基本HTML
+        # 如果模板加载失败，返回详细的诊断信息
+        import os
+        
+        # 收集诊断信息
+        cwd = os.getcwd()
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        template_dir = templates.directory
+        
+        diagnostic_info = f"""
+        <h3>诊断信息:</h3>
+        <ul>
+            <li>当前工作目录: {cwd}</li>
+            <li>应用目录: {base_dir}</li>
+            <li>模板目录: {template_dir}</li>
+            <li>模板目录存在: {os.path.exists(template_dir)}</li>
+            <li>index.html存在: {os.path.exists(os.path.join(template_dir, 'index.html')) if os.path.exists(template_dir) else 'N/A'}</li>
+        </ul>
+        """
+        
         return HTMLResponse(content=f"""
         <!DOCTYPE html>
         <html>
         <head>
             <title>北京网球场馆信息抓取系统</title>
             <meta charset="utf-8">
+            <style>
+                body {{ font-family: Arial, sans-serif; margin: 40px; }}
+                .error {{ color: red; }}
+                .info {{ background: #f0f0f0; padding: 10px; border-radius: 5px; }}
+            </style>
         </head>
         <body>
             <h1>北京网球场馆信息抓取系统</h1>
             <p>系统正在运行中...</p>
             <p><a href="/api/health">健康检查</a></p>
             <p><a href="/api/docs">API文档</a></p>
-            <p>模板加载错误: {str(e)}</p>
+            <div class="error">
+                <h2>模板加载错误</h2>
+                <p>{str(e)}</p>
+            </div>
+            <div class="info">
+                {diagnostic_info}
+            </div>
         </body>
         </html>
         """)
