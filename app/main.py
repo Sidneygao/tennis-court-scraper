@@ -36,33 +36,37 @@ app.add_middleware(
 # 获取当前文件所在目录的绝对路径
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# 尝试多种可能的模板路径
-def get_template_directory():
-    """获取模板目录路径"""
-    possible_paths = [
-        os.path.join(BASE_DIR, "templates"),  # app/templates
-        os.path.join(os.getcwd(), "app", "templates"),  # ./app/templates
-        os.path.join(os.getcwd(), "templates"),  # ./templates
-        "/opt/render/project/src/app/templates",  # Render环境
-        "/opt/render/project/src/templates",  # Render环境备用
+def ensure_template_files():
+    """确保模板文件和目录存在"""
+    logger.info("检查并创建模板文件...")
+    
+    # 尝试多个可能的模板目录路径
+    possible_template_dirs = [
+        os.path.join(BASE_DIR, "templates"),
+        os.path.join(os.getcwd(), "app", "templates"),
+        os.path.join(os.getcwd(), "templates"),
+        "/opt/render/project/src/app/templates",
+        "/opt/render/project/src/templates",
     ]
     
-    for path in possible_paths:
-        if os.path.exists(path) and os.path.exists(os.path.join(path, "index.html")):
-            logger.info(f"找到模板目录: {path}")
-            return path
+    template_dir = None
+    for path in possible_template_dirs:
+        if os.path.exists(path) or os.access(os.path.dirname(path), os.W_OK):
+            template_dir = path
+            break
     
-    # 如果都找不到，尝试创建目录并复制模板文件
-    default_path = os.path.join(BASE_DIR, "templates")
-    logger.warning(f"使用默认模板目录: {default_path}")
+    if not template_dir:
+        # 如果都不可写，使用默认路径
+        template_dir = os.path.join(BASE_DIR, "templates")
     
     # 确保目录存在
-    os.makedirs(default_path, exist_ok=True)
+    os.makedirs(template_dir, exist_ok=True)
+    logger.info(f"模板目录: {template_dir}")
     
-    # 如果index.html不存在，创建一个基本的模板
-    index_path = os.path.join(default_path, "index.html")
+    # 创建index.html文件
+    index_path = os.path.join(template_dir, "index.html")
     if not os.path.exists(index_path):
-        logger.warning("创建基本模板文件")
+        logger.info("创建index.html模板文件...")
         with open(index_path, "w", encoding="utf-8") as f:
             f.write("""<!DOCTYPE html>
 <html>
@@ -71,35 +75,124 @@ def get_template_directory():
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
-        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #333; text-align: center; }
-        .api-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 20px 0; }
-        .api-link { padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
-        .api-link:hover { background: #0056b3; }
-        .status { text-align: center; color: #666; }
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 20px; 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container { 
+            max-width: 1200px; 
+            margin: 0 auto; 
+            background: white; 
+            padding: 30px; 
+            border-radius: 15px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 { 
+            color: #333; 
+            text-align: center; 
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        .status { 
+            text-align: center; 
+            color: #666; 
+            margin: 20px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+        .api-links { 
+            display: flex; 
+            flex-wrap: wrap; 
+            gap: 15px; 
+            justify-content: center; 
+            margin: 30px 0; 
+        }
+        .api-link { 
+            padding: 15px 25px; 
+            background: linear-gradient(45deg, #007bff, #0056b3); 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 8px; 
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .api-link:hover { 
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,123,255,0.4);
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .info-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            border-left: 4px solid #007bff;
+        }
+        .info-card h3 {
+            margin-top: 0;
+            color: #333;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>北京网球场馆信息抓取系统</h1>
+        <h1>🎾 北京网球场馆信息抓取系统</h1>
+        
         <div class="status">
-            <p>系统运行正常</p>
-            <p>模板文件已自动生成</p>
+            <h2>✅ 系统运行正常</h2>
+            <p>模板文件已自动生成，系统已成功部署</p>
         </div>
+        
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>📊 系统功能</h3>
+                <ul>
+                    <li>场馆信息抓取</li>
+                    <li>价格预测分析</li>
+                    <li>评论数据收集</li>
+                    <li>实时数据更新</li>
+                </ul>
+            </div>
+            <div class="info-card">
+                <h3>🔧 技术栈</h3>
+                <ul>
+                    <li>FastAPI 后端</li>
+                    <li>SQLite 数据库</li>
+                    <li>Jinja2 模板</li>
+                    <li>Uvicorn 服务器</li>
+                </ul>
+            </div>
+        </div>
+        
         <div class="api-links">
-            <a href="/api/docs" class="api-link">API文档</a>
-            <a href="/api/courts/" class="api-link">场馆列表</a>
-            <a href="/api/health" class="api-link">健康检查</a>
+            <a href="/api/docs" class="api-link">📚 API文档</a>
+            <a href="/api/courts/" class="api-link">🏟️ 场馆列表</a>
+            <a href="/api/health" class="api-link">💚 健康检查</a>
+            <a href="/api/info" class="api-link">ℹ️ 系统信息</a>
+        </div>
+        
+        <div class="status">
+            <p><strong>部署环境:</strong> Render</p>
+            <p><strong>状态:</strong> 运行中</p>
+            <p><strong>版本:</strong> v1.0.0</p>
         </div>
     </div>
 </body>
 </html>""")
+        logger.info("index.html模板文件创建完成")
     
-    return default_path
+    return template_dir
 
 # 获取模板目录并记录
-TEMPLATE_DIR = get_template_directory()
+TEMPLATE_DIR = ensure_template_files()
 
 # 挂载静态文件
 static_dir = os.path.join(BASE_DIR, "static")
@@ -142,13 +235,16 @@ async def startup_event():
         logger.info(f"当前工作目录: {os.getcwd()}")
         logger.info(f"应用目录: {BASE_DIR}")
         
+        # 确保模板文件存在
+        global TEMPLATE_DIR
+        TEMPLATE_DIR = ensure_template_files()
+        logger.info(f"模板目录: {TEMPLATE_DIR}")
+        
         # 初始化数据库
         init_db()
         logger.info("数据库初始化完成")
         
-        # 检查关键文件
-        logger.info(f"模板目录: {TEMPLATE_DIR}")
-        
+        # 检查静态文件目录
         static_dir = os.path.join(BASE_DIR, "static")
         logger.info(f"静态文件目录: {static_dir}")
         

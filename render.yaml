@@ -3,7 +3,7 @@ services:
     name: tennis-court-scraper
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python render_start.py
+    startCommand: python render_simple_start.py
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.7
