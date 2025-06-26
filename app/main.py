@@ -27,11 +27,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# 获取当前文件所在目录的绝对路径
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 # 挂载静态文件
-app.mount("/static", StaticFiles(directory="app/static"), name="static")
+app.mount("/static", StaticFiles(directory=os.path.join(BASE_DIR, "static")), name="static")
 
 # 设置模板
-templates = Jinja2Templates(directory="app/templates")
+templates = Jinja2Templates(directory=os.path.join(BASE_DIR, "templates"))
 
 # 包含API路由
 app.include_router(courts.router)
@@ -53,7 +56,26 @@ async def shutdown_event():
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     """主页"""
-    return templates.TemplateResponse("index.html", {"request": request})
+    try:
+        return templates.TemplateResponse("index.html", {"request": request})
+    except Exception as e:
+        # 如果模板加载失败，返回基本HTML
+        return HTMLResponse(content=f"""
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>北京网球场馆信息抓取系统</title>
+            <meta charset="utf-8">
+        </head>
+        <body>
+            <h1>北京网球场馆信息抓取系统</h1>
+            <p>系统正在运行中...</p>
+            <p><a href="/api/health">健康检查</a></p>
+            <p><a href="/api/docs">API文档</a></p>
+            <p>模板加载错误: {str(e)}</p>
+        </body>
+        </html>
+        """)
 
 @app.get("/api/health")
 async def health_check():

@@ -3,9 +3,11 @@ services:
     name: tennis-court-scraper
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: cd app && uvicorn main:app --host 0.0.0.0 --port $PORT
+    startCommand: python start.py
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.7
       - key: DATABASE_URL
-        value: sqlite:///./data/courts.db 
+        value: sqlite:///./data/courts.db
+      - key: DEBUG
+        value: false 
