@@ -3,11 +3,17 @@ services:
     name: tennis-court-scraper
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: python start.py
+    startCommand: python render_start.py
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.7
       - key: DATABASE_URL
         value: sqlite:///./data/courts.db
       - key: DEBUG
-        value: false 
+        value: false
+      - key: PORT
+        value: 8000
+      - key: RENDER
+        value: true
+      - key: TEMPLATE_DIR
+        value: /opt/render/project/src/app/templates 

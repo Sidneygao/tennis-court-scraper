@@ -44,6 +44,7 @@ def get_template_directory():
         os.path.join(os.getcwd(), "app", "templates"),  # ./app/templates
         os.path.join(os.getcwd(), "templates"),  # ./templates
         "/opt/render/project/src/app/templates",  # Render环境
+        "/opt/render/project/src/templates",  # Render环境备用
     ]
     
     for path in possible_paths:
@@ -51,9 +52,50 @@ def get_template_directory():
             logger.info(f"找到模板目录: {path}")
             return path
     
-    # 如果都找不到，返回默认路径
+    # 如果都找不到，尝试创建目录并复制模板文件
     default_path = os.path.join(BASE_DIR, "templates")
     logger.warning(f"使用默认模板目录: {default_path}")
+    
+    # 确保目录存在
+    os.makedirs(default_path, exist_ok=True)
+    
+    # 如果index.html不存在，创建一个基本的模板
+    index_path = os.path.join(default_path, "index.html")
+    if not os.path.exists(index_path):
+        logger.warning("创建基本模板文件")
+        with open(index_path, "w", encoding="utf-8") as f:
+            f.write("""<!DOCTYPE html>
+<html>
+<head>
+    <title>北京网球场馆信息抓取系统</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        h1 { color: #333; text-align: center; }
+        .api-links { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 20px 0; }
+        .api-link { padding: 10px 20px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; }
+        .api-link:hover { background: #0056b3; }
+        .status { text-align: center; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>北京网球场馆信息抓取系统</h1>
+        <div class="status">
+            <p>系统运行正常</p>
+            <p>模板文件已自动生成</p>
+        </div>
+        <div class="api-links">
+            <a href="/api/docs" class="api-link">API文档</a>
+            <a href="/api/courts/" class="api-link">场馆列表</a>
+            <a href="/api/health" class="api-link">健康检查</a>
+        </div>
+    </div>
+</body>
+</html>""")
+    
     return default_path
 
 # 获取模板目录并记录
