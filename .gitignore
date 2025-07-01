@@ -125,7 +125,7 @@ logs/
 test_*.json
 xiaohongshu_*.json
 selenium_*.json
-*.html
+# *.html
 
 # Environment variables
 .env
