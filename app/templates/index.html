@@ -41,9 +41,9 @@
         <div id="courtsContainer" style="margin: 0 auto; max-width: 900px; min-height: 200px; padding: 16px 0 0 0;"></div>
         <div class="donate-section">
             <div class="caption">如需合作或数据定制，欢迎加微信联系</div>
-            <div class="wechat-id">微信号：your_wechat_id</div>
             <div class="caption">支持开发，微信扫码捐赠</div>
             <img src="/static/img/wechat_donate_qr.png" alt="微信收款二维码">
+            <div class="caption" style="margin-top:8px;">加微信请使用上方二维码</div>
         </div>
     </div>
     <script>
@@ -81,7 +81,7 @@
             const courts = await response.json();
             const container = document.getElementById('courtsContainer');
             if (!courts.length) {
-                container.innerHTML = '<div style="color:#888;text-align:center;">未找到场馆数据</div>';
+                container.innerHTML = '<div style="color:#888;text-align:center;">未找到场馆数据，如需合作请加微信</div>';
                 return;
             }
             let html = '';
