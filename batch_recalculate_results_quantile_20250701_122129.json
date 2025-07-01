@@ -1,0 +1,8 @@
+{
+  "total_courts": 241,
+  "success_count": 241,
+  "failed_count": 0,
+  "duration_seconds": 6.692218,
+  "algorithm": "邻域分位数加权法",
+  "completed_at": "2025-07-01T12:21:29.100854"
+}

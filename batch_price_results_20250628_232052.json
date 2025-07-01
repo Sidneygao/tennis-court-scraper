@@ -1,0 +1,279 @@
+{
+  "success": true,
+  "total_courts": 45,
+  "success_count": 0,
+  "failed_count": 45,
+  "duration_seconds": 0.802214,
+  "results": [
+    {
+      "court_id": 581,
+      "court_name": "齐动力网球(丽泽店)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 582,
+      "court_name": "球友网球馆(六里桥店)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 584,
+      "court_name": "齐动力网球(六里桥-威尼斯基地)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 588,
+      "court_name": "得乐网球培训(欧园网球场)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 585,
+      "court_name": "恒瑞网球",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 591,
+      "court_name": "六里桥网球场",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 590,
+      "court_name": "鹏润家园-网球场",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 592,
+      "court_name": "六里桥网球羽毛球乒乓球馆",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 595,
+      "court_name": "大富网球俱乐部(4、7号场地)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 596,
+      "court_name": "北京兴晖网球俱乐部(草桥二商球馆店)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 597,
+      "court_name": "杰瑞网球俱乐部(二商网球馆)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 600,
+      "court_name": "铭旭网球俱乐部",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 601,
+      "court_name": "广安游泳网球馆",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 603,
+      "court_name": "齐动力网球(华宝国际店)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 606,
+      "court_name": "莲花小区网球场",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 608,
+      "court_name": "清芷园网球",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 610,
+      "court_name": "开心果网球俱乐部",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 611,
+      "court_name": "卓越网球俱乐部",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 614,
+      "court_name": "得乐网球(西罗园网球场)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 615,
+      "court_name": "北京沐康国际网球馆",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 617,
+      "court_name": "育乐网球",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 621,
+      "court_name": "齐动力网球(西单天安店)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 618,
+      "court_name": "魅力飞扬网球俱乐部(京荟广场店)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 623,
+      "court_name": "OPeN STAR网球俱乐部(西红门店)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 627,
+      "court_name": "光彩网球中心",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 630,
+      "court_name": "蓝图北重网球馆",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 631,
+      "court_name": "京西大本营网球馆",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 633,
+      "court_name": "鲸丽网球中心",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 636,
+      "court_name": "得乐网球(永定路店)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 634,
+      "court_name": "万商网球馆",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 637,
+      "court_name": "温菲尔德网球俱乐部(田村山馆)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 642,
+      "court_name": "狮城百丽网球场",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 640,
+      "court_name": "蓝星网球",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 644,
+      "court_name": "未来一号网球羽毛球篮球体育公园",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 648,
+      "court_name": "毅思趣网球俱乐部",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 645,
+      "court_name": "永承国际网球俱乐部",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 651,
+      "court_name": "旺兴湖网球俱乐部",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 649,
+      "court_name": "星纬网球中心",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 654,
+      "court_name": "万源网球俱乐部",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 655,
+      "court_name": "瀛海足球主题公园-网球场",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 656,
+      "court_name": "得乐网球(欢乐谷网球场)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 660,
+      "court_name": "得乐网球(大鲁店网球馆)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 659,
+      "court_name": "东石公园-网球场",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 662,
+      "court_name": "超越网球(丰台)",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    },
+    {
+      "court_id": 663,
+      "court_name": "嘉荟网球",
+      "success": false,
+      "error": "预测器未返回有效结果"
+    }
+  ]
+}

@@ -6,7 +6,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from app.database import get_db
-from app.models import TennisCourt
+from app.models import TennisCourt, CourtDetail
+import json
+import os
 
 # 场馆名称列表
 court_names = [
@@ -16,6 +18,9 @@ court_names = [
     'PadelOne匹克球板式网球场',
     '酷迪网球(望京校区)',
 ]
+
+# 预测结果文件路径（可根据实际情况修改）
+PREDICT_FILE = 'geojson_predict_results_fixed_20250630_091014.json'
 
 def close_popup(driver):
     # 关闭可能出现的弹窗
@@ -95,8 +100,34 @@ def update_price_in_db(name, price):
     else:
         print(f'未找到数据库场馆: {name}')
 
+def update_predict_prices(predict_file):
+    if not os.path.exists(predict_file):
+        print(f'文件不存在: {predict_file}')
+        return
+    with open(predict_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    results = data.get('results', [])
+    print(f'共读取到 {len(results)} 条预测结果')
+    db = next(get_db())
+    update_count = 0
+    for item in results:
+        court_id = item.get('court_id')
+        predict = item.get('prediction')
+        if not court_id or not predict:
+            continue
+        detail = db.query(CourtDetail).filter(CourtDetail.court_id == court_id).first()
+        if detail:
+            detail.predict_prices = json.dumps(predict, ensure_ascii=False)
+            db.commit()
+            update_count += 1
+            print(f'已更新 court_id={court_id} 的 predict_prices')
+        else:
+            print(f'未找到 court_id={court_id} 的 CourtDetail，跳过')
+    print(f'批量同步完成，共更新 {update_count} 条记录')
+
 if __name__ == '__main__':
     for name in court_names:
         price = get_dianping_price(name)
         if price:
-            update_price_in_db(name, price) 
+            update_price_in_db(name, price)
+    update_predict_prices(PREDICT_FILE) 

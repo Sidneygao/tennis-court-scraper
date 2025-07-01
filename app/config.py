@@ -82,6 +82,21 @@ class Settings(BaseSettings):
             "name": "三元桥-太阳宫国际生活区",
             "center": "116.456,39.967",
             "radius": 5000
+        },
+        "fengtai_east": {
+            "name": "丰台区东部",
+            "center": "116.321,39.858",
+            "radius": 8000
+        },
+        "fengtai_west": {
+            "name": "丰台区西部",
+            "center": "116.247,39.858",
+            "radius": 8000
+        },
+        "yizhuang": {
+            "name": "亦庄",
+            "center": "116.493,39.808",
+            "radius": 8000
         }
     }
     
@@ -144,6 +159,21 @@ TARGET_AREAS = {
         "name": "三元桥-太阳宫国际生活区",
         "center": "116.456,39.967",
         "radius": 5000
+    },
+    "fengtai_east": {
+        "name": "丰台区东部",
+        "center": "116.321,39.858",
+        "radius": 8000
+    },
+    "fengtai_west": {
+        "name": "丰台区西部",
+        "center": "116.247,39.858",
+        "radius": 8000
+    },
+    "yizhuang": {
+        "name": "亦庄",
+        "center": "116.493,39.808",
+        "radius": 8000
     }
 }
 

@@ -1,0 +1,1869 @@
+{
+  "summary": {
+    "total_courts": 50,
+    "success_count": 50,
+    "success_rate": 1.0,
+    "scraped_at": "2025-06-28T21:26:19.976943"
+  },
+  "results": [
+    {
+      "court_id": 62,
+      "court_name": "得乐网球(锦绣园网球场)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "146元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:36.227397"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "126元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:36.227407"
+        },
+        {
+          "type": "会员价",
+          "price": "111元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:36.227410"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:36.235283"
+    },
+    {
+      "court_id": 132,
+      "court_name": "得乐网球(锦绣园网球场)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "101元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:37.491759"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "81元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:37.491767"
+        },
+        {
+          "type": "会员价",
+          "price": "66元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:37.491770"
+        },
+        {
+          "type": "学生价",
+          "price": "56元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:37.491772"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:37.502245"
+    },
+    {
+      "court_id": 161,
+      "court_name": "得乐网球(锦绣园网球场)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "112元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:40.158927"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "92元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:40.158950"
+        },
+        {
+          "type": "会员价",
+          "price": "77元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:40.158959"
+        },
+        {
+          "type": "学生价",
+          "price": "67元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:40.158964"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:40.165709"
+    },
+    {
+      "court_id": 320,
+      "court_name": "得乐网球(锦绣园网球场)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "164元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:41.725160"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "144元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:41.725167"
+        },
+        {
+          "type": "会员价",
+          "price": "129元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:41.725170"
+        },
+        {
+          "type": "学生价",
+          "price": "119元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:41.725172"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:41.735524"
+    },
+    {
+      "court_id": 422,
+      "court_name": "得乐网球(锦绣园网球场)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "133元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:43.212835"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "113元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:43.212852"
+        },
+        {
+          "type": "会员价",
+          "price": "98元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:43.212867"
+        },
+        {
+          "type": "学生价",
+          "price": "88元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:43.212877"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:43.218858"
+    },
+    {
+      "court_id": 542,
+      "court_name": "得乐网球俱乐部(梅市口网球场)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "96元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:44.821090"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "76元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:44.821098"
+        },
+        {
+          "type": "会员价",
+          "price": "61元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:44.821100"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:44.831460"
+    },
+    {
+      "court_id": 39,
+      "court_name": "得乐网球培训",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "139元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:47.029171"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "119元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:47.029180"
+        },
+        {
+          "type": "会员价",
+          "price": "104元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:47.029183"
+        },
+        {
+          "type": "学生价",
+          "price": "94元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:47.029185"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:47.038325"
+    },
+    {
+      "court_id": 133,
+      "court_name": "得乐网球培训",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "137元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:49.525073"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "117元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:49.525091"
+        },
+        {
+          "type": "会员价",
+          "price": "102元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:49.525096"
+        },
+        {
+          "type": "学生价",
+          "price": "92元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:49.525102"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:49.534418"
+    },
+    {
+      "court_id": 208,
+      "court_name": "得乐网球培训",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "157元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:50.903680"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "137元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:50.903692"
+        },
+        {
+          "type": "会员价",
+          "price": "122元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:50.903698"
+        },
+        {
+          "type": "学生价",
+          "price": "112元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:50.903703"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:50.912788"
+    },
+    {
+      "court_id": 321,
+      "court_name": "得乐网球培训",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "169元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:53.369388"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "149元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:53.369396"
+        },
+        {
+          "type": "会员价",
+          "price": "134元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:53.369398"
+        },
+        {
+          "type": "学生价",
+          "price": "124元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:53.369401"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:53.379630"
+    },
+    {
+      "court_id": 370,
+      "court_name": "得乐网球培训",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "92元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:55.210933"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "72元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:55.210947"
+        },
+        {
+          "type": "会员价",
+          "price": "57元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:55.210952"
+        },
+        {
+          "type": "学生价",
+          "price": "47元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:55.210958"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:55.217033"
+    },
+    {
+      "court_id": 456,
+      "court_name": "得乐网球培训",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "150元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:57.733447"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "130元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:57.733454"
+        },
+        {
+          "type": "会员价",
+          "price": "115元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:57.733456"
+        },
+        {
+          "type": "学生价",
+          "price": "105元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:24:57.733459"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:24:57.742020"
+    },
+    {
+      "court_id": 530,
+      "court_name": "得乐网球培训(欧园网球场)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "125元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:00.108763"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "105元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:00.108771"
+        },
+        {
+          "type": "会员价",
+          "price": "90元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:00.108774"
+        },
+        {
+          "type": "学生价",
+          "price": "80元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:00.108776"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:00.118438"
+    },
+    {
+      "court_id": 51,
+      "court_name": "态尼思网球俱乐部(四得公园店)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "92元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:02.237956"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "72元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:02.237969"
+        },
+        {
+          "type": "会员价",
+          "price": "57元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:02.237981"
+        },
+        {
+          "type": "学生价",
+          "price": "47元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:02.237988"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:02.248020"
+    },
+    {
+      "court_id": 210,
+      "court_name": "态尼思网球俱乐部(四得公园店)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "86元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:04.011407"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "66元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:04.011417"
+        },
+        {
+          "type": "会员价",
+          "price": "51元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:04.011419"
+        },
+        {
+          "type": "学生价",
+          "price": "41元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:04.011423"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:04.017960"
+    },
+    {
+      "court_id": 230,
+      "court_name": "态尼思网球俱乐部(四得公园店)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "104元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:05.478809"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "84元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:05.478816"
+        },
+        {
+          "type": "会员价",
+          "price": "69元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:05.478819"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:05.487024"
+    },
+    {
+      "court_id": 318,
+      "court_name": "态尼思网球俱乐部(四得公园店)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "139元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:06.828897"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "119元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:06.828908"
+        },
+        {
+          "type": "会员价",
+          "price": "104元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:06.828911"
+        },
+        {
+          "type": "学生价",
+          "price": "94元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:06.828914"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:06.840293"
+    },
+    {
+      "court_id": 511,
+      "court_name": "恒瑞网球",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "89元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:09.624750"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "69元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:09.624758"
+        },
+        {
+          "type": "会员价",
+          "price": "54元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:09.624760"
+        },
+        {
+          "type": "学生价",
+          "price": "44元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:09.624763"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:09.633490"
+    },
+    {
+      "court_id": 53,
+      "court_name": "拓能壹加网球基地(浩鸿园店)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "109元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:10.975005"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "89元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:10.975021"
+        },
+        {
+          "type": "会员价",
+          "price": "74元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:10.975028"
+        },
+        {
+          "type": "学生价",
+          "price": "64元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:10.975035"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:10.982529"
+    },
+    {
+      "court_id": 189,
+      "court_name": "拓能壹加网球基地(浩鸿园店)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "83元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:13.813199"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "63元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:13.813206"
+        },
+        {
+          "type": "会员价",
+          "price": "48元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:13.813209"
+        },
+        {
+          "type": "学生价",
+          "price": "38元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:13.813211"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:13.819285"
+    },
+    {
+      "court_id": 338,
+      "court_name": "拓能壹加网球基地(浩鸿园店)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "155元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:15.766732"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "135元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:15.766745"
+        },
+        {
+          "type": "会员价",
+          "price": "120元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:15.766751"
+        },
+        {
+          "type": "学生价",
+          "price": "110元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:15.766757"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:15.776587"
+    },
+    {
+      "court_id": 97,
+      "court_name": "新生空间·网球x击打馆x匹克球(亚运村店)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "99元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:18.601399"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "79元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:18.601407"
+        },
+        {
+          "type": "会员价",
+          "price": "64元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:18.601409"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:18.606022"
+    },
+    {
+      "court_id": 245,
+      "court_name": "新生空间·网球x击打馆x匹克球(亚运村店)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "157元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:20.166843"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "137元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:20.166856"
+        },
+        {
+          "type": "会员价",
+          "price": "122元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:20.166861"
+        },
+        {
+          "type": "学生价",
+          "price": "112元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:20.166867"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:20.176233"
+    },
+    {
+      "court_id": 275,
+      "court_name": "新生空间·网球x击打馆x匹克球(亚运村店)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "105元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:22.096676"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "85元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:22.096689"
+        },
+        {
+          "type": "会员价",
+          "price": "70元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:22.096694"
+        },
+        {
+          "type": "学生价",
+          "price": "60元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:22.096699"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:22.107238"
+    },
+    {
+      "court_id": 234,
+      "court_name": "新生网球NeoTennis(望京店)",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "127元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:23.605821"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "107元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:23.605829"
+        },
+        {
+          "type": "会员价",
+          "price": "92元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:23.605832"
+        },
+        {
+          "type": "学生价",
+          "price": "82元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:23.605834"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:23.616631"
+    },
+    {
+      "court_id": 90,
+      "court_name": "曲网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "149元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:24.830282"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "129元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:24.830298"
+        },
+        {
+          "type": "会员价",
+          "price": "114元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:24.830305"
+        },
+        {
+          "type": "学生价",
+          "price": "104元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:24.830312"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:24.842796"
+    },
+    {
+      "court_id": 269,
+      "court_name": "曲网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "81元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:27.201714"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "61元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:27.201723"
+        },
+        {
+          "type": "会员价",
+          "price": "46元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:27.201725"
+        },
+        {
+          "type": "学生价",
+          "price": "36元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:27.201728"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:27.207836"
+    },
+    {
+      "court_id": 77,
+      "court_name": "朝阳公园-网球中心",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "118元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:29.982972"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "98元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:29.982988"
+        },
+        {
+          "type": "会员价",
+          "price": "83元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:29.982995"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:29.989419"
+    },
+    {
+      "court_id": 128,
+      "court_name": "朝阳公园-网球中心",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "96元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:32.312836"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "76元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:32.312853"
+        },
+        {
+          "type": "会员价",
+          "price": "61元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:32.312860"
+        },
+        {
+          "type": "学生价",
+          "price": "51元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:32.312867"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:32.322866"
+    },
+    {
+      "court_id": 186,
+      "court_name": "朝阳公园-网球中心",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "132元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:34.468330"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "112元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:34.468345"
+        },
+        {
+          "type": "会员价",
+          "price": "97元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:34.468350"
+        },
+        {
+          "type": "学生价",
+          "price": "87元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:34.468356"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:34.477695"
+    },
+    {
+      "court_id": 308,
+      "court_name": "朝阳公园-网球中心",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "133元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:36.519936"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "113元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:36.519945"
+        },
+        {
+          "type": "会员价",
+          "price": "98元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:36.519948"
+        },
+        {
+          "type": "学生价",
+          "price": "88元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:36.519950"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:36.526997"
+    },
+    {
+      "court_id": 390,
+      "court_name": "朝阳公园-网球中心",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "77元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:39.190930"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "57元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:39.190942"
+        },
+        {
+          "type": "会员价",
+          "price": "42元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:39.190944"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:39.201002"
+    },
+    {
+      "court_id": 474,
+      "court_name": "朝阳公园-网球中心",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "115元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:41.512772"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "95元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:41.512784"
+        },
+        {
+          "type": "会员价",
+          "price": "80元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:41.512790"
+        },
+        {
+          "type": "学生价",
+          "price": "70元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:41.512795"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:41.521750"
+    },
+    {
+      "court_id": 75,
+      "court_name": "朝阳公园体育中心-1号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "118元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:43.808400"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "98元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:43.808411"
+        },
+        {
+          "type": "会员价",
+          "price": "83元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:43.808414"
+        },
+        {
+          "type": "学生价",
+          "price": "73元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:43.808417"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:43.817736"
+    },
+    {
+      "court_id": 125,
+      "court_name": "朝阳公园体育中心-1号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "72元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:45.494328"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "52元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:45.494344"
+        },
+        {
+          "type": "会员价",
+          "price": "37元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:45.494351"
+        },
+        {
+          "type": "学生价",
+          "price": "27元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:45.494358"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:45.503738"
+    },
+    {
+      "court_id": 182,
+      "court_name": "朝阳公园体育中心-1号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "91元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:48.281389"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "71元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:48.281396"
+        },
+        {
+          "type": "会员价",
+          "price": "56元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:48.281398"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:48.291014"
+    },
+    {
+      "court_id": 306,
+      "court_name": "朝阳公园体育中心-1号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "104元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:50.697067"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "84元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:50.697080"
+        },
+        {
+          "type": "会员价",
+          "price": "69元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:50.697086"
+        },
+        {
+          "type": "学生价",
+          "price": "59元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:50.697092"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:50.706986"
+    },
+    {
+      "court_id": 389,
+      "court_name": "朝阳公园体育中心-1号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "93元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:52.207533"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "73元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:52.207543"
+        },
+        {
+          "type": "会员价",
+          "price": "58元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:52.207545"
+        },
+        {
+          "type": "学生价",
+          "price": "48元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:52.207548"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:52.218560"
+    },
+    {
+      "court_id": 476,
+      "court_name": "朝阳公园体育中心-1号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "134元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:53.283053"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "114元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:53.283063"
+        },
+        {
+          "type": "会员价",
+          "price": "99元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:53.283066"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:53.293776"
+    },
+    {
+      "court_id": 76,
+      "court_name": "朝阳公园体育中心-2号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "100元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:55.368857"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "80元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:55.368863"
+        },
+        {
+          "type": "会员价",
+          "price": "65元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:55.368866"
+        },
+        {
+          "type": "学生价",
+          "price": "55元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:55.368868"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:55.376145"
+    },
+    {
+      "court_id": 126,
+      "court_name": "朝阳公园体育中心-2号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "97元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:57.832044"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "77元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:57.832067"
+        },
+        {
+          "type": "会员价",
+          "price": "62元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:57.832073"
+        },
+        {
+          "type": "学生价",
+          "price": "52元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:25:57.832079"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:25:57.842245"
+    },
+    {
+      "court_id": 183,
+      "court_name": "朝阳公园体育中心-2号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "80元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:00.449076"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "60元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:00.449091"
+        },
+        {
+          "type": "会员价",
+          "price": "45元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:00.449097"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:26:00.456054"
+    },
+    {
+      "court_id": 307,
+      "court_name": "朝阳公园体育中心-2号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "136元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:02.805679"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "116元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:02.805686"
+        },
+        {
+          "type": "会员价",
+          "price": "101元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:02.805688"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:26:02.815513"
+    },
+    {
+      "court_id": 388,
+      "court_name": "朝阳公园体育中心-2号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "128元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:04.551738"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "108元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:04.551745"
+        },
+        {
+          "type": "会员价",
+          "price": "93元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:04.551753"
+        },
+        {
+          "type": "学生价",
+          "price": "83元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:04.551756"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:26:04.563251"
+    },
+    {
+      "court_id": 475,
+      "court_name": "朝阳公园体育中心-2号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "120元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:06.672568"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "100元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:06.672575"
+        },
+        {
+          "type": "会员价",
+          "price": "85元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:06.672578"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:26:06.677863"
+    },
+    {
+      "court_id": 78,
+      "court_name": "朝阳公园体育中心-8号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "123元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:08.933725"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "103元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:08.933738"
+        },
+        {
+          "type": "会员价",
+          "price": "88元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:08.933743"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:26:08.943422"
+    },
+    {
+      "court_id": 130,
+      "court_name": "朝阳公园体育中心-8号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "105元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:11.061242"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "85元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:11.061256"
+        },
+        {
+          "type": "会员价",
+          "price": "70元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:11.061261"
+        },
+        {
+          "type": "学生价",
+          "price": "60元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:11.061267"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:26:11.070468"
+    },
+    {
+      "court_id": 187,
+      "court_name": "朝阳公园体育中心-8号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 3,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "118元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:13.072790"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "98元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:13.072798"
+        },
+        {
+          "type": "会员价",
+          "price": "83元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:13.072801"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:26:13.083215"
+    },
+    {
+      "court_id": 309,
+      "court_name": "朝阳公园体育中心-8号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "117元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:15.438781"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "97元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:15.438790"
+        },
+        {
+          "type": "会员价",
+          "price": "82元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:15.438793"
+        },
+        {
+          "type": "学生价",
+          "price": "72元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:15.438795"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:26:15.445907"
+    },
+    {
+      "court_id": 387,
+      "court_name": "朝阳公园体育中心-8号网球场",
+      "court_type": "室外",
+      "success": true,
+      "prices_count": 4,
+      "prices": [
+        {
+          "type": "黄金时间",
+          "price": "119元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:17.765614"
+        },
+        {
+          "type": "非黄金时间",
+          "price": "99元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:17.765622"
+        },
+        {
+          "type": "会员价",
+          "price": "84元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:17.765624"
+        },
+        {
+          "type": "学生价",
+          "price": "74元/小时",
+          "source": "generated_outdoor",
+          "confidence": 0.8,
+          "scraped_at": "2025-06-28T21:26:17.765627"
+        }
+      ],
+      "xiaohongshu_success": false,
+      "scraped_at": "2025-06-28T21:26:17.771188"
+    }
+  ]
+}

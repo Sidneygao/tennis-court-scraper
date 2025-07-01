@@ -252,4 +252,57 @@ body {
 .tooltip-custom:hover::after {
     opacity: 1;
     visibility: visible;
+}
+
+/* 价格标签样式 */
+.real-price {
+    background: #28a745;
+    color: white;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.predicted-price {
+    background: #ffc107;
+    color: #212529;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.price-container {
+    margin-top: 10px;
+}
+
+.price-item {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.price-label {
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.price-value {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.price-value.unavailable {
+    color: #6c757d;
+    font-style: italic;
+}
+
+.price-warning {
+    color: #dc3545;
+    margin-left: 5px;
+    font-size: 0.8rem;
 } 

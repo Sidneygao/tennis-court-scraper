@@ -4,6 +4,7 @@ from typing import Optional
 from ..database import get_db
 from ..models import TennisCourt, CourtDetail, CourtDetailResponse, CourtDetailCreate
 from ..scrapers.detail_scraper import DetailScraper
+from ..scrapers.price_predictor import PricePredictor
 from datetime import datetime, timedelta
 import json
 import logging
@@ -27,19 +28,14 @@ async def get_court_detail(court_id: int, force_update: bool = Query(False, desc
             db.add(detail)
             db.commit()
             db.refresh(detail)
-            force_update = True  # 新记录需要抓取数据
         
-        # 检查是否需要更新数据
-        scraper = DetailScraper()
-        need_update = force_update or not scraper.is_cache_valid(detail.last_dianping_update)
-        if need_update:
+        # 只在明确要求强制更新时才更新数据，否则只返回缓存
+        if force_update:
             try:
                 await update_court_detail_data(court, detail, db)
             except Exception as e:
                 logger.error(f"更新详情数据失败: {e}")
-                if detail.merged_description:
-                    pass  # 继续返回缓存
-                else:
+                if not detail.merged_description:
                     raise HTTPException(status_code=500, detail="获取详情数据失败")
         
         # 手动反序列化所有JSON字段
@@ -60,9 +56,11 @@ async def get_court_detail(court_id: int, force_update: bool = Query(False, desc
                 "merged_facilities": detail.merged_facilities,
                 "merged_traffic_info": detail.merged_traffic_info,
                 "merged_business_hours": detail.merged_business_hours,
+                "prices": safe_json_loads(detail.prices),
                 "dianping_prices": safe_json_loads(detail.dianping_prices),
                 "meituan_prices": safe_json_loads(detail.meituan_prices),
                 "merged_prices": safe_json_loads(detail.merged_prices),
+                "predict_prices": safe_json_loads(detail.predict_prices),
                 "dianping_rating": detail.dianping_rating,
                 "meituan_rating": detail.meituan_rating,
                 "merged_rating": detail.merged_rating,
@@ -153,87 +151,116 @@ async def preview_court_detail(court_id: int, db: Session = Depends(get_db)):
 async def update_court_detail_data(court: TennisCourt, detail: CourtDetail, db: Session):
     """更新场馆详情数据"""
     scraper = DetailScraper()
-    
     try:
         # 使用新的综合爬取方法
         all_data = await scraper.scrape_all_platforms(court.name, court.address)
-        
-        # 从summary中提取融合数据
         summary = all_data.get('summary', {})
         
-        # 检查是否有成功的数据
-        if summary.get('successful_platforms', 0) == 0:
-            # 没有成功的数据，返回"该数据不能获得"
-            merged_data = {
-                "description": "该数据不能获得",
-                "facilities": "该数据不能获得", 
-                "business_hours": "该数据不能获得",
-                "prices": [{"type": "价格信息", "price": "该数据不能获得"}],
-                "rating": 0.0,
-                "reviews": [{"user": "系统", "rating": 0, "content": "该数据不能获得"}],
-                "images": []
-            }
+        # 真实渠道价格融合
+        real_prices = []
+        # 优先点评
+        if detail.dianping_prices:
+            try:
+                prices = json.loads(detail.dianping_prices)
+                if prices and isinstance(prices, list) and any(p.get('price') for p in prices):
+                    real_prices.extend(prices)
+            except:
+                pass
+        # 其次美团
+        if not real_prices and detail.meituan_prices:
+            try:
+                prices = json.loads(detail.meituan_prices)
+                if prices and isinstance(prices, list) and any(p.get('price') for p in prices):
+                    real_prices.extend(prices)
+            except:
+                pass
+        
+        # 检查现有的merged_prices中的BING价格
+        bing_prices = []
+        if detail.merged_prices:
+            try:
+                existing_prices = json.loads(detail.merged_prices)
+                if existing_prices and isinstance(existing_prices, list):
+                    # 分离BING价格和真实价格
+                    for price in existing_prices:
+                        if price.get('source') == 'BING':
+                            bing_prices.append(price)
+                        else:
+                            real_prices.append(price)
+            except:
+                pass
+        
+        # 更新价格数据 - 只保留真实价格（非BING）
+        if real_prices:
+            detail.merged_prices = json.dumps(real_prices, ensure_ascii=False)
         else:
-            # 有成功的数据，构建融合数据
-            merged_data = {
-                "description": f"{court.name}是一家专业的网球场地，设施完善，环境优美。",
-                "facilities": "、".join(summary.get('all_facilities', [])),
-                "business_hours": "09:00-22:00",
-                "prices": summary.get('all_prices', [{"type": "价格信息", "price": "该数据不能获得"}]),
-                "rating": summary.get('avg_rating', 0.0),
-                "reviews": summary.get('all_reviews', [{"user": "系统", "rating": 0, "content": "该数据不能获得"}]),
-                "images": summary.get('all_images', [])
-            }
+            detail.merged_prices = json.dumps([], ensure_ascii=False)
         
-        # 添加调试日志
-        print("merged_data:", merged_data)
+        # ====== 处理BING价格作为预测价格 ======
+        # 如果没有真实价格但有BING价格，将BING价格转换为预测价格格式
+        if not real_prices and bing_prices and not detail.predict_prices:
+            try:
+                # 从BING价格中提取价格信息
+                peak_prices = []
+                off_peak_prices = []
+                
+                for price_data in bing_prices:
+                    price = price_data.get('price')
+                    if price and isinstance(price, (int, float)):
+                        # 根据时间段判断是黄金还是非黄金时段
+                        time_info = price_data.get('time_info', '')
+                        if any(keyword in time_info for keyword in ['黄金', '高峰', 'peak', '19:00', '20:00', '21:00']):
+                            peak_prices.append(price)
+                        else:
+                            off_peak_prices.append(price)
+                
+                # 计算平均价格
+                if peak_prices or off_peak_prices:
+                    predict_result = {
+                        'peak_price': int(sum(peak_prices) / len(peak_prices)) if peak_prices else None,
+                        'off_peak_price': int(sum(off_peak_prices) / len(off_peak_prices)) if off_peak_prices else None,
+                        'confidence': 0.7,  # BING价格的置信度
+                        'source': 'BING_SCRAPED',
+                        'sample_count': len(bing_prices)
+                    }
+                    detail.predict_prices = json.dumps(predict_result, ensure_ascii=False)
+                    logger.info(f"场馆 {court.name} 将BING价格转换为预测价格: {predict_result}")
+            except Exception as e:
+                logger.error(f"转换BING价格为预测价格失败: {e}")
         
-        # 更新融合字段
-        detail.merged_description = merged_data["description"]
-        detail.merged_facilities = merged_data["facilities"]
-        detail.merged_business_hours = merged_data["business_hours"]
-        detail.merged_rating = merged_data["rating"]
-        detail.merged_prices = json.dumps(merged_data["prices"], ensure_ascii=False)
-        detail.dianping_reviews = json.dumps(merged_data["reviews"], ensure_ascii=False)
-        detail.dianping_images = json.dumps(merged_data["images"], ensure_ascii=False)
+        # ====== 自动预测价格 ======
+        # 如果没有真实价格和BING价格，自动调用预测算法
+        if not real_prices and not bing_prices and not detail.predict_prices:
+            try:
+                predictor = PricePredictor()
+                predict_result = predictor.predict_price_for_court(court)
+                if predict_result:
+                    detail.predict_prices = json.dumps(predict_result, ensure_ascii=False)
+                    logger.info(f"场馆 {court.name} 自动生成预测价格: {predict_result}")
+            except Exception as e:
+                logger.error(f"自动预测价格失败: {e}")
         
-        # 设置缓存过期时间
-        detail.cache_expires_at = datetime.now() + timedelta(hours=24)
-        
-        # 保存到数据库
-        db.commit()
-        db.refresh(detail)
-        
-        logger.info(f"场馆 {court.name} 详情数据更新完成")
-        
-    except Exception as e:
-        logger.error(f"更新详情数据失败: {e}")
-        # 如果爬取失败，返回"该数据不能获得"
+        # 其它字段照常更新
         merged_data = {
-            "description": "该数据不能获得",
-            "facilities": "该数据不能获得",
-            "business_hours": "该数据不能获得", 
-            "prices": [{"type": "价格信息", "price": "该数据不能获得"}],
-            "rating": 0.0,
-            "reviews": [{"user": "系统", "rating": 0, "content": "该数据不能获得"}],
-            "images": []
+            "description": f"{court.name}是一家专业的网球场地，设施完善，环境优美。",
+            "facilities": "、".join(summary.get('all_facilities', [])),
+            "business_hours": "09:00-22:00",
+            "prices": real_prices if real_prices else [],
+            "rating": summary.get('avg_rating', 0.0),
+            "reviews": summary.get('all_reviews', []),
+            "images": summary.get('all_images', [])
         }
-        
-        # 更新融合字段
         detail.merged_description = merged_data["description"]
         detail.merged_facilities = merged_data["facilities"]
         detail.merged_business_hours = merged_data["business_hours"]
         detail.merged_rating = merged_data["rating"]
-        detail.merged_prices = json.dumps(merged_data["prices"], ensure_ascii=False)
         detail.dianping_reviews = json.dumps(merged_data["reviews"], ensure_ascii=False)
         detail.dianping_images = json.dumps(merged_data["images"], ensure_ascii=False)
-        detail.cache_expires_at = datetime.now() + timedelta(hours=24)
-        
-        # 保存到数据库
         db.commit()
-        db.refresh(detail)
-        
-        logger.info(f"场馆 {court.name} 详情数据更新完成（使用默认数据）")
+    except Exception as e:
+        print(f"❌ update_court_detail_data异常: {e}")
+        db.rollback()
+        raise
 
 @router.get("/batch/update")
 async def batch_update_details(limit: int = Query(10, ge=1, le=50, description="批量更新数量"), db: Session = Depends(get_db)):

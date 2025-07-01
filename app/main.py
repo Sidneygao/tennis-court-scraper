@@ -5,7 +5,13 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
 import os
 
-from .config import settings
+print('>>> main.py 启动')
+try:
+    from .config import settings
+    print('>>> config导入成功')
+except Exception as e:
+    print('!!! config导入失败:', e)
+    raise
 from .database import init_db
 from .api import courts, scraper, details
 
@@ -76,5 +82,6 @@ async def get_app_info():
     }
 
 if __name__ == "__main__":
+    print('>>> main.py __main__ 入口')
     import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000) 

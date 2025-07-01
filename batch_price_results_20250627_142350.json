@@ -1,0 +1,849 @@
+{
+  "success": true,
+  "total_courts": 20,
+  "success_count": 20,
+  "failed_count": 0,
+  "duration_seconds": 0.218811,
+  "results": [
+    {
+      "court_id": 1,
+      "court_name": "WoowTennis网球俱乐部(双井富力广场店)",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 4,
+      "court_name": "RockTennis网球学练馆(国贸店)",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 3,
+      "court_name": "动之光·大望路网球馆",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 6,
+      "court_name": "SOLOTennis网球俱乐部",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 7,
+      "court_name": "迪卡侬网球匹克球俱乐部",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥94/小时",
+        "off_peak_price": "¥75/小时",
+        "member_price": "¥84/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室外",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 0.9,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥94/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥75/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥84/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 5,
+      "court_name": "郑洁网球汇(国贸店)",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 9,
+      "court_name": "NEXTCHAMP网球俱乐部(国贸校区)",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 2,
+      "court_name": "球星网球汇(合生汇球星运动中心店)",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥94/小时",
+        "off_peak_price": "¥75/小时",
+        "member_price": "¥84/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室外",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 0.9,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥94/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥75/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥84/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 11,
+      "court_name": "RockTennis网球馆(天坛店)",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 8,
+      "court_name": "北京嘉里健身室内网球场-室内游泳池",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 15,
+      "court_name": "Tennislife网球学练馆国贸店",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 16,
+      "court_name": "国际俱乐部网球馆",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 17,
+      "court_name": "We Love Tennis维乐网球·匹克球学练馆",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 14,
+      "court_name": "赛特俱乐部-网球馆",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 19,
+      "court_name": "XD不被定义网球馆(龙潭湖体育馆)",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 10,
+      "court_name": "嘉里中心-网球场",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 21,
+      "court_name": "WoowTennis网球俱乐部(国贸店)",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 20,
+      "court_name": "金地网球",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 22,
+      "court_name": "挥拍玩家JoooyHit网球学练馆",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    },
+    {
+      "court_id": 18,
+      "court_name": "北京市未来一号网球匹克球学练馆",
+      "success": true,
+      "predicted_prices": {
+        "peak_price": "¥126/小时",
+        "off_peak_price": "¥100/小时",
+        "member_price": "¥113/小时",
+        "price_unit": "小时",
+        "is_predicted": true,
+        "prediction_confidence": 0.85,
+        "prediction_factors": {
+          "area": "shuangjing",
+          "court_type": "室内",
+          "facilities": null,
+          "base_price": 105,
+          "type_multiplier": 1.2,
+          "facility_bonus": 0
+        }
+      },
+      "real_prices": null,
+      "final_prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥126/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥100/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        },
+        {
+          "type": "会员价格",
+          "price": "¥113/小时",
+          "is_predicted": true,
+          "confidence": 0.85
+        }
+      ]
+    }
+  ]
+}

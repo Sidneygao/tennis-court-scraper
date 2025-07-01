@@ -201,49 +201,17 @@ def test_search_function():
     except Exception as e:
         print(f"❌ 搜索失败: {e}")
 
-def test_template_matching():
-    """测试模板匹配功能"""
-    print("🔍 测试模板匹配功能")
-    print("=" * 30)
-    
-    scraper = XiaohongshuSmartScraper()
-    
-    # 测试不同的场馆名称
-    test_names = [
-        "乾坤体育网球学练馆",
-        "SOLOTennis俱乐部",
-        "动之光网球馆",
-        "球星网球汇",
-        "茂华UHN网球场",
-        "其他网球馆"
-    ]
-    
-    for name in test_names:
-        print(f"\n测试场馆: {name}")
-        template = scraper._find_matching_template(name)
-        
-        if template:
-            print(f"✅ 匹配到模板: {template['location']}")
-            print(f"   基础评分: {template['base_rating']}")
-            print(f"   基础价格: {template['base_price']}元")
-            print(f"   设施: {', '.join(template['facilities'])}")
-        else:
-            print("⚠️ 未匹配到模板，将使用通用数据")
-
 if __name__ == "__main__":
     import argparse
     
     parser = argparse.ArgumentParser(description='智能小红书爬虫测试')
     parser.add_argument('--single', action='store_true', help='测试单个场馆')
     parser.add_argument('--search', action='store_true', help='测试搜索功能')
-    parser.add_argument('--template', action='store_true', help='测试模板匹配功能')
     parser.add_argument('--court', type=str, help='指定场馆名称')
     
     args = parser.parse_args()
     
-    if args.template:
-        test_template_matching()
-    elif args.search:
+    if args.search:
         test_search_function()
     elif args.single:
         if args.court:

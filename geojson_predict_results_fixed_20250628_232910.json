@@ -1,0 +1,2371 @@
+{
+  "timestamp": "2025-06-28T23:29:10.577711",
+  "summary": {
+    "total_courts": 83,
+    "success_count": 83,
+    "no_reference_count": 0,
+    "success_rate": 100.0
+  },
+  "results": [
+    {
+      "court_id": 581,
+      "name": "齐动力网球(丽泽店)",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.080820",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 0.2
+          },
+          {
+            "id": 585,
+            "name": "恒瑞网球",
+            "distance": 2.0
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 1.9
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 582,
+      "name": "球友网球馆(六里桥店)",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.098964",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 0.1
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 1.8
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 583,
+      "name": "艾冠网球俱乐部",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.111598",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 0.1
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 1.8
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 584,
+      "name": "齐动力网球(六里桥-威尼斯基地)",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:09.131192",
+        "source_courts": [
+          {
+            "id": 585,
+            "name": "恒瑞网球",
+            "distance": 2.2
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 1.7
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 585,
+      "name": "恒瑞网球",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:09.157867",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 2.2
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 3.6
+          },
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 3.1
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 3.1
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 586,
+      "name": "金唐博文网球场(杰瑞网球俱乐部)",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:09.175701",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 2.2
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 0.5
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 587,
+      "name": "杰瑞网球俱乐部",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:09.193626",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 2.2
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 0.6
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 588,
+      "name": "得乐网球培训(欧园网球场)",
+      "prediction": {
+        "peak_price": 150,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:09.220251",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 1.7
+          },
+          {
+            "id": 585,
+            "name": "恒瑞网球",
+            "distance": 3.6
+          },
+          {
+            "id": 608,
+            "name": "清芷园网球",
+            "distance": 3.6
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 589,
+      "name": "育乐网球(红莲大厦店)",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.231924",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 2.0
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 0.2
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 590,
+      "name": "鹏润家园-网球场",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:09.247562",
+        "source_courts": [
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 1.5
+          },
+          {
+            "id": 608,
+            "name": "清芷园网球",
+            "distance": 2.3
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 591,
+      "name": "六里桥网球场",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.261608",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 1.1
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 1.4
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 592,
+      "name": "六里桥网球羽毛球乒乓球馆",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.275766",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 1.1
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 1.4
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 593,
+      "name": "芳草荟网球",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:09.299014",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 4.2
+          },
+          {
+            "id": 585,
+            "name": "恒瑞网球",
+            "distance": 2.2
+          },
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 4.8
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 4.8
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 594,
+      "name": "RockTennis网球学练馆(六里桥店)",
+      "prediction": {
+        "peak_price": 150,
+        "off_peak_price": null,
+        "data_count": 5,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:09.319058",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 1.5
+          },
+          {
+            "id": 585,
+            "name": "恒瑞网球",
+            "distance": 2.8
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 3.0
+          },
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 2.4
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 2.4
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 5
+    },
+    {
+      "court_id": 595,
+      "name": "大富网球俱乐部(4、7号场地)",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:09.333926",
+        "source_courts": [
+          {
+            "id": 596,
+            "name": "北京兴晖网球俱乐部(草桥二商球馆店)",
+            "distance": 0.5
+          },
+          {
+            "id": 614,
+            "name": "得乐网球(西罗园网球场)",
+            "distance": 3.9
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 596,
+      "name": "北京兴晖网球俱乐部(草桥二商球馆店)",
+      "prediction": {
+        "peak_price": 150,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:09.353285",
+        "source_courts": [
+          {
+            "id": 595,
+            "name": "大富网球俱乐部(4、7号场地)",
+            "distance": 0.5
+          },
+          {
+            "id": 608,
+            "name": "清芷园网球",
+            "distance": 4.5
+          },
+          {
+            "id": 614,
+            "name": "得乐网球(西罗园网球场)",
+            "distance": 4.2
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 597,
+      "name": "杰瑞网球俱乐部(二商网球馆)",
+      "prediction": {
+        "peak_price": 190,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.363011",
+        "source_courts": [
+          {
+            "id": 595,
+            "name": "大富网球俱乐部(4、7号场地)",
+            "distance": 0.6
+          },
+          {
+            "id": 596,
+            "name": "北京兴晖网球俱乐部(草桥二商球馆店)",
+            "distance": 0.0
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 598,
+      "name": "丰体篮球场网球场",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.374703",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 0.8
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 0.9
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 599,
+      "name": "丰台体育中心网球场",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.383382",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 0.8
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 0.9
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 600,
+      "name": "铭旭网球俱乐部",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.394037",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 1.2
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 1.2
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 601,
+      "name": "广安游泳网球馆",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:09.409314",
+        "source_courts": [
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 2.3
+          },
+          {
+            "id": 608,
+            "name": "清芷园网球",
+            "distance": 2.2
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 602,
+      "name": "华宝蓝图网球馆",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:09.428144",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 2.5
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 2.9
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 603,
+      "name": "齐动力网球(华宝国际店)",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:09.447829",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 2.5
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 2.9
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 604,
+      "name": "万芳亭网球馆",
+      "prediction": {
+        "peak_price": 130,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.458738",
+        "source_courts": [
+          {
+            "id": 608,
+            "name": "清芷园网球",
+            "distance": 1.7
+          },
+          {
+            "id": 614,
+            "name": "得乐网球(西罗园网球场)",
+            "distance": 1.8
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 605,
+      "name": "广安游泳网球馆",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:09.472098",
+        "source_courts": [
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 2.5
+          },
+          {
+            "id": 608,
+            "name": "清芷园网球",
+            "distance": 2.1
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 606,
+      "name": "莲花小区网球场",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:09.497937",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 2.6
+          },
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 3.2
+          },
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 3.6
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 3.6
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 607,
+      "name": "网动网球(丰台创新中心店)",
+      "prediction": {
+        "peak_price": 180,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:09.525145",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 6.0
+          },
+          {
+            "id": 585,
+            "name": "恒瑞网球",
+            "distance": 4.1
+          },
+          {
+            "id": 595,
+            "name": "大富网球俱乐部(4、7号场地)",
+            "distance": 5.3
+          },
+          {
+            "id": 596,
+            "name": "北京兴晖网球俱乐部(草桥二商球馆店)",
+            "distance": 5.1
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 608,
+      "name": "清芷园网球",
+      "prediction": {
+        "peak_price": 150,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:09.543086",
+        "source_courts": [
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 3.6
+          },
+          {
+            "id": 614,
+            "name": "得乐网球(西罗园网球场)",
+            "distance": 2.4
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 609,
+      "name": "雨露润泽网球俱乐部(清芷园店)",
+      "prediction": {
+        "peak_price": 130,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:09.555771",
+        "source_courts": [
+          {
+            "id": 608,
+            "name": "清芷园网球",
+            "distance": 0.1
+          },
+          {
+            "id": 614,
+            "name": "得乐网球(西罗园网球场)",
+            "distance": 2.4
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 610,
+      "name": "开心果网球俱乐部",
+      "prediction": {
+        "peak_price": 150,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:09.579806",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 3.5
+          },
+          {
+            "id": 585,
+            "name": "恒瑞网球",
+            "distance": 3.1
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 0.1
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 611,
+      "name": "卓越网球俱乐部",
+      "prediction": {
+        "peak_price": 160,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:09.605118",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 3.5
+          },
+          {
+            "id": 585,
+            "name": "恒瑞网球",
+            "distance": 3.1
+          },
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 0.1
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 612,
+      "name": "隧穿时空网球足球场",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.615878",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 1.0
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 0.9
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 613,
+      "name": "绿豆网球看丹馆",
+      "prediction": {
+        "peak_price": 150,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:09.640020",
+        "source_courts": [
+          {
+            "id": 585,
+            "name": "恒瑞网球",
+            "distance": 4.3
+          },
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 6.0
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 614,
+      "name": "得乐网球(西罗园网球场)",
+      "prediction": {
+        "peak_price": 160,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:09.654726",
+        "source_courts": [
+          {
+            "id": 608,
+            "name": "清芷园网球",
+            "distance": 2.4
+          },
+          {
+            "id": 627,
+            "name": "光彩网球中心",
+            "distance": 1.9
+          },
+          {
+            "id": 662,
+            "name": "超越网球(丰台)",
+            "distance": 2.6
+          },
+          {
+            "id": 663,
+            "name": "嘉荟网球",
+            "distance": 2.6
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 615,
+      "name": "北京沐康国际网球馆",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:09.670913",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 3.0
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 3.0
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 616,
+      "name": "得乐网球(五里店网球馆)",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:09.689228",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 3.2
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 3.2
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 617,
+      "name": "育乐网球",
+      "prediction": {
+        "peak_price": 190,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:09.707817",
+        "source_courts": [
+          {
+            "id": 595,
+            "name": "大富网球俱乐部(4、7号场地)",
+            "distance": 4.6
+          },
+          {
+            "id": 596,
+            "name": "北京兴晖网球俱乐部(草桥二商球馆店)",
+            "distance": 4.1
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 618,
+      "name": "魅力飞扬网球俱乐部(京荟广场店)",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.716865",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 1.7
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 1.6
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 619,
+      "name": "万寿宾馆-网球中心",
+      "prediction": {
+        "peak_price": 150,
+        "off_peak_price": null,
+        "data_count": 5,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:09.744219",
+        "source_courts": [
+          {
+            "id": 584,
+            "name": "齐动力网球(六里桥-威尼斯基地)",
+            "distance": 4.6
+          },
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 4.5
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 4.5
+          },
+          {
+            "id": 636,
+            "name": "得乐网球(永定路店)",
+            "distance": 2.8
+          },
+          {
+            "id": 637,
+            "name": "温菲尔德网球俱乐部(田村山馆)",
+            "distance": 4.2
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 5
+    },
+    {
+      "court_id": 620,
+      "name": "泰内斯网球俱乐部",
+      "prediction": {
+        "peak_price": 150,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:09.763993",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 3.8
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 3.8
+          },
+          {
+            "id": 636,
+            "name": "得乐网球(永定路店)",
+            "distance": 2.2
+          },
+          {
+            "id": 637,
+            "name": "温菲尔德网球俱乐部(田村山馆)",
+            "distance": 3.4
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 621,
+      "name": "齐动力网球(西单天安店)",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:09.784427",
+        "source_courts": [
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 4.9
+          },
+          {
+            "id": 608,
+            "name": "清芷园网球",
+            "distance": 3.4
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 622,
+      "name": "网苗网球馆(北京总部基地丰台科技园世界公园店)",
+      "prediction": {
+        "peak_price": 160,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 8.0,
+        "predict_time": "2025-06-28T23:29:09.816853",
+        "source_courts": [
+          {
+            "id": 585,
+            "name": "恒瑞网球",
+            "distance": 6.3
+          },
+          {
+            "id": 595,
+            "name": "大富网球俱乐部(4、7号场地)",
+            "distance": 7.5
+          },
+          {
+            "id": 596,
+            "name": "北京兴晖网球俱乐部(草桥二商球馆店)",
+            "distance": 7.2
+          },
+          {
+            "id": 633,
+            "name": "鲸丽网球中心",
+            "distance": 8.0
+          }
+        ]
+      },
+      "search_radius": 8.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 623,
+      "name": "OPeN STAR网球俱乐部(西红门店)",
+      "prediction": {
+        "peak_price": 190,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:09.837983",
+        "source_courts": [
+          {
+            "id": 595,
+            "name": "大富网球俱乐部(4、7号场地)",
+            "distance": 5.7
+          },
+          {
+            "id": 596,
+            "name": "北京兴晖网球俱乐部(草桥二商球馆店)",
+            "distance": 5.2
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 624,
+      "name": "明日之星网球俱乐部",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:09.864997",
+        "source_courts": [
+          {
+            "id": 588,
+            "name": "得乐网球培训(欧园网球场)",
+            "distance": 5.4
+          },
+          {
+            "id": 608,
+            "name": "清芷园网球",
+            "distance": 5.5
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 625,
+      "name": "北京市网球运动管理中心2号网球馆",
+      "prediction": {
+        "peak_price": 160,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.875844",
+        "source_courts": [
+          {
+            "id": 614,
+            "name": "得乐网球(西罗园网球场)",
+            "distance": 1.7
+          },
+          {
+            "id": 627,
+            "name": "光彩网球中心",
+            "distance": 0.2
+          },
+          {
+            "id": 662,
+            "name": "超越网球(丰台)",
+            "distance": 1.1
+          },
+          {
+            "id": 663,
+            "name": "嘉荟网球",
+            "distance": 1.1
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 626,
+      "name": "北京市网球管理中心室内网球馆",
+      "prediction": {
+        "peak_price": 160,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.885388",
+        "source_courts": [
+          {
+            "id": 614,
+            "name": "得乐网球(西罗园网球场)",
+            "distance": 1.9
+          },
+          {
+            "id": 627,
+            "name": "光彩网球中心",
+            "distance": 0.1
+          },
+          {
+            "id": 662,
+            "name": "超越网球(丰台)",
+            "distance": 0.9
+          },
+          {
+            "id": 663,
+            "name": "嘉荟网球",
+            "distance": 0.9
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 627,
+      "name": "光彩网球中心",
+      "prediction": {
+        "peak_price": 160,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:09.895661",
+        "source_courts": [
+          {
+            "id": 614,
+            "name": "得乐网球(西罗园网球场)",
+            "distance": 1.9
+          },
+          {
+            "id": 662,
+            "name": "超越网球(丰台)",
+            "distance": 0.9
+          },
+          {
+            "id": 663,
+            "name": "嘉荟网球",
+            "distance": 0.9
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 628,
+      "name": "丰台区卢沟桥梅市口网球场",
+      "prediction": {
+        "peak_price": 110,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:09.918182",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 4.5
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 4.5
+          },
+          {
+            "id": 633,
+            "name": "鲸丽网球中心",
+            "distance": 4.9
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 629,
+      "name": "得乐网球俱乐部(梅市口网球场)",
+      "prediction": {
+        "peak_price": 110,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:09.939144",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 4.7
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 4.7
+          },
+          {
+            "id": 633,
+            "name": "鲸丽网球中心",
+            "distance": 4.6
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 630,
+      "name": "蓝图北重网球馆",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:09.958264",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 3.3
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 3.3
+          },
+          {
+            "id": 637,
+            "name": "温菲尔德网球俱乐部(田村山馆)",
+            "distance": 3.7
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 631,
+      "name": "京西大本营网球馆",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:09.986767",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 5.8
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 5.8
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 632,
+      "name": "天天冠网网球学练馆",
+      "prediction": {
+        "peak_price": 180,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:10.000811",
+        "source_courts": [
+          {
+            "id": 636,
+            "name": "得乐网球(永定路店)",
+            "distance": 2.7
+          },
+          {
+            "id": 637,
+            "name": "温菲尔德网球俱乐部(田村山馆)",
+            "distance": 2.5
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 633,
+      "name": "鲸丽网球中心",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 9.0,
+        "predict_time": "2025-06-28T23:29:10.034551",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 8.4
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 8.4
+          }
+        ]
+      },
+      "search_radius": 9.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 634,
+      "name": "万商网球馆",
+      "prediction": {
+        "peak_price": 180,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:10.056702",
+        "source_courts": [
+          {
+            "id": 636,
+            "name": "得乐网球(永定路店)",
+            "distance": 4.3
+          },
+          {
+            "id": 637,
+            "name": "温菲尔德网球俱乐部(田村山馆)",
+            "distance": 3.2
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 635,
+      "name": "得乐网球(老山网球场)",
+      "prediction": {
+        "peak_price": 180,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:10.074337",
+        "source_courts": [
+          {
+            "id": 636,
+            "name": "得乐网球(永定路店)",
+            "distance": 4.3
+          },
+          {
+            "id": 637,
+            "name": "温菲尔德网球俱乐部(田村山馆)",
+            "distance": 2.9
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 636,
+      "name": "得乐网球(永定路店)",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:10.102397",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 5.4
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 5.4
+          },
+          {
+            "id": 637,
+            "name": "温菲尔德网球俱乐部(田村山馆)",
+            "distance": 1.5
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 637,
+      "name": "温菲尔德网球俱乐部(田村山馆)",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:10.127383",
+        "source_courts": [
+          {
+            "id": 610,
+            "name": "开心果网球俱乐部",
+            "distance": 5.9
+          },
+          {
+            "id": 611,
+            "name": "卓越网球俱乐部",
+            "distance": 5.9
+          },
+          {
+            "id": 636,
+            "name": "得乐网球(永定路店)",
+            "distance": 1.5
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 638,
+      "name": "网动网球(泰然体育中心校区)",
+      "prediction": {
+        "peak_price": 180,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 8.0,
+        "predict_time": "2025-06-28T23:29:10.159481",
+        "source_courts": [
+          {
+            "id": 636,
+            "name": "得乐网球(永定路店)",
+            "distance": 7.3
+          },
+          {
+            "id": 637,
+            "name": "温菲尔德网球俱乐部(田村山馆)",
+            "distance": 6.0
+          }
+        ]
+      },
+      "search_radius": 8.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 639,
+      "name": "RockTennis网球学练馆(亦庄店)",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:10.169370",
+        "source_courts": [
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 1.6
+          },
+          {
+            "id": 642,
+            "name": "狮城百丽网球场",
+            "distance": 1.5
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 640,
+      "name": "蓝星网球",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:10.192717",
+        "source_courts": [
+          {
+            "id": 642,
+            "name": "狮城百丽网球场",
+            "distance": 2.4
+          },
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 4.4
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 4.4
+          },
+          {
+            "id": 654,
+            "name": "万源网球俱乐部",
+            "distance": 4.4
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 641,
+      "name": "永承国际网球俱乐部",
+      "prediction": {
+        "peak_price": 130,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:10.205967",
+        "source_courts": [
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 2.5
+          },
+          {
+            "id": 642,
+            "name": "狮城百丽网球场",
+            "distance": 0.4
+          },
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 2.2
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 2.2
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 642,
+      "name": "狮城百丽网球场",
+      "prediction": {
+        "peak_price": 110,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:10.217930",
+        "source_courts": [
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 2.4
+          },
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 2.5
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 2.5
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 643,
+      "name": "齐动力儿童网球馆(亦庄国锐金嵿基地)",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:10.227134",
+        "source_courts": [
+          {
+            "id": 642,
+            "name": "狮城百丽网球场",
+            "distance": 1.5
+          },
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 1.1
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 1.1
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 644,
+      "name": "未来一号网球羽毛球篮球体育公园",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:10.239395",
+        "source_courts": [
+          {
+            "id": 642,
+            "name": "狮城百丽网球场",
+            "distance": 2.5
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 0.0
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 645,
+      "name": "永承国际网球俱乐部",
+      "prediction": {
+        "peak_price": 140,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:10.253179",
+        "source_courts": [
+          {
+            "id": 642,
+            "name": "狮城百丽网球场",
+            "distance": 2.5
+          },
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 0.0
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 646,
+      "name": "越动网球俱乐部",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:10.264667",
+        "source_courts": [
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 1.9
+          },
+          {
+            "id": 654,
+            "name": "万源网球俱乐部",
+            "distance": 2.6
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 647,
+      "name": "朝阳口岸网球场",
+      "prediction": {
+        "peak_price": 130,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:10.275325",
+        "source_courts": [
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 2.8
+          },
+          {
+            "id": 656,
+            "name": "得乐网球(欢乐谷网球场)",
+            "distance": 2.9
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 648,
+      "name": "毅思趣网球俱乐部",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:10.289148",
+        "source_courts": [
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 2.2
+          },
+          {
+            "id": 654,
+            "name": "万源网球俱乐部",
+            "distance": 2.4
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 649,
+      "name": "星纬网球中心",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 6,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:10.312222",
+        "source_courts": [
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 5.0
+          },
+          {
+            "id": 642,
+            "name": "狮城百丽网球场",
+            "distance": 5.7
+          },
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 5.1
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 5.1
+          },
+          {
+            "id": 656,
+            "name": "得乐网球(欢乐谷网球场)",
+            "distance": 4.1
+          },
+          {
+            "id": 659,
+            "name": "东石公园-网球场",
+            "distance": 5.3
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 6
+    },
+    {
+      "court_id": 650,
+      "name": "OPeN STAR网球俱乐部(肖村超级光合店)",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:10.325223",
+        "source_courts": [
+          {
+            "id": 662,
+            "name": "超越网球(丰台)",
+            "distance": 3.0
+          },
+          {
+            "id": 663,
+            "name": "嘉荟网球",
+            "distance": 3.0
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 651,
+      "name": "旺兴湖网球俱乐部",
+      "prediction": {
+        "peak_price": 120,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 4.0,
+        "predict_time": "2025-06-28T23:29:10.339873",
+        "source_courts": [
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 3.3
+          },
+          {
+            "id": 654,
+            "name": "万源网球俱乐部",
+            "distance": 2.1
+          }
+        ]
+      },
+      "search_radius": 4.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 652,
+      "name": "郑洁网球汇(分钟寺店)",
+      "prediction": {
+        "peak_price": 150,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 3.0,
+        "predict_time": "2025-06-28T23:29:10.350404",
+        "source_courts": [
+          {
+            "id": 656,
+            "name": "得乐网球(欢乐谷网球场)",
+            "distance": 2.5
+          },
+          {
+            "id": 662,
+            "name": "超越网球(丰台)",
+            "distance": 2.9
+          },
+          {
+            "id": 663,
+            "name": "嘉荟网球",
+            "distance": 2.9
+          }
+        ]
+      },
+      "search_radius": 3.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 653,
+      "name": "趣打网球(足球公园校区)",
+      "prediction": {
+        "peak_price": 130,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:10.372775",
+        "source_courts": [
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 5.9
+          },
+          {
+            "id": 642,
+            "name": "狮城百丽网球场",
+            "distance": 4.2
+          },
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 5.6
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 5.6
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 654,
+      "name": "万源网球俱乐部",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 5,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:10.397146",
+        "source_courts": [
+          {
+            "id": 627,
+            "name": "光彩网球中心",
+            "distance": 5.6
+          },
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 4.4
+          },
+          {
+            "id": 642,
+            "name": "狮城百丽网球场",
+            "distance": 5.9
+          },
+          {
+            "id": 662,
+            "name": "超越网球(丰台)",
+            "distance": 5.8
+          },
+          {
+            "id": 663,
+            "name": "嘉荟网球",
+            "distance": 5.8
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 5
+    },
+    {
+      "court_id": 655,
+      "name": "瀛海足球主题公园-网球场",
+      "prediction": {
+        "peak_price": 130,
+        "off_peak_price": null,
+        "data_count": 4,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:10.417167",
+        "source_courts": [
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 5.9
+          },
+          {
+            "id": 642,
+            "name": "狮城百丽网球场",
+            "distance": 4.2
+          },
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 5.7
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 5.7
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 4
+    },
+    {
+      "court_id": 656,
+      "name": "得乐网球(欢乐谷网球场)",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:10.436507",
+        "source_courts": [
+          {
+            "id": 640,
+            "name": "蓝星网球",
+            "distance": 5.7
+          },
+          {
+            "id": 662,
+            "name": "超越网球(丰台)",
+            "distance": 5.2
+          },
+          {
+            "id": 663,
+            "name": "嘉荟网球",
+            "distance": 5.2
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 657,
+      "name": "金徽网球中心",
+      "prediction": {
+        "peak_price": 90,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:10.453847",
+        "source_courts": [
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 4.3
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 4.3
+          },
+          {
+            "id": 659,
+            "name": "东石公园-网球场",
+            "distance": 1.0
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 658,
+      "name": "永承国际网球俱乐部(通州次渠红土馆)",
+      "prediction": {
+        "peak_price": 90,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 5.0,
+        "predict_time": "2025-06-28T23:29:10.472974",
+        "source_courts": [
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 4.3
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 4.3
+          },
+          {
+            "id": 659,
+            "name": "东石公园-网球场",
+            "distance": 1.0
+          }
+        ]
+      },
+      "search_radius": 5.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 659,
+      "name": "东石公园-网球场",
+      "prediction": {
+        "peak_price": 90,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 6.0,
+        "predict_time": "2025-06-28T23:29:10.498180",
+        "source_courts": [
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 5.2
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 5.2
+          }
+        ]
+      },
+      "search_radius": 6.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 660,
+      "name": "得乐网球(大鲁店网球馆)",
+      "prediction": {
+        "peak_price": 90,
+        "off_peak_price": null,
+        "data_count": 3,
+        "search_radius": 7.0,
+        "predict_time": "2025-06-28T23:29:10.523073",
+        "source_courts": [
+          {
+            "id": 644,
+            "name": "未来一号网球羽毛球篮球体育公园",
+            "distance": 6.4
+          },
+          {
+            "id": 645,
+            "name": "永承国际网球俱乐部",
+            "distance": 6.4
+          },
+          {
+            "id": 659,
+            "name": "东石公园-网球场",
+            "distance": 2.2
+          }
+        ]
+      },
+      "search_radius": 7.0,
+      "data_count": 3
+    },
+    {
+      "court_id": 661,
+      "name": "幸福七和网球俱乐部",
+      "prediction": {
+        "peak_price": 110,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 7.0,
+        "predict_time": "2025-06-28T23:29:10.545202",
+        "source_courts": [
+          {
+            "id": 656,
+            "name": "得乐网球(欢乐谷网球场)",
+            "distance": 6.3
+          },
+          {
+            "id": 659,
+            "name": "东石公园-网球场",
+            "distance": 4.9
+          }
+        ]
+      },
+      "search_radius": 7.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 662,
+      "name": "超越网球(丰台)",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:10.560646",
+        "source_courts": [
+          {
+            "id": 627,
+            "name": "光彩网球中心",
+            "distance": 0.9
+          },
+          {
+            "id": 663,
+            "name": "嘉荟网球",
+            "distance": 0.0
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    },
+    {
+      "court_id": 663,
+      "name": "嘉荟网球",
+      "prediction": {
+        "peak_price": 170,
+        "off_peak_price": null,
+        "data_count": 2,
+        "search_radius": 2.0,
+        "predict_time": "2025-06-28T23:29:10.570845",
+        "source_courts": [
+          {
+            "id": 627,
+            "name": "光彩网球中心",
+            "distance": 0.9
+          },
+          {
+            "id": 662,
+            "name": "超越网球(丰台)",
+            "distance": 0.0
+          }
+        ]
+      },
+      "search_radius": 2.0,
+      "data_count": 2
+    }
+  ]
+}

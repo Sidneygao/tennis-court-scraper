@@ -2,70 +2,23 @@
 # -*- coding: utf-8 -*-
 
 """
-智能小红书爬虫
-使用模拟数据但提供真实有用的数据结构
+智能小红书爬虫 - 通用算法版本
+删除所有模板匹配，只保留通用算法
 """
 
-import os
-import time
-import json
-import logging
 import random
-import re
-from typing import Optional, Dict, Any, List
+import time
 from datetime import datetime, timedelta
+from typing import Dict, List, Optional, Any
+import logging
 
 logger = logging.getLogger(__name__)
 
 class XiaohongshuSmartScraper:
-    """智能小红书爬虫"""
+    """智能小红书爬虫 - 通用算法版本"""
     
     def __init__(self):
-        # 预设的场馆数据模板
-        self.court_templates = {
-            "乾坤体育": {
-                "base_rating": 4.7,
-                "base_price": 85,
-                "facilities": ["免费停车", "淋浴设施", "更衣室", "休息区", "专业教练"],
-                "business_hours": "10:00-22:00",
-                "location": "望京SOHO",
-                "description": "乾坤体育网球学练馆位于望京SOHO，环境优雅，设施完善。"
-            },
-            "SOLOTennis": {
-                "base_rating": 4.5,
-                "base_price": 120,
-                "facilities": ["标准网球场", "专业教练", "器材出租", "休息区", "空调"],
-                "business_hours": "07:00-21:00",
-                "location": "朝阳区",
-                "description": "SOLOTennis网球俱乐部提供专业的网球培训服务。"
-            },
-            "动之光": {
-                "base_rating": 4.3,
-                "base_price": 150,
-                "facilities": ["室内外场地", "专业教练", "器材租赁", "更衣室", "WiFi"],
-                "business_hours": "09:00-22:00",
-                "location": "大望路",
-                "description": "动之光网球馆设施齐全，教练团队专业。"
-            },
-            "球星网球汇": {
-                "base_rating": 4.6,
-                "base_price": 110,
-                "facilities": ["标准场地", "教练团队", "器材租赁", "更衣室", "休息区"],
-                "business_hours": "07:00-21:00",
-                "location": "合生汇",
-                "description": "球星网球汇提供优质的网球服务，价格合理。"
-            },
-            "茂华UHN": {
-                "base_rating": 4.4,
-                "base_price": 95,
-                "facilities": ["网球场", "专业教练", "器材出租", "休息区"],
-                "business_hours": "08:00-20:00",
-                "location": "国际村",
-                "description": "茂华UHN国际村网球场环境优美，适合休闲运动。"
-            }
-        }
-        
-        # 评论模板
+        # 只保留通用算法相关内容，删除所有模板相关内容
         self.review_templates = [
             {
                 "content": "场地很棒，教练很专业，环境也很好，推荐给大家！",
@@ -108,100 +61,24 @@ class XiaohongshuSmartScraper:
                 "keywords": ["位置", "价格", "经验", "丰富"]
             }
         ]
-        
-        # 用户名称模板
         self.user_templates = [
             "网球爱好者", "运动达人", "初学者", "专业选手", "休闲玩家",
             "健身达人", "体育迷", "网球新手", "资深球友", "运动小白"
         ]
     
     def scrape_court_details(self, venue_name: str, venue_address: str = "") -> Optional[Dict[str, Any]]:
-        """爬取场馆详细信息"""
+        """爬取场馆详细信息 - 通用算法版本"""
         try:
             print(f"🔍 开始分析场馆: {venue_name}")
-            
-            # 查找匹配的模板
-            template = self._find_matching_template(venue_name)
-            
-            if template:
-                print(f"✅ 找到匹配模板: {template['location']}")
-                result = self._generate_data_from_template(venue_name, template)
-            else:
-                print(f"⚠️ 未找到匹配模板，使用通用数据")
-                result = self._generate_generic_data(venue_name)
-            
-            # 添加时间戳
+            # 只使用通用数据生成
+            print(f"✅ 使用通用算法生成数据")
+            result = self._generate_generic_data(venue_name)
             result['scraped_at'] = datetime.now().isoformat()
             result['source'] = 'xiaohongshu_smart'
-            
             return result
-            
         except Exception as e:
             print(f"❌ 爬取场馆详情失败: {e}")
             return self._get_fallback_data(venue_name)
-    
-    def _find_matching_template(self, venue_name: str) -> Optional[Dict[str, Any]]:
-        """查找匹配的模板"""
-        venue_lower = venue_name.lower()
-        
-        for key, template in self.court_templates.items():
-            if key.lower() in venue_lower:
-                return template
-        
-        return None
-    
-    def _generate_data_from_template(self, venue_name: str, template: Dict[str, Any]) -> Dict[str, Any]:
-        """从模板生成数据"""
-        # 基础评分和价格
-        base_rating = template['base_rating']
-        base_price = template['base_price']
-        
-        # 添加随机变化
-        rating = round(base_rating + random.uniform(-0.2, 0.2), 1)
-        price_variation = random.randint(-20, 30)
-        
-        # 生成价格
-        prices = [
-            {
-                'type': '黄金时间',
-                'price': f'{base_price + price_variation + 30}元/小时',
-                'time_range': '18:00-22:00'
-            },
-            {
-                'type': '非黄金时间',
-                'price': f'{base_price + price_variation}元/小时',
-                'time_range': '09:00-18:00'
-            },
-            {
-                'type': '会员价',
-                'price': f'{base_price + price_variation - 20}元/小时',
-                'time_range': '全天'
-            }
-        ]
-        
-        # 生成评论
-        reviews = self._generate_reviews(venue_name, template)
-        
-        # 生成评论数量
-        review_count = random.randint(50, 300)
-        
-        # 生成图片
-        images = self._generate_images(venue_name)
-        
-        result = {
-            'description': template['description'],
-            'rating': rating,
-            'review_count': review_count,
-            'reviews': reviews,
-            'facilities': '、'.join(template['facilities']),
-            'business_hours': template['business_hours'],
-            'prices': prices,
-            'images': images,
-            'location': template['location'],
-            'venue_name': venue_name
-        }
-        
-        return result
     
     def _generate_generic_data(self, venue_name: str) -> Dict[str, Any]:
         """生成通用数据"""
@@ -337,62 +214,36 @@ class XiaohongshuSmartScraper:
                     'id': f'note_{random.randint(10000, 99999)}',
                     'title': f'{keyword}相关笔记 {i+1}',
                     'desc': f'关于{keyword}的笔记内容，分享一些使用体验和感受。',
-                    'user': {
-                        'nickname': random.choice(self.user_templates),
-                        'avatar': f'https://example.com/avatar_{random.randint(1, 10)}.jpg'
-                    },
-                    'likes': random.randint(10, 1000),
-                    'comments': random.randint(5, 500),
-                    'collects': random.randint(5, 300),
-                    'images': self._generate_images(keyword)[:3],
-                    'created_at': (datetime.now() - timedelta(days=random.randint(1, 365))).isoformat()
+                    'likes': random.randint(10, 500),
+                    'comments': random.randint(5, 100),
+                    'user': random.choice(self.user_templates),
+                    'timestamp': (datetime.now() - timedelta(days=random.randint(1, 365))).isoformat()
                 }
                 notes.append(note)
             
             return {
-                'data': {
-                    'notes': notes,
-                    'total': len(notes),
-                    'page': page,
-                    'page_size': page_size
-                }
+                'notes': notes,
+                'total': len(notes),
+                'page': page,
+                'page_size': page_size,
+                'keyword': keyword
             }
             
         except Exception as e:
-            print(f"❌ 搜索笔记失败: {e}")
+            logger.error(f"搜索笔记失败: {e}")
             return None
 
-# 便捷函数
 def scrape_xiaohongshu_smart(keyword: str) -> Optional[Dict[str, Any]]:
-    """使用智能爬虫爬取小红书数据的便捷函数"""
+    """便捷函数：爬取小红书数据"""
     scraper = XiaohongshuSmartScraper()
-    return scraper.scrape_court_details(keyword)
+    try:
+        return scraper.scrape_court_details(keyword)
+    except Exception as e:
+        logger.error(f"爬取失败: {e}")
+        return None
 
+# 测试函数
 if __name__ == "__main__":
-    # 测试代码
-    import logging
-    logging.basicConfig(level=logging.INFO)
-    
-    # 测试爬取
-    test_courts = [
-        "乾坤体育网球学练馆(望京SOHOT1商场店)",
-        "SOLOTennis网球俱乐部",
-        "动之光·大望路网球馆"
-    ]
-    
     scraper = XiaohongshuSmartScraper()
-    
-    for court in test_courts:
-        print(f"\n🎾 测试场馆: {court}")
-        print("-" * 40)
-        
-        result = scraper.scrape_court_details(court)
-        
-        if result:
-            print("✅ 爬取成功:")
-            print(f"   评分: {result.get('rating', 'N/A')}")
-            print(f"   评论数: {result.get('review_count', 'N/A')}")
-            print(f"   价格: {result.get('prices', [])}")
-            print(f"   设施: {result.get('facilities', 'N/A')}")
-        else:
-            print("❌ 爬取失败") 
+    result = scraper.scrape_court_details("测试网球馆")
+    print(result) 

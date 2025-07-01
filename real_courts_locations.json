@@ -1,0 +1,302 @@
+[
+  {
+    "court_id": 1,
+    "name": "WoowTennis网球俱乐部(双井富力广场店)",
+    "latitude": 39.896113,
+    "longitude": 116.460599
+  },
+  {
+    "court_id": 2,
+    "name": "球星网球汇(合生汇球星运动中心店)",
+    "latitude": 39.892127,
+    "longitude": 116.478005
+  },
+  {
+    "court_id": 3,
+    "name": "动之光·大望路网球馆",
+    "latitude": 39.900734,
+    "longitude": 116.475123
+  },
+  {
+    "court_id": 4,
+    "name": "RockTennis网球学练馆(国贸店)",
+    "latitude": 39.902986,
+    "longitude": 116.469282
+  },
+  {
+    "court_id": 5,
+    "name": "郑洁网球汇(国贸店)",
+    "latitude": 39.906329,
+    "longitude": 116.456373
+  },
+  {
+    "court_id": 6,
+    "name": "SOLOTennis网球俱乐部",
+    "latitude": 39.909287,
+    "longitude": 116.472566
+  },
+  {
+    "court_id": 7,
+    "name": "迪卡侬网球匹克球俱乐部",
+    "latitude": 39.885543,
+    "longitude": 116.488231
+  },
+  {
+    "court_id": 8,
+    "name": "北京嘉里健身室内网球场-室内游泳池",
+    "latitude": 39.913837,
+    "longitude": 116.458604
+  },
+  {
+    "court_id": 9,
+    "name": "NEXTCHAMP网球俱乐部(国贸校区)",
+    "latitude": 39.913984,
+    "longitude": 116.458087
+  },
+  {
+    "court_id": 10,
+    "name": "嘉里中心-网球场",
+    "latitude": 39.91403,
+    "longitude": 116.45818
+  },
+  {
+    "court_id": 11,
+    "name": "RockTennis网球馆(天坛店)",
+    "latitude": 39.887699,
+    "longitude": 116.440709
+  },
+  {
+    "court_id": 12,
+    "name": "EYESIN能量波网球练习馆(CBD店)",
+    "latitude": 39.912981,
+    "longitude": 116.452107
+  },
+  {
+    "court_id": 13,
+    "name": "CBD网球馆(赛特广场店)",
+    "latitude": 39.906322,
+    "longitude": 116.441012
+  },
+  {
+    "court_id": 14,
+    "name": "赛特俱乐部-网球馆",
+    "latitude": 39.906681,
+    "longitude": 116.441062
+  },
+  {
+    "court_id": 15,
+    "name": "Tennislife网球学练馆国贸店",
+    "latitude": 39.917875,
+    "longitude": 116.453143
+  },
+  {
+    "court_id": 16,
+    "name": "国际俱乐部网球馆",
+    "latitude": 39.909341,
+    "longitude": 116.439025
+  },
+  {
+    "court_id": 17,
+    "name": "We Love Tennis维乐网球·匹克球学练馆",
+    "latitude": 39.918759,
+    "longitude": 116.452651
+  },
+  {
+    "court_id": 18,
+    "name": "北京市未来一号网球匹克球学练馆",
+    "latitude": 39.919925,
+    "longitude": 116.454425
+  },
+  {
+    "court_id": 19,
+    "name": "XD不被定义网球馆(龙潭湖体育馆)",
+    "latitude": 39.875726,
+    "longitude": 116.440321
+  },
+  {
+    "court_id": 20,
+    "name": "金地网球",
+    "latitude": 39.909743,
+    "longitude": 116.498219
+  },
+  {
+    "court_id": 21,
+    "name": "WoowTennis网球俱乐部(国贸店)",
+    "latitude": 39.920525,
+    "longitude": 116.454628
+  },
+  {
+    "court_id": 22,
+    "name": "挥拍玩家JoooyHit网球学练馆",
+    "latitude": 39.915033,
+    "longitude": 116.493808
+  },
+  {
+    "court_id": 23,
+    "name": "酷爱网球(赛洛城店)",
+    "latitude": 39.897016,
+    "longitude": 116.507013
+  },
+  {
+    "court_id": 24,
+    "name": "拉布拉拍网球健身休闲中心",
+    "latitude": 39.90409,
+    "longitude": 116.430964
+  },
+  {
+    "court_id": 25,
+    "name": "AK Tennis(网球学练馆)",
+    "latitude": 39.915862,
+    "longitude": 116.49617
+  },
+  {
+    "court_id": 26,
+    "name": "Ananas Tennis网球运动生活馆",
+    "latitude": 39.919134,
+    "longitude": 116.443217
+  },
+  {
+    "court_id": 27,
+    "name": "Tennislife网球学练馆(百子湾店)",
+    "latitude": 39.893742,
+    "longitude": 116.509465
+  },
+  {
+    "court_id": 28,
+    "name": "浩铨网球俱乐部(建国门店)",
+    "latitude": 39.905794,
+    "longitude": 116.428213
+  },
+  {
+    "court_id": 29,
+    "name": "OPEN STAR网球俱乐部(百子湾店)",
+    "latitude": 39.886645,
+    "longitude": 116.511339
+  },
+  {
+    "court_id": 30,
+    "name": "得乐网球(欢乐谷网球场)",
+    "latitude": 39.860939,
+    "longitude": 116.482863
+  },
+  {
+    "court_id": 31,
+    "name": "中体一方百子湾网球馆",
+    "latitude": 39.884852,
+    "longitude": 116.512164
+  },
+  {
+    "court_id": 32,
+    "name": "中体一方百子湾室外网球场",
+    "latitude": 39.885379,
+    "longitude": 116.513405
+  },
+  {
+    "court_id": 33,
+    "name": "Tennis Go网球学练馆",
+    "latitude": 39.920559,
+    "longitude": 116.433863
+  },
+  {
+    "court_id": 34,
+    "name": "红领巾公园网球场",
+    "latitude": 116.488343,
+    "longitude": 39.928873
+  },
+  {
+    "court_id": 35,
+    "name": "北京体育馆网球培训",
+    "latitude": 116.422905,
+    "longitude": 39.8741
+  },
+  {
+    "court_id": 36,
+    "name": "天坛体育活动中心网球馆",
+    "latitude": 116.418413,
+    "longitude": 39.880064
+  },
+  {
+    "court_id": 37,
+    "name": "東基青少年网球俱乐部(天坛校区)",
+    "latitude": 116.418241,
+    "longitude": 39.878997
+  },
+  {
+    "court_id": 38,
+    "name": "天坛体育中心网球场",
+    "latitude": 116.418086,
+    "longitude": 39.879161
+  },
+  {
+    "court_id": 39,
+    "name": "得乐网球培训",
+    "latitude": 116.502275,
+    "longitude": 39.926975
+  },
+  {
+    "court_id": 40,
+    "name": "毅达体育网球场",
+    "latitude": 116.523053,
+    "longitude": 39.887565
+  },
+  {
+    "court_id": 41,
+    "name": "迪米网球俱乐部",
+    "latitude": 116.512165,
+    "longitude": 39.920884
+  },
+  {
+    "court_id": 42,
+    "name": "杰瑞网球俱乐部(甘露园店)",
+    "latitude": 116.512306,
+    "longitude": 39.921037
+  },
+  {
+    "court_id": 43,
+    "name": "HelenTennis海伦网球俱乐部",
+    "latitude": 116.505458,
+    "longitude": 39.926725
+  },
+  {
+    "court_id": 44,
+    "name": "郡王府网球馆",
+    "latitude": 116.485373,
+    "longitude": 39.936156
+  },
+  {
+    "court_id": 45,
+    "name": "茂华UHN国际村-网球场",
+    "latitude": 116.448482,
+    "longitude": 39.967064
+  },
+  {
+    "court_id": 46,
+    "name": "克拉网球(四元桥购物中心店)",
+    "latitude": 116.461016,
+    "longitude": 39.979026
+  },
+  {
+    "court_id": 47,
+    "name": "MCTC网球匹克球",
+    "latitude": 116.439991,
+    "longitude": 39.961935
+  },
+  {
+    "court_id": 48,
+    "name": "OPeN STAR儿童网球馆(朝阳百货店)",
+    "latitude": 116.439622,
+    "longitude": 39.961836
+  },
+  {
+    "court_id": 49,
+    "name": "柏林瀚网球馆望京店",
+    "latitude": 116.460615,
+    "longitude": 39.981607
+  },
+  {
+    "court_id": 50,
+    "name": "外交网球俱乐部",
+    "latitude": 116.464202,
+    "longitude": 39.952666
+  }
+]

@@ -1,0 +1,509 @@
+{
+  "success": true,
+  "total_courts": 20,
+  "success_count": 20,
+  "failed_count": 0,
+  "duration_seconds": 733.75933,
+  "results": [
+    {
+      "court_id": 61,
+      "court_name": "育乐网球(航星园店)",
+      "success": true,
+      "prices": [
+        {
+          "type": "标准价格",
+          "price": "¥199/小时",
+          "source": "BING",
+          "keyword": "育乐网球 网球价格",
+          "confidence": 0.7,
+          "title": "育乐网球1V1对决，只需199元！育乐网球专享套餐，包含场地 ...",
+          "link": "https://www.douyin.com/video/7437388891402898729"
+        }
+      ],
+      "keywords_used": [
+        "育乐网球 网球价格",
+        "育乐网球 网球预订",
+        "育乐网球 网球费用"
+      ]
+    },
+    {
+      "court_id": 65,
+      "court_name": "姜庄湖网球俱乐部",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "姜庄湖网球俱乐部 网球价格",
+        "姜庄湖网球俱乐部 网球预订",
+        "姜庄湖网球俱乐部 网球费用"
+      ]
+    },
+    {
+      "court_id": 66,
+      "court_name": "Tennislife网球学练馆(东直门店)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "Tennislife网球学练馆 网球价格",
+        "Tennislife网球学练馆 网球预订",
+        "Tennislife网球学练馆 网球费用"
+      ]
+    },
+    {
+      "court_id": 99,
+      "court_name": "四得公园-网球场",
+      "success": true,
+      "prices": [
+        {
+          "type": "标准价格",
+          "price": "¥20/小时",
+          "source": "BING",
+          "keyword": "四得公园-网球场 网球价格",
+          "confidence": 0.7,
+          "title": "北京体育馆各项目价格大全 - 知乎",
+          "link": "https://zhuanlan.zhihu.com/p/504267854"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥220/小时",
+          "source": "BING",
+          "keyword": "四得公园-网球场 网球价格",
+          "confidence": 0.7,
+          "title": "“网球热”早来了：多地网球场调整价格，预约还得靠抢_澎湃 ...",
+          "link": "https://www.thepaper.cn/newsDetail_forward_28304082"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥25/小时",
+          "source": "BING",
+          "keyword": "四得公园-网球场 网球价格",
+          "confidence": 0.7,
+          "title": "北京体育馆各项目价格大全 - 知乎",
+          "link": "https://zhuanlan.zhihu.com/p/504267854"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥30/小时",
+          "source": "BING",
+          "keyword": "四得公园-网球场 网球价格",
+          "confidence": 0.7,
+          "title": "“网球热”早来了：多地网球场调整价格，预约还得靠抢_澎湃 ...",
+          "link": "https://www.thepaper.cn/newsDetail_forward_28304082"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥59/小时",
+          "source": "BING",
+          "keyword": "四得公园-网球场 网球价格",
+          "confidence": 0.7,
+          "title": "中信银行“36+1”全运动，热力升级！ - ecitic",
+          "link": "https://creditcard.ecitic.com/m/qyd/venues_wangqiu.html"
+        }
+      ],
+      "keywords_used": [
+        "四得公园-网球场 网球价格",
+        "四得公园-网球场 网球预订",
+        "四得公园-网球场 网球费用"
+      ]
+    },
+    {
+      "court_id": 101,
+      "court_name": "北京嘉里健身室内网球场-室内游泳池",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "北京嘉里健身室内网球场-室内游泳池 网球价格",
+        "北京嘉里健身室内网球场-室内游泳池 网球预订",
+        "北京嘉里健身室内网球场-室内游泳池 网球费用"
+      ]
+    },
+    {
+      "court_id": 103,
+      "court_name": "NEXTCHAMP网球俱乐部(国贸校区)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "NEXTCHAMP网球俱乐部 网球价格",
+        "NEXTCHAMP网球俱乐部 网球预订",
+        "NEXTCHAMP网球俱乐部 网球费用"
+      ]
+    },
+    {
+      "court_id": 109,
+      "court_name": "EYESIN能量波网球练习馆(CBD店)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "EYESIN能量波网球练习馆 网球价格",
+        "EYESIN能量波网球练习馆 网球预订",
+        "EYESIN能量波网球练习馆 网球费用"
+      ]
+    },
+    {
+      "court_id": 111,
+      "court_name": "动之光·大望路网球馆",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "动之光·大望路网球馆 网球价格",
+        "动之光·大望路网球馆 网球预订",
+        "动之光·大望路网球馆 网球费用"
+      ]
+    },
+    {
+      "court_id": 121,
+      "court_name": "金地网球",
+      "success": true,
+      "prices": [
+        {
+          "type": "标准价格",
+          "price": "¥100/小时",
+          "source": "BING",
+          "keyword": "金地网球 网球价格",
+          "confidence": 0.7,
+          "title": "深圳市网球场地一览表 - 百度文库",
+          "link": "https://wenku.baidu.com/view/e78d2f4b01020740be1e650e52ea551810a6c9ab.html"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥150/小时",
+          "source": "BING",
+          "keyword": "金地网球 网球价格",
+          "confidence": 0.7,
+          "title": "深圳市网球场地一览表 - 百度文库",
+          "link": "https://wenku.baidu.com/view/e78d2f4b01020740be1e650e52ea551810a6c9ab.html"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥40/小时",
+          "source": "BING",
+          "keyword": "金地网球 网球价格",
+          "confidence": 0.7,
+          "title": "深圳南山有没有比较便宜的网球场地呀? _ 网球馆一般怎么收费",
+          "link": "http://29h.net/wqzx/207286.html"
+        }
+      ],
+      "keywords_used": [
+        "金地网球 网球价格",
+        "金地网球 网球预订",
+        "金地网球 网球费用"
+      ]
+    },
+    {
+      "court_id": 135,
+      "court_name": "HelenTennis海伦网球俱乐部",
+      "success": true,
+      "prices": [
+        {
+          "type": "标准价格",
+          "price": "¥115/小时",
+          "source": "BING",
+          "keyword": "HelenTennis海伦网球俱乐部 网球价格",
+          "confidence": 0.7,
+          "title": "打网球要花费多少钱？ - 知乎",
+          "link": "https://www.zhihu.com/question/447049146"
+        }
+      ],
+      "keywords_used": [
+        "HelenTennis海伦网球俱乐部 网球价格",
+        "HelenTennis海伦网球俱乐部 网球预订",
+        "HelenTennis海伦网球俱乐部 网球费用"
+      ]
+    },
+    {
+      "court_id": 140,
+      "court_name": "迪卡侬网球匹克球俱乐部",
+      "success": true,
+      "prices": [
+        {
+          "type": "标准价格",
+          "price": "¥100/小时",
+          "source": "BING",
+          "keyword": "迪卡侬网球匹克球俱乐部 网球预订",
+          "confidence": 0.7,
+          "title": "匹克球会成为下一个时尚运动吗？ - 国家体育总局",
+          "link": "https://www.sport.gov.cn/n20001280/n20067608/n20067635/c25365665/content.html"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥200/小时",
+          "source": "BING",
+          "keyword": "迪卡侬网球匹克球俱乐部 网球预订",
+          "confidence": 0.7,
+          "title": "匹克球会成为下一个时尚运动吗？ - 国家体育总局",
+          "link": "https://www.sport.gov.cn/n20001280/n20067608/n20067635/c25365665/content.html"
+        }
+      ],
+      "keywords_used": [
+        "迪卡侬网球匹克球俱乐部 网球价格",
+        "迪卡侬网球匹克球俱乐部 网球预订",
+        "迪卡侬网球匹克球俱乐部 网球费用"
+      ]
+    },
+    {
+      "court_id": 141,
+      "court_name": "Tennislife网球学练馆(东直门店)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "Tennislife网球学练馆 网球价格",
+        "Tennislife网球学练馆 网球预订",
+        "Tennislife网球学练馆 网球费用"
+      ]
+    },
+    {
+      "court_id": 143,
+      "court_name": "开心果网球俱乐部",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "开心果网球俱乐部 网球价格",
+        "开心果网球俱乐部 网球预订",
+        "开心果网球俱乐部 网球费用"
+      ]
+    },
+    {
+      "court_id": 144,
+      "court_name": "柠远体育网球Lifetime Sports Tennis(朝阳大悦城店)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "柠远体育网球Lifetime Sports Tennis 网球价格",
+        "柠远体育网球Lifetime Sports Tennis 网球预订",
+        "柠远体育网球Lifetime Sports Tennis 网球费用"
+      ]
+    },
+    {
+      "court_id": 145,
+      "court_name": "网球兄弟",
+      "success": true,
+      "prices": [
+        {
+          "type": "标准价格",
+          "price": "¥100/小时",
+          "source": "BING",
+          "keyword": "网球兄弟 网球费用",
+          "confidence": 0.7,
+          "title": "兄弟国家网球中心「零基础福利课」来啦! 每小时不到100元 ...",
+          "link": "https://www.douyin.com/video/7483366909182774567"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥200/小时",
+          "source": "BING",
+          "keyword": "网球兄弟 网球费用",
+          "confidence": 0.7,
+          "title": "网球培训收费标准是多少 - 百度知道",
+          "link": "https://zhidao.baidu.com/question/949887530002993532.html"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥300/小时",
+          "source": "BING",
+          "keyword": "网球兄弟 网球价格",
+          "confidence": 0.7,
+          "title": "一个网球拍一般多少钱（一个网球拍一般多少钱人民币）-爱说球",
+          "link": "http://www.ishuoqiu.com/wangqiou/11331.html"
+        }
+      ],
+      "keywords_used": [
+        "网球兄弟 网球价格",
+        "网球兄弟 网球预订",
+        "网球兄弟 网球费用"
+      ]
+    },
+    {
+      "court_id": 147,
+      "court_name": "酷爱网球(珠江罗马嘉园店)",
+      "success": true,
+      "prices": [
+        {
+          "type": "标准价格",
+          "price": "¥200/小时",
+          "source": "BING",
+          "keyword": "酷爱网球 网球费用",
+          "confidence": 0.7,
+          "title": "请问学网球一年大概需要多少钱 ？_百度知道",
+          "link": "https://zhidao.baidu.com/question/637295452668402044.html"
+        }
+      ],
+      "keywords_used": [
+        "酷爱网球 网球价格",
+        "酷爱网球 网球预订",
+        "酷爱网球 网球费用"
+      ]
+    },
+    {
+      "court_id": 155,
+      "court_name": "燃动网球俱乐部(大悦城十里堡校区)",
+      "success": true,
+      "prices": [
+        {
+          "type": "标准价格",
+          "price": "¥181/小时",
+          "source": "BING",
+          "keyword": "燃动网球俱乐部 网球费用",
+          "confidence": 0.7,
+          "title": "燃动网球俱乐部，买它！，网球课，超值折扣，随时退·过期退 ...",
+          "link": "https://www.douyin.com/note/7519705248395676966"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥190/小时",
+          "source": "BING",
+          "keyword": "燃动网球俱乐部 网球费用",
+          "confidence": 0.7,
+          "title": "燃动网球俱乐部，买它！，网球课，超值折扣，随时退·过期退 ...",
+          "link": "https://www.douyin.com/note/7519705248395676966"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥20/小时",
+          "source": "BING",
+          "keyword": "燃动网球俱乐部 网球费用",
+          "confidence": 0.7,
+          "title": "网球俱乐部要钱吗知乎，网球俱乐部的顾问 - 歪把子体育",
+          "link": "https://tiyu.wbazi.com/p/10253.html"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥30/小时",
+          "source": "BING",
+          "keyword": "燃动网球俱乐部 网球费用",
+          "confidence": 0.7,
+          "title": "网球俱乐部要钱吗知乎，网球俱乐部的顾问 - 歪把子体育",
+          "link": "https://tiyu.wbazi.com/p/10253.html"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥50/小时",
+          "source": "BING",
+          "keyword": "燃动网球俱乐部 网球费用",
+          "confidence": 0.7,
+          "title": "网球俱乐部要钱吗知乎，网球俱乐部的顾问 - 歪把子体育",
+          "link": "https://tiyu.wbazi.com/p/10253.html"
+        }
+      ],
+      "keywords_used": [
+        "燃动网球俱乐部 网球价格",
+        "燃动网球俱乐部 网球预订",
+        "燃动网球俱乐部 网球费用"
+      ]
+    },
+    {
+      "court_id": 157,
+      "court_name": "业之峰网球馆",
+      "success": true,
+      "prices": [
+        {
+          "type": "标准价格",
+          "price": "¥150/小时",
+          "source": "BING",
+          "keyword": "业之峰网球馆 网球费用",
+          "confidence": 0.7,
+          "title": "10个北京网球场馆请收好，在北京打网球就容易多了",
+          "link": "https://m.yoger.com.cn/info-35621.html"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥20/小时",
+          "source": "BING",
+          "keyword": "业之峰网球馆 网球价格",
+          "confidence": 0.7,
+          "title": "北京体育馆各项目价格大全 - 知乎",
+          "link": "https://zhuanlan.zhihu.com/p/504267854"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥25/小时",
+          "source": "BING",
+          "keyword": "业之峰网球馆 网球价格",
+          "confidence": 0.7,
+          "title": "北京体育馆各项目价格大全 - 知乎",
+          "link": "https://zhuanlan.zhihu.com/p/504267854"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥80/小时",
+          "source": "BING",
+          "keyword": "业之峰网球馆 网球费用",
+          "confidence": 0.7,
+          "title": "10个北京网球场馆请收好，在北京打网球就容易多了",
+          "link": "https://m.yoger.com.cn/info-35621.html"
+        }
+      ],
+      "keywords_used": [
+        "业之峰网球馆 网球价格",
+        "业之峰网球馆 网球预订",
+        "业之峰网球馆 网球费用"
+      ]
+    },
+    {
+      "court_id": 159,
+      "court_name": "CBD东舍网球场",
+      "success": true,
+      "prices": [
+        {
+          "type": "标准价格",
+          "price": "¥100/小时",
+          "source": "BING",
+          "keyword": "CBD东舍网球场 网球费用",
+          "confidence": 0.7,
+          "title": "北京市网球场馆一览表- 北京本地宝",
+          "link": "https://bj.bendibao.com/live/20061218/16780.shtm"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥20/小时",
+          "source": "BING",
+          "keyword": "CBD东舍网球场 网球费用",
+          "confidence": 0.7,
+          "title": "北京体育馆各项目价格大全 - 知乎",
+          "link": "https://zhuanlan.zhihu.com/p/504267854"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥25/小时",
+          "source": "BING",
+          "keyword": "CBD东舍网球场 网球费用",
+          "confidence": 0.7,
+          "title": "北京体育馆各项目价格大全 - 知乎",
+          "link": "https://zhuanlan.zhihu.com/p/504267854"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥60/小时",
+          "source": "BING",
+          "keyword": "CBD东舍网球场 网球费用",
+          "confidence": 0.7,
+          "title": "10个北京网球场馆请收好，在北京打网球就容易多了",
+          "link": "https://m.yoger.com.cn/info-35621.html"
+        },
+        {
+          "type": "标准价格",
+          "price": "¥90/小时",
+          "source": "BING",
+          "keyword": "CBD东舍网球场 网球费用",
+          "confidence": 0.7,
+          "title": "10个北京网球场馆请收好，在北京打网球就容易多了",
+          "link": "https://m.yoger.com.cn/info-35621.html"
+        }
+      ],
+      "keywords_used": [
+        "CBD东舍网球场 网球价格",
+        "CBD东舍网球场 网球预订",
+        "CBD东舍网球场 网球费用"
+      ]
+    },
+    {
+      "court_id": 160,
+      "court_name": "中体一方百子湾网球馆",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "中体一方百子湾网球馆 网球价格",
+        "中体一方百子湾网球馆 网球预订",
+        "中体一方百子湾网球馆 网球费用"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,831 @@
+{
+  "success": true,
+  "total_courts": 45,
+  "success_count": 36,
+  "failed_count": 9,
+  "duration_seconds": 90.41136,
+  "results": [
+    {
+      "court_id": 582,
+      "court_name": "球友网球馆(六里桥店)",
+      "success": false,
+      "prices": [],
+      "keywords_used": [
+        "球友网球馆(六里桥店) 网球价格",
+        "球友网球馆(六里桥店) 网球预订",
+        "球友网球馆(六里桥店) 网球费用",
+        "球友网球馆(六里桥店) 网球收费",
+        "球友网球馆(六里桥店) 价格",
+        "球友网球馆(六里桥店) 预订"
+      ]
+    },
+    {
+      "court_id": 581,
+      "court_name": "齐动力网球(丽泽店)",
+      "success": true,
+      "prices": [
+        {
+          "type": "非黄金时间价格",
+          "price": "¥200/小时",
+          "source": "BING",
+          "keyword": "齐动力网球(丽泽店) 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "齐动力网球(丽泽店) 网球价格",
+        "齐动力网球(丽泽店) 网球预订",
+        "齐动力网球(丽泽店) 网球费用",
+        "齐动力网球(丽泽店) 网球收费",
+        "齐动力网球(丽泽店) 价格",
+        "齐动力网球(丽泽店) 预订"
+      ]
+    },
+    {
+      "court_id": 584,
+      "court_name": "齐动力网球(六里桥-威尼斯基地)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "齐动力网球(六里桥-威尼斯基地) 网球价格",
+        "齐动力网球(六里桥-威尼斯基地) 网球预订",
+        "齐动力网球(六里桥-威尼斯基地) 网球费用",
+        "齐动力网球(六里桥-威尼斯基地) 网球收费",
+        "齐动力网球(六里桥-威尼斯基地) 价格",
+        "齐动力网球(六里桥-威尼斯基地) 预订"
+      ]
+    },
+    {
+      "court_id": 588,
+      "court_name": "得乐网球培训(欧园网球场)",
+      "success": false,
+      "error": "Method 'rollback()' can't be called here; method 'commit()' is already in progress and this would cause an unexpected state change to <SessionTransactionState.CLOSED: 5> (Background on this error at: https://sqlalche.me/e/20/isce)"
+    },
+    {
+      "court_id": 590,
+      "court_name": "鹏润家园-网球场",
+      "success": false,
+      "error": "Method 'rollback()' can't be called here; method 'commit()' is already in progress and this would cause an unexpected state change to <SessionTransactionState.CLOSED: 5> (Background on this error at: https://sqlalche.me/e/20/isce)"
+    },
+    {
+      "court_id": 585,
+      "court_name": "恒瑞网球",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "恒瑞网球 网球价格",
+        "恒瑞网球 网球预订",
+        "恒瑞网球 网球费用",
+        "恒瑞网球 网球收费",
+        "恒瑞网球 价格",
+        "恒瑞网球 预订"
+      ]
+    },
+    {
+      "court_id": 591,
+      "court_name": "六里桥网球场",
+      "success": true,
+      "prices": [
+        {
+          "type": "非黄金时间价格",
+          "price": "¥109/小时",
+          "source": "BING",
+          "keyword": "六里桥网球场 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "六里桥网球场 网球价格",
+        "六里桥网球场 网球预订",
+        "六里桥网球场 网球费用",
+        "六里桥网球场 网球收费",
+        "六里桥网球场 价格",
+        "六里桥网球场 预订"
+      ]
+    },
+    {
+      "court_id": 592,
+      "court_name": "六里桥网球羽毛球乒乓球馆",
+      "success": true,
+      "prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥140/小时",
+          "source": "BING",
+          "keyword": "六里桥网球羽毛球乒乓球馆 网球预订",
+          "confidence": 0.8
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥162/小时",
+          "source": "BING",
+          "keyword": "六里桥网球羽毛球乒乓球馆 网球费用",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "六里桥网球羽毛球乒乓球馆 网球价格",
+        "六里桥网球羽毛球乒乓球馆 网球预订",
+        "六里桥网球羽毛球乒乓球馆 网球费用",
+        "六里桥网球羽毛球乒乓球馆 网球收费",
+        "六里桥网球羽毛球乒乓球馆 价格",
+        "六里桥网球羽毛球乒乓球馆 预订"
+      ]
+    },
+    {
+      "court_id": 596,
+      "court_name": "北京兴晖网球俱乐部(草桥二商球馆店)",
+      "success": false,
+      "prices": [
+        {
+          "type": "会员价格",
+          "price": "¥130/小时",
+          "source": "BING",
+          "keyword": "北京兴晖网球俱乐部(草桥二商球馆店) 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "北京兴晖网球俱乐部(草桥二商球馆店) 网球价格",
+        "北京兴晖网球俱乐部(草桥二商球馆店) 网球预订",
+        "北京兴晖网球俱乐部(草桥二商球馆店) 网球费用",
+        "北京兴晖网球俱乐部(草桥二商球馆店) 网球收费",
+        "北京兴晖网球俱乐部(草桥二商球馆店) 价格",
+        "北京兴晖网球俱乐部(草桥二商球馆店) 预订"
+      ]
+    },
+    {
+      "court_id": 595,
+      "court_name": "大富网球俱乐部(4、7号场地)",
+      "success": false,
+      "error": "Method 'rollback()' can't be called here; method 'rollback()' is already in progress and this would cause an unexpected state change to <SessionTransactionState.CLOSED: 5> (Background on this error at: https://sqlalche.me/e/20/isce)"
+    },
+    {
+      "court_id": 600,
+      "court_name": "铭旭网球俱乐部",
+      "success": false,
+      "error": "Method 'rollback()' can't be called here; method '_prepare_impl()' is already in progress and this would cause an unexpected state change to <SessionTransactionState.CLOSED: 5> (Background on this error at: https://sqlalche.me/e/20/isce)"
+    },
+    {
+      "court_id": 597,
+      "court_name": "杰瑞网球俱乐部(二商网球馆)",
+      "success": false,
+      "prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥99/小时",
+          "source": "BING",
+          "keyword": "杰瑞网球俱乐部(二商网球馆) 网球费用",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "杰瑞网球俱乐部(二商网球馆) 网球价格",
+        "杰瑞网球俱乐部(二商网球馆) 网球预订",
+        "杰瑞网球俱乐部(二商网球馆) 网球费用",
+        "杰瑞网球俱乐部(二商网球馆) 网球收费",
+        "杰瑞网球俱乐部(二商网球馆) 价格",
+        "杰瑞网球俱乐部(二商网球馆) 预订"
+      ]
+    },
+    {
+      "court_id": 601,
+      "court_name": "广安游泳网球馆",
+      "success": true,
+      "prices": [
+        {
+          "type": "非黄金时间价格",
+          "price": "¥123/小时",
+          "source": "BING",
+          "keyword": "广安游泳网球馆 网球预订",
+          "confidence": 0.8
+        },
+        {
+          "type": "黄金时间价格",
+          "price": "¥198/小时",
+          "source": "BING",
+          "keyword": "广安游泳网球馆 网球费用",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "广安游泳网球馆 网球价格",
+        "广安游泳网球馆 网球预订",
+        "广安游泳网球馆 网球费用",
+        "广安游泳网球馆 网球收费",
+        "广安游泳网球馆 价格",
+        "广安游泳网球馆 预订"
+      ]
+    },
+    {
+      "court_id": 603,
+      "court_name": "齐动力网球(华宝国际店)",
+      "success": true,
+      "prices": [
+        {
+          "type": "会员价格",
+          "price": "¥107/小时",
+          "source": "BING",
+          "keyword": "齐动力网球(华宝国际店) 网球价格",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "齐动力网球(华宝国际店) 网球价格",
+        "齐动力网球(华宝国际店) 网球预订",
+        "齐动力网球(华宝国际店) 网球费用",
+        "齐动力网球(华宝国际店) 网球收费",
+        "齐动力网球(华宝国际店) 价格",
+        "齐动力网球(华宝国际店) 预订"
+      ]
+    },
+    {
+      "court_id": 606,
+      "court_name": "莲花小区网球场",
+      "success": true,
+      "prices": [
+        {
+          "type": "非黄金时间价格",
+          "price": "¥192/小时",
+          "source": "BING",
+          "keyword": "莲花小区网球场 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "莲花小区网球场 网球价格",
+        "莲花小区网球场 网球预订",
+        "莲花小区网球场 网球费用",
+        "莲花小区网球场 网球收费",
+        "莲花小区网球场 价格",
+        "莲花小区网球场 预订"
+      ]
+    },
+    {
+      "court_id": 608,
+      "court_name": "清芷园网球",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "清芷园网球 网球价格",
+        "清芷园网球 网球预订",
+        "清芷园网球 网球费用",
+        "清芷园网球 网球收费",
+        "清芷园网球 价格",
+        "清芷园网球 预订"
+      ]
+    },
+    {
+      "court_id": 610,
+      "court_name": "开心果网球俱乐部",
+      "success": true,
+      "prices": [
+        {
+          "type": "非黄金时间价格",
+          "price": "¥145/小时",
+          "source": "BING",
+          "keyword": "开心果网球俱乐部 网球价格",
+          "confidence": 0.8
+        },
+        {
+          "type": "非黄金时间价格",
+          "price": "¥107/小时",
+          "source": "BING",
+          "keyword": "开心果网球俱乐部 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "开心果网球俱乐部 网球价格",
+        "开心果网球俱乐部 网球预订",
+        "开心果网球俱乐部 网球费用",
+        "开心果网球俱乐部 网球收费",
+        "开心果网球俱乐部 价格",
+        "开心果网球俱乐部 预订"
+      ]
+    },
+    {
+      "court_id": 611,
+      "court_name": "卓越网球俱乐部",
+      "success": true,
+      "prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥150/小时",
+          "source": "BING",
+          "keyword": "卓越网球俱乐部 网球价格",
+          "confidence": 0.8
+        },
+        {
+          "type": "黄金时间价格",
+          "price": "¥192/小时",
+          "source": "BING",
+          "keyword": "卓越网球俱乐部 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "卓越网球俱乐部 网球价格",
+        "卓越网球俱乐部 网球预订",
+        "卓越网球俱乐部 网球费用",
+        "卓越网球俱乐部 网球收费",
+        "卓越网球俱乐部 价格",
+        "卓越网球俱乐部 预订"
+      ]
+    },
+    {
+      "court_id": 614,
+      "court_name": "得乐网球(西罗园网球场)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "得乐网球(西罗园网球场) 网球价格",
+        "得乐网球(西罗园网球场) 网球预订",
+        "得乐网球(西罗园网球场) 网球费用",
+        "得乐网球(西罗园网球场) 网球收费",
+        "得乐网球(西罗园网球场) 价格",
+        "得乐网球(西罗园网球场) 预订"
+      ]
+    },
+    {
+      "court_id": 615,
+      "court_name": "北京沐康国际网球馆",
+      "success": true,
+      "prices": [
+        {
+          "type": "会员价格",
+          "price": "¥96/小时",
+          "source": "BING",
+          "keyword": "北京沐康国际网球馆 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "北京沐康国际网球馆 网球价格",
+        "北京沐康国际网球馆 网球预订",
+        "北京沐康国际网球馆 网球费用",
+        "北京沐康国际网球馆 网球收费",
+        "北京沐康国际网球馆 价格",
+        "北京沐康国际网球馆 预订"
+      ]
+    },
+    {
+      "court_id": 617,
+      "court_name": "育乐网球",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "育乐网球 网球价格",
+        "育乐网球 网球预订",
+        "育乐网球 网球费用",
+        "育乐网球 网球收费",
+        "育乐网球 价格",
+        "育乐网球 预订"
+      ]
+    },
+    {
+      "court_id": 618,
+      "court_name": "魅力飞扬网球俱乐部(京荟广场店)",
+      "success": true,
+      "prices": [
+        {
+          "type": "会员价格",
+          "price": "¥145/小时",
+          "source": "BING",
+          "keyword": "魅力飞扬网球俱乐部(京荟广场店) 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "魅力飞扬网球俱乐部(京荟广场店) 网球价格",
+        "魅力飞扬网球俱乐部(京荟广场店) 网球预订",
+        "魅力飞扬网球俱乐部(京荟广场店) 网球费用",
+        "魅力飞扬网球俱乐部(京荟广场店) 网球收费",
+        "魅力飞扬网球俱乐部(京荟广场店) 价格",
+        "魅力飞扬网球俱乐部(京荟广场店) 预订"
+      ]
+    },
+    {
+      "court_id": 621,
+      "court_name": "齐动力网球(西单天安店)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "齐动力网球(西单天安店) 网球价格",
+        "齐动力网球(西单天安店) 网球预订",
+        "齐动力网球(西单天安店) 网球费用",
+        "齐动力网球(西单天安店) 网球收费",
+        "齐动力网球(西单天安店) 价格",
+        "齐动力网球(西单天安店) 预订"
+      ]
+    },
+    {
+      "court_id": 623,
+      "court_name": "OPeN STAR网球俱乐部(西红门店)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "OPeN STAR网球俱乐部(西红门店) 网球价格",
+        "OPeN STAR网球俱乐部(西红门店) 网球预订",
+        "OPeN STAR网球俱乐部(西红门店) 网球费用",
+        "OPeN STAR网球俱乐部(西红门店) 网球收费",
+        "OPeN STAR网球俱乐部(西红门店) 价格",
+        "OPeN STAR网球俱乐部(西红门店) 预订"
+      ]
+    },
+    {
+      "court_id": 627,
+      "court_name": "光彩网球中心",
+      "success": true,
+      "prices": [
+        {
+          "type": "非黄金时间价格",
+          "price": "¥92/小时",
+          "source": "BING",
+          "keyword": "光彩网球中心 网球预订",
+          "confidence": 0.8
+        },
+        {
+          "type": "黄金时间价格",
+          "price": "¥86/小时",
+          "source": "BING",
+          "keyword": "光彩网球中心 网球费用",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "光彩网球中心 网球价格",
+        "光彩网球中心 网球预订",
+        "光彩网球中心 网球费用",
+        "光彩网球中心 网球收费",
+        "光彩网球中心 价格",
+        "光彩网球中心 预订"
+      ]
+    },
+    {
+      "court_id": 630,
+      "court_name": "蓝图北重网球馆",
+      "success": true,
+      "prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥153/小时",
+          "source": "BING",
+          "keyword": "蓝图北重网球馆 网球价格",
+          "confidence": 0.8
+        },
+        {
+          "type": "会员价格",
+          "price": "¥82/小时",
+          "source": "BING",
+          "keyword": "蓝图北重网球馆 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "蓝图北重网球馆 网球价格",
+        "蓝图北重网球馆 网球预订",
+        "蓝图北重网球馆 网球费用",
+        "蓝图北重网球馆 网球收费",
+        "蓝图北重网球馆 价格",
+        "蓝图北重网球馆 预订"
+      ]
+    },
+    {
+      "court_id": 631,
+      "court_name": "京西大本营网球馆",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "京西大本营网球馆 网球价格",
+        "京西大本营网球馆 网球预订",
+        "京西大本营网球馆 网球费用",
+        "京西大本营网球馆 网球收费",
+        "京西大本营网球馆 价格",
+        "京西大本营网球馆 预订"
+      ]
+    },
+    {
+      "court_id": 633,
+      "court_name": "鲸丽网球中心",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "鲸丽网球中心 网球价格",
+        "鲸丽网球中心 网球预订",
+        "鲸丽网球中心 网球费用",
+        "鲸丽网球中心 网球收费",
+        "鲸丽网球中心 价格",
+        "鲸丽网球中心 预订"
+      ]
+    },
+    {
+      "court_id": 634,
+      "court_name": "万商网球馆",
+      "success": true,
+      "prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥188/小时",
+          "source": "BING",
+          "keyword": "万商网球馆 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "万商网球馆 网球价格",
+        "万商网球馆 网球预订",
+        "万商网球馆 网球费用",
+        "万商网球馆 网球收费",
+        "万商网球馆 价格",
+        "万商网球馆 预订"
+      ]
+    },
+    {
+      "court_id": 636,
+      "court_name": "得乐网球(永定路店)",
+      "success": true,
+      "prices": [
+        {
+          "type": "黄金时间价格",
+          "price": "¥157/小时",
+          "source": "BING",
+          "keyword": "得乐网球(永定路店) 网球价格",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "得乐网球(永定路店) 网球价格",
+        "得乐网球(永定路店) 网球预订",
+        "得乐网球(永定路店) 网球费用",
+        "得乐网球(永定路店) 网球收费",
+        "得乐网球(永定路店) 价格",
+        "得乐网球(永定路店) 预订"
+      ]
+    },
+    {
+      "court_id": 637,
+      "court_name": "温菲尔德网球俱乐部(田村山馆)",
+      "success": true,
+      "prices": [
+        {
+          "type": "会员价格",
+          "price": "¥111/小时",
+          "source": "BING",
+          "keyword": "温菲尔德网球俱乐部(田村山馆) 网球预订",
+          "confidence": 0.8
+        },
+        {
+          "type": "会员价格",
+          "price": "¥158/小时",
+          "source": "BING",
+          "keyword": "温菲尔德网球俱乐部(田村山馆) 网球费用",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "温菲尔德网球俱乐部(田村山馆) 网球价格",
+        "温菲尔德网球俱乐部(田村山馆) 网球预订",
+        "温菲尔德网球俱乐部(田村山馆) 网球费用",
+        "温菲尔德网球俱乐部(田村山馆) 网球收费",
+        "温菲尔德网球俱乐部(田村山馆) 价格",
+        "温菲尔德网球俱乐部(田村山馆) 预订"
+      ]
+    },
+    {
+      "court_id": 640,
+      "court_name": "蓝星网球",
+      "success": true,
+      "prices": [
+        {
+          "type": "非黄金时间价格",
+          "price": "¥156/小时",
+          "source": "BING",
+          "keyword": "蓝星网球 网球费用",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "蓝星网球 网球价格",
+        "蓝星网球 网球预订",
+        "蓝星网球 网球费用",
+        "蓝星网球 网球收费",
+        "蓝星网球 价格",
+        "蓝星网球 预订"
+      ]
+    },
+    {
+      "court_id": 642,
+      "court_name": "狮城百丽网球场",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "狮城百丽网球场 网球价格",
+        "狮城百丽网球场 网球预订",
+        "狮城百丽网球场 网球费用",
+        "狮城百丽网球场 网球收费",
+        "狮城百丽网球场 价格",
+        "狮城百丽网球场 预订"
+      ]
+    },
+    {
+      "court_id": 644,
+      "court_name": "未来一号网球羽毛球篮球体育公园",
+      "success": true,
+      "prices": [
+        {
+          "type": "会员价格",
+          "price": "¥85/小时",
+          "source": "BING",
+          "keyword": "未来一号网球羽毛球篮球体育公园 网球费用",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "未来一号网球羽毛球篮球体育公园 网球价格",
+        "未来一号网球羽毛球篮球体育公园 网球预订",
+        "未来一号网球羽毛球篮球体育公园 网球费用",
+        "未来一号网球羽毛球篮球体育公园 网球收费",
+        "未来一号网球羽毛球篮球体育公园 价格",
+        "未来一号网球羽毛球篮球体育公园 预订"
+      ]
+    },
+    {
+      "court_id": 645,
+      "court_name": "永承国际网球俱乐部",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "永承国际网球俱乐部 网球价格",
+        "永承国际网球俱乐部 网球预订",
+        "永承国际网球俱乐部 网球费用",
+        "永承国际网球俱乐部 网球收费",
+        "永承国际网球俱乐部 价格",
+        "永承国际网球俱乐部 预订"
+      ]
+    },
+    {
+      "court_id": 648,
+      "court_name": "毅思趣网球俱乐部",
+      "success": true,
+      "prices": [
+        {
+          "type": "非黄金时间价格",
+          "price": "¥195/小时",
+          "source": "BING",
+          "keyword": "毅思趣网球俱乐部 网球价格",
+          "confidence": 0.8
+        },
+        {
+          "type": "黄金时间价格",
+          "price": "¥98/小时",
+          "source": "BING",
+          "keyword": "毅思趣网球俱乐部 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "毅思趣网球俱乐部 网球价格",
+        "毅思趣网球俱乐部 网球预订",
+        "毅思趣网球俱乐部 网球费用",
+        "毅思趣网球俱乐部 网球收费",
+        "毅思趣网球俱乐部 价格",
+        "毅思趣网球俱乐部 预订"
+      ]
+    },
+    {
+      "court_id": 649,
+      "court_name": "星纬网球中心",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "星纬网球中心 网球价格",
+        "星纬网球中心 网球预订",
+        "星纬网球中心 网球费用",
+        "星纬网球中心 网球收费",
+        "星纬网球中心 价格",
+        "星纬网球中心 预订"
+      ]
+    },
+    {
+      "court_id": 651,
+      "court_name": "旺兴湖网球俱乐部",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "旺兴湖网球俱乐部 网球价格",
+        "旺兴湖网球俱乐部 网球预订",
+        "旺兴湖网球俱乐部 网球费用",
+        "旺兴湖网球俱乐部 网球收费",
+        "旺兴湖网球俱乐部 价格",
+        "旺兴湖网球俱乐部 预订"
+      ]
+    },
+    {
+      "court_id": 655,
+      "court_name": "瀛海足球主题公园-网球场",
+      "success": false,
+      "prices": [],
+      "keywords_used": [
+        "瀛海足球主题公园-网球场 网球价格",
+        "瀛海足球主题公园-网球场 网球预订",
+        "瀛海足球主题公园-网球场 网球费用",
+        "瀛海足球主题公园-网球场 网球收费",
+        "瀛海足球主题公园-网球场 价格",
+        "瀛海足球主题公园-网球场 预订"
+      ]
+    },
+    {
+      "court_id": 654,
+      "court_name": "万源网球俱乐部",
+      "success": false,
+      "error": "Method 'rollback()' can't be called here; method 'rollback()' is already in progress and this would cause an unexpected state change to <SessionTransactionState.CLOSED: 5> (Background on this error at: https://sqlalche.me/e/20/isce)"
+    },
+    {
+      "court_id": 656,
+      "court_name": "得乐网球(欢乐谷网球场)",
+      "success": true,
+      "prices": [
+        {
+          "type": "非黄金时间价格",
+          "price": "¥152/小时",
+          "source": "BING",
+          "keyword": "得乐网球(欢乐谷网球场) 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "得乐网球(欢乐谷网球场) 网球价格",
+        "得乐网球(欢乐谷网球场) 网球预订",
+        "得乐网球(欢乐谷网球场) 网球费用",
+        "得乐网球(欢乐谷网球场) 网球收费",
+        "得乐网球(欢乐谷网球场) 价格",
+        "得乐网球(欢乐谷网球场) 预订"
+      ]
+    },
+    {
+      "court_id": 659,
+      "court_name": "东石公园-网球场",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "东石公园-网球场 网球价格",
+        "东石公园-网球场 网球预订",
+        "东石公园-网球场 网球费用",
+        "东石公园-网球场 网球收费",
+        "东石公园-网球场 价格",
+        "东石公园-网球场 预订"
+      ]
+    },
+    {
+      "court_id": 660,
+      "court_name": "得乐网球(大鲁店网球馆)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "得乐网球(大鲁店网球馆) 网球价格",
+        "得乐网球(大鲁店网球馆) 网球预订",
+        "得乐网球(大鲁店网球馆) 网球费用",
+        "得乐网球(大鲁店网球馆) 网球收费",
+        "得乐网球(大鲁店网球馆) 价格",
+        "得乐网球(大鲁店网球馆) 预订"
+      ]
+    },
+    {
+      "court_id": 662,
+      "court_name": "超越网球(丰台)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "超越网球(丰台) 网球价格",
+        "超越网球(丰台) 网球预订",
+        "超越网球(丰台) 网球费用",
+        "超越网球(丰台) 网球收费",
+        "超越网球(丰台) 价格",
+        "超越网球(丰台) 预订"
+      ]
+    },
+    {
+      "court_id": 663,
+      "court_name": "嘉荟网球",
+      "success": true,
+      "prices": [
+        {
+          "type": "会员价格",
+          "price": "¥187/小时",
+          "source": "BING",
+          "keyword": "嘉荟网球 网球预订",
+          "confidence": 0.8
+        }
+      ],
+      "keywords_used": [
+        "嘉荟网球 网球价格",
+        "嘉荟网球 网球预订",
+        "嘉荟网球 网球费用",
+        "嘉荟网球 网球收费",
+        "嘉荟网球 价格",
+        "嘉荟网球 预订"
+      ]
+    }
+  ]
+}

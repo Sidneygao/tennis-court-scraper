@@ -1,0 +1,71 @@
+{
+  "success": true,
+  "total_courts": 5,
+  "success_count": 3,
+  "failed_count": 2,
+  "duration_seconds": 10.127565,
+  "results": [
+    {
+      "court_id": 11,
+      "court_name": "RockTennis网球馆(天坛店)",
+      "success": false,
+      "prices": [],
+      "keywords_used": [
+        "RockTennis网球馆(天坛店) 网球价格",
+        "RockTennis网球馆(天坛店) 网球预订",
+        "RockTennis网球馆(天坛店) 网球费用",
+        "RockTennis网球馆(天坛店) 网球收费",
+        "RockTennis网球馆(天坛店) 价格",
+        "RockTennis网球馆(天坛店) 预订"
+      ]
+    },
+    {
+      "court_id": 10,
+      "court_name": "嘉里中心-网球场",
+      "success": false,
+      "error": "Method 'rollback()' can't be called here; method 'rollback()' is already in progress and this would cause an unexpected state change to <SessionTransactionState.CLOSED: 5> (Background on this error at: https://sqlalche.me/e/20/isce)"
+    },
+    {
+      "court_id": 12,
+      "court_name": "EYESIN能量波网球练习馆(CBD店)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "EYESIN能量波网球练习馆(CBD店) 网球价格",
+        "EYESIN能量波网球练习馆(CBD店) 网球预订",
+        "EYESIN能量波网球练习馆(CBD店) 网球费用",
+        "EYESIN能量波网球练习馆(CBD店) 网球收费",
+        "EYESIN能量波网球练习馆(CBD店) 价格",
+        "EYESIN能量波网球练习馆(CBD店) 预订"
+      ]
+    },
+    {
+      "court_id": 1,
+      "court_name": "WoowTennis网球俱乐部(双井富力广场店)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "WoowTennis网球俱乐部(双井富力广场店) 网球价格",
+        "WoowTennis网球俱乐部(双井富力广场店) 网球预订",
+        "WoowTennis网球俱乐部(双井富力广场店) 网球费用",
+        "WoowTennis网球俱乐部(双井富力广场店) 网球收费",
+        "WoowTennis网球俱乐部(双井富力广场店) 价格",
+        "WoowTennis网球俱乐部(双井富力广场店) 预订"
+      ]
+    },
+    {
+      "court_id": 2,
+      "court_name": "球星网球汇(合生汇球星运动中心店)",
+      "success": true,
+      "prices": [],
+      "keywords_used": [
+        "球星网球汇(合生汇球星运动中心店) 网球价格",
+        "球星网球汇(合生汇球星运动中心店) 网球预订",
+        "球星网球汇(合生汇球星运动中心店) 网球费用",
+        "球星网球汇(合生汇球星运动中心店) 网球收费",
+        "球星网球汇(合生汇球星运动中心店) 价格",
+        "球星网球汇(合生汇球星运动中心店) 预订"
+      ]
+    }
+  ]
+}

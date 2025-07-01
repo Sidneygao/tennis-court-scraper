@@ -146,9 +146,12 @@ class CourtDetail(Base):
     merged_business_hours = Column(String(200))  # 融合后的营业时间
     
     # 价格信息（从点评/美团获取）
+    prices = Column(Text)           # 真实价格信息（JSON格式）
     dianping_prices = Column(Text)  # 点评价格信息（JSON格式）
     meituan_prices = Column(Text)   # 美团价格信息（JSON格式）
     merged_prices = Column(Text)    # 融合后的价格信息（JSON格式）
+    predict_prices = Column(Text)   # 2KM类别步进融合预测价格（JSON格式）
+    bing_prices = Column(Text)      # BING搜索价格信息（JSON格式）
     
     # 评分信息
     dianping_rating = Column(Float)  # 点评评分
