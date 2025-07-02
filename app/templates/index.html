@@ -2,98 +2,15 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>网球场爬虫</title>
+    <title>北京网球场馆信息抓取系统</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/static/css/style.css">
-    <style>
-        .donate-section {
-            margin-top: 40px;
-            text-align: center;
-        }
-        .donate-section img {
-            width: 180px;
-            margin: 10px auto;
-            display: block;
-            border-radius: 8px;
-            border: 1px solid #eee;
-        }
-        .donate-section .caption {
-            font-size: 1.1em;
-            color: #666;
-            margin-bottom: 8px;
-        }
-        .wechat-id {
-            font-size: 1.1em;
-            color: #007b83;
-            margin-bottom: 8px;
-        }
-    </style>
 </head>
 <body>
     <div class="container">
-        <h1 style="text-align:center;margin-top:32px;margin-bottom:16px;font-size:2.2em;letter-spacing:2px;">网球场爬虫</h1>
-        <div id="area-select-anchor"></div>
-        <div style="margin: 0 auto; max-width: 480px; padding: 24px 0 8px 0;">
-            <label for="area" style="font-weight:bold;font-size:1.1em;">区域选择：</label>
-            <select id="area" name="area" style="width: 60%; padding: 6px 8px; font-size: 1em; margin-left: 8px;"></select>
-            <button type="button" onclick="loadCourts()" style="margin-left: 12px; padding: 6px 18px; font-size: 1em;">查询</button>
-        </div>
-        <div id="courtsContainer" style="margin: 0 auto; max-width: 900px; min-height: 200px; padding: 16px 0 0 0;"></div>
-        <div class="donate-section">
-            <div class="caption">如需合作或数据定制，欢迎加微信联系</div>
-            <div class="caption">支持开发，微信扫码捐赠</div>
-            <img src="/static/img/wechat_donate_qr.png" alt="微信收款二维码">
-            <div class="caption" style="margin-top:8px;">加微信请使用上方二维码</div>
-        </div>
+        <h1>北京网球场馆信息抓取系统</h1>
+        <p>欢迎访问！系统已部署成功。</p>
+        <p>如需自定义首页内容，请编辑 app/templates/index.html。</p>
     </div>
-    <script>
-        // 页面加载后自动滚动到区域选择区
-        document.addEventListener('DOMContentLoaded', function() {
-            setTimeout(function() {
-                document.getElementById('area-select-anchor').scrollIntoView({behavior: 'smooth'});
-            }, 300);
-            loadAreas();
-        });
-        // 加载区域选项
-        async function loadAreas() {
-            try {
-                const response = await fetch('/api/courts/areas/list');
-                const data = await response.json();
-                const areaSelect = document.getElementById('area');
-                areaSelect.innerHTML = '<option value="">全部区域</option>';
-                if (data.areas && data.areas.length > 0) {
-                    data.areas.forEach(area => {
-                        const option = document.createElement('option');
-                        option.value = area.key;
-                        option.textContent = area.name;
-                        areaSelect.appendChild(option);
-                    });
-                }
-            } catch (e) {
-                alert('区域加载失败');
-            }
-        }
-        // 加载场馆
-        async function loadCourts() {
-            const area = document.getElementById('area').value;
-            const params = area ? `?area=${encodeURIComponent(area)}` : '';
-            const response = await fetch(`/api/courts/${params}`);
-            const courts = await response.json();
-            const container = document.getElementById('courtsContainer');
-            if (!courts.length) {
-                container.innerHTML = '<div style="color:#888;text-align:center;">未找到场馆数据，如需合作请加微信</div>';
-                return;
-            }
-            let html = '';
-            courts.forEach(court => {
-                html += `<div style='border:1px solid #eee;border-radius:8px;padding:12px 18px;margin-bottom:12px;'>
-                    <div style='font-size:1.15em;font-weight:bold;'>${court.name}</div>
-                    <div style='color:#666;margin:4px 0;'>${court.address || ''}</div>
-                    <div style='color:#888;font-size:0.95em;'>类型：${court.court_type || '未知'} | 电话：${court.phone || '无'}</div>
-                </div>`;
-            });
-            container.innerHTML = html;
-        }
-    </script>
 </body>
 </html> 
