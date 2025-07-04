@@ -138,6 +138,10 @@ class PricePredictor:
         if "名人都网球俱乐部" in court_name:
             return "室内"
         
+        # 特例：嘉里中心-网球场，直接判定为室内
+        if "嘉里中心-网球场" in court_name:
+            return "室内"
+        
         # 第一层：硬TAG判断
         if "室内" in name_lower or "气膜" in name_lower:
             return "室内"
@@ -163,6 +167,11 @@ class PricePredictor:
         for keyword in indoor_indirect:
             if keyword in full_text:
                 return "室内"
+        
+        # 新增：检查"?层"模式（如"2层"、"3层"等）
+        import re
+        if re.search(r'\d+层', full_text):
+            return "室内"
         
         # 室外间接关键字
         outdoor_indirect = ['网球场', '室外', '露天', '户外']

@@ -2,7 +2,7 @@ from fastapi import FastAPI, Request
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, FileResponse
 import os
 
 print('>>> main.py 启动')
@@ -18,7 +18,7 @@ from .api import courts, scraper, details
 # 创建FastAPI应用
 app = FastAPI(
     title=settings.app_name,
-    version=settings.app_version,
+    version=settings.version,
     description="北京网球场馆信息抓取系统",
     docs_url="/api/docs",
     redoc_url="/api/redoc"
@@ -44,10 +44,19 @@ app.include_router(courts.router)
 app.include_router(scraper.router)
 app.include_router(details.router)
 
+@app.get("/data/map_cache/{filename:path}")
+async def serve_map_image(filename: str):
+    """服务地图图片文件"""
+    file_path = f"data/map_cache/{filename}"
+    if os.path.exists(file_path):
+        return FileResponse(file_path, media_type="image/png")
+    else:
+        return {"error": "Image not found"}, 404
+
 @app.on_event("startup")
 async def startup_event():
     """应用启动时执行"""
-    print(f"启动 {settings.app_name} v{settings.app_version}")
+    print(f"启动 {settings.app_name} v{settings.version}")
     init_db()
     print("应用启动完成")
 
@@ -56,10 +65,15 @@ async def shutdown_event():
     """应用关闭时执行"""
     print("应用正在关闭...")
 
-@app.get("/", response_class=HTMLResponse)
+@app.api_route("/", methods=["GET", "HEAD"], response_class=HTMLResponse)
 async def read_root(request: Request):
     """主页"""
     return templates.TemplateResponse("index.html", {"request": request})
+
+@app.get("/detail", response_class=HTMLResponse)
+async def read_detail(request: Request):
+    """详情页面"""
+    return templates.TemplateResponse("detail.html", {"request": request})
 
 @app.get("/api/health")
 async def health_check():
@@ -67,7 +81,7 @@ async def health_check():
     return {
         "status": "healthy",
         "app_name": settings.app_name,
-        "version": settings.app_version,
+        "version": settings.version,
         "debug": settings.debug
     }
 
@@ -76,7 +90,7 @@ async def get_app_info():
     """获取应用信息"""
     return {
         "app_name": settings.app_name,
-        "version": settings.app_version,
+        "version": settings.version,
         "target_areas": settings.target_areas,
         "data_sources": ["amap", "dianping", "meituan"]  # 计划支持的数据源
     }

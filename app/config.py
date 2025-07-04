@@ -6,6 +6,7 @@ class Settings(BaseSettings):
     # 应用配置
     app_name: str = "北京网球场馆信息抓取系统"
     app_version: str = "1.0.0"
+    version: str = "1.0.0"  # 添加version字段
     debug: bool = False
     
     # 数据库配置

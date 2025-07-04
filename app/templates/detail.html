@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>场馆详情 - 网球场爬虫</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        .price-badge {
+            display: inline-block;
+            margin: 2px;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            font-weight: 500;
+        }
+        .price-real { background-color: #d4edda; color: #155724; }
+        .price-predict { background-color: #fff3cd; color: #856404; }
+        .review-item {
+            border-left: 3px solid #007bff;
+            padding-left: 15px;
+            margin-bottom: 15px;
+        }
+        .review-user {
+            font-weight: bold;
+            color: #495057;
+        }
+        .review-rating {
+            color: #ffc107;
+        }
+        .review-content {
+            margin-top: 5px;
+            color: #6c757d;
+        }
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .image-item {
+            width: 120px;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid #dee2e6;
+        }
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+        .map-container {
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #dee2e6;
+        }
+        @media (max-width: 768px) {
+            .map-container {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <button class="btn btn-outline-secondary back-btn" onclick="history.back()">
+            ← 返回
+        </button>
+        
+        <div id="loading" class="text-center py-5">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">加载中...</span>
+            </div>
+            <p class="mt-3">正在加载场馆详情...</p>
+        </div>
+        
+        <div id="content" style="display: none;">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 id="court-name" class="mb-3"></h2>
+                    <p id="court-address" class="text-muted mb-3"></p>
+                    
+                    <!-- 基本信息 -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">基本信息</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="basic-info"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- 价格信息 -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">价格信息</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="price-info"></div>
+                            <div id="remark-info" class="mt-3 text-muted"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- 评论信息 -->
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            <h5 class="mb-0">用户评论</h5>
+                        </div>
+                        <div class="card-body">
+                            <div id="reviews-info"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4">
+                    <!-- 操作按钮 -->
+                    <div class="card">
+                        <div class="card-body">
+                            <button id="manual-btn" class="btn btn-primary w-100 mb-2" onclick="showManualPriceModal()">
+                                补充信息
+                            </button>
+                            <button class="btn btn-outline-secondary w-100" onclick="history.back()">
+                                返回列表
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id="error" style="display: none;" class="text-center py-5">
+            <div class="alert alert-danger">
+                <h4>加载失败</h4>
+                <p id="error-message"></p>
+                <button class="btn btn-primary" onclick="location.reload()">重新加载</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 补充信息弹窗 -->
+    <div class="modal fade" id="manualPriceModal" tabindex="-1" aria-labelledby="manualPriceModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="manualPriceModalLabel">补充价格信息</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="manualPriceForm">
+              <div class="mb-2">
+                <label class="form-label">高峰价</label>
+                <input type="number" class="form-control" id="peak_price" required>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">非高峰价</label>
+                <input type="number" class="form-control" id="off_peak_price" required>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">会员价</label>
+                <input type="number" class="form-control" id="member_price" required>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">标准价</label>
+                <input type="number" class="form-control" id="standard_price" required>
+              </div>
+              <div class="mb-2">
+                <label class="form-label">备注</label>
+                <textarea class="form-control" id="manual_remark" rows="2"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+            <button type="button" class="btn btn-primary" onclick="submitManualPrice()">提交</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let courtId = null;
+        
+        // 页面加载时获取场馆ID并加载详情
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            courtId = urlParams.get('id');
+            if (courtId) {
+                loadDetail(courtId);
+            } else {
+                showError('缺少场馆ID参数');
+            }
+        });
+        
+        async function loadDetail(id) {
+            try {
+                const response = await fetch(`/api/details/${id}`);
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                const data = await response.json();
+                renderDetail(data);
+            } catch (error) {
+                console.error('加载详情失败:', error);
+                showError('加载详情失败: ' + error.message);
+            }
+        }
+        
+        function renderDetail(data) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+            
+            // 场馆基本信息
+            document.getElementById('court-name').textContent = data.court_name || '未知场馆';
+            document.getElementById('court-address').textContent = data.address || '地址未知';
+            
+            // 基本信息
+            const basicInfo = document.getElementById('basic-info');
+            basicInfo.innerHTML = `
+                <div class="row mt-3">
+                    <div class="col-12">
+                        <h5>位置信息</h5>
+                        <div id="map-container">
+                            <img id="map-image" src="" alt="场馆位置地图" style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; display: none;">
+                            <div id="map" class="map-container" style="display: none;"></div>
+                            <div id="map-loading" style="height: 300px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa; border-radius: 8px;">
+                                <p class="text-muted">加载地图中...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <p><strong>综合评分:</strong></p>
+                        <p class="text-muted">${data.merged_rating || '暂无评分'}</p>
+                    </div>
+                </div>
+            `;
+            
+            // 初始化地图
+            initMap(data);
+            
+            // 价格信息
+            const priceInfo = document.getElementById('price-info');
+            let priceHtml = '';
+            
+            // 调试信息
+            console.log('价格数据调试:', {
+                manual_prices: data.manual_prices,
+                merged_prices: data.merged_prices,
+                prices: data.prices,
+                predict_prices: data.predict_prices
+            });
+            
+            // 优先显示人工录入价格
+            let manualPrices = data.manual_prices || [];
+            if (manualPrices && typeof manualPrices === 'object' && !Array.isArray(manualPrices)) {
+                // manual_prices 为对象，遍历所有 xxx_price 字段
+                for (const key in manualPrices) {
+                    if (manualPrices.hasOwnProperty(key) && key.endsWith('price')) {
+                        const value = manualPrices[key];
+                        if (value !== undefined && value !== null && value !== '') {
+                            let label = '';
+                            if (key === 'peak_price') label = '高峰价';
+                            else if (key === 'off_peak_price') label = '非高峰价';
+                            else if (key === 'member_price') label = '会员价';
+                            else if (key === 'standard_price') label = '标准价';
+                            else label = key;
+                            priceHtml += `<span class='price-badge price-real'>${label}: ${value}</span>`;
+                        }
+                    }
+                }
+            } else if (Array.isArray(manualPrices) && manualPrices.length > 0) {
+                // 兼容数组结构
+                for (const price of manualPrices) {
+                    if (price && price.price) {
+                        const type = price.type || '价格';
+                        priceHtml += `<span class='price-badge price-real'>${type}: ${price.price}</span>`;
+                    }
+                }
+            } else {
+                // 显示merged_prices中的价格
+                const realPrices = data.merged_prices || [];
+                if (realPrices.length > 0) {
+                    const mainPrice = realPrices.find(p => p.type && p.type.includes('综合')) || realPrices[0];
+                    if (mainPrice && mainPrice.price) {
+                        priceHtml = `<span class='price-badge price-real'>${mainPrice.price}</span>`;
+                    }
+                } else {
+                    // 兼容predict_prices
+                    const predict = data.predict_prices;
+                    if (!predict) {
+                        priceHtml = '<span class="price-badge price-predict">无预测价格</span>';
+                    } else if (predict.predict_failed) {
+                        priceHtml = `<span class="price-badge price-predict">预测失败：${predict.reason || ''}</span>`;
+                    } else {
+                        // 只要有peak_price/off_peak_price字段，强制用中文渲染
+                        let p = predict;
+                        try {
+                            if (typeof p === 'string') p = JSON.parse(p);
+                        } catch(e) {}
+                        let hasPrice = false;
+                        if (p && typeof p === 'object') {
+                            if (p.peak_price) {
+                                priceHtml += `<span class='price-badge price-predict'>预测高峰价: ${p.peak_price}</span>`;
+                                hasPrice = true;
+                            }
+                            if (p.off_peak_price) {
+                                priceHtml += `<span class='price-badge price-predict'>预测非高峰价: ${p.off_peak_price}</span>`;
+                                hasPrice = true;
+                            }
+                        }
+                        if (!hasPrice) {
+                            priceHtml = '<span class="price-badge price-predict">无预测价格</span>';
+                        }
+                    }
+                }
+            }
+            priceInfo.innerHTML = priceHtml;
+            
+            // 备注信息
+            const remarkInfo = document.getElementById('remark-info');
+            if (data.manual_remark) {
+                remarkInfo.textContent = '备注：' + data.manual_remark;
+            } else {
+                remarkInfo.textContent = '';
+            }
+            
+            // 评论信息
+            const reviewsInfo = document.getElementById('reviews-info');
+            const reviews = data.dianping_reviews || [];
+            
+            if (reviews.length > 0) {
+                let reviewsHtml = '';
+                reviews.forEach(review => {
+                    const stars = '★'.repeat(review.rating || 5) + '☆'.repeat(5 - (review.rating || 5));
+                    reviewsHtml += `
+                        <div class="review-item">
+                            <div class="review-user">${review.user || '匿名用户'}</div>
+                            <div class="review-rating">${stars}</div>
+                            <div class="review-content">${review.content || '暂无评论内容'}</div>
+                        </div>
+                    `;
+                });
+                reviewsInfo.innerHTML = reviewsHtml;
+            } else {
+                reviewsInfo.innerHTML = '<p class="text-muted">暂无评论</p>';
+            }
+        }
+        
+        function showError(message) {
+            document.getElementById('loading').style.display = 'none';
+            document.getElementById('error').style.display = 'block';
+            document.getElementById('error-message').textContent = message;
+        }
+        
+        function showManualPriceModal() {
+            const modal = new bootstrap.Modal(document.getElementById('manualPriceModal'));
+            modal.show();
+        }
+        
+        async function submitManualPrice() {
+            if (!courtId) return;
+            const peak_price = document.getElementById('peak_price').value;
+            const off_peak_price = document.getElementById('off_peak_price').value;
+            const member_price = document.getElementById('member_price').value;
+            const standard_price = document.getElementById('standard_price').value;
+            const manual_remark = document.getElementById('manual_remark').value;
+            const manual_prices = {
+                peak_price: Number(peak_price),
+                off_peak_price: Number(off_peak_price),
+                member_price: Number(member_price),
+                standard_price: Number(standard_price),
+                remark: manual_remark
+            };
+            try {
+                const response = await fetch(`/api/details/${courtId}/manual_price`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ manual_prices, manual_remark })
+                });
+                if (response.ok) {
+                    bootstrap.Modal.getInstance(document.getElementById('manualPriceModal')).hide();
+                    loadDetail(courtId);
+                } else {
+                    alert('提交失败');
+                }
+            } catch (e) {
+                alert('提交失败: ' + e.message);
+            }
+        }
+        
+        // 地图相关函数
+        let map = null;
+        
+        async function initMap(data) {
+            try {
+                // 优先显示地图图片
+                if (data.map_image) {
+                    document.getElementById('map-loading').style.display = 'none';
+                    const mapImg = document.getElementById('map-image');
+                    mapImg.style.display = 'block';
+                    mapImg.src = data.map_image;
+                    // 新增：点击图片打开Bing地图网页版
+                    if (data.latitude && data.longitude) {
+                        mapImg.style.cursor = 'pointer';
+                        mapImg.onclick = function() {
+                            const url = `https://www.bing.com/maps?cp=${data.latitude}~${data.longitude}&lvl=16`;
+                            window.open(url, '_blank');
+                        };
+                    }
+                    return;
+                }
+                
+                // 如果没有地图图片，使用交互式地图
+                document.getElementById('map-loading').style.display = 'none';
+                document.getElementById('map').style.display = 'block';
+                
+                // 获取场馆坐标
+                const coordinates = await getCourtCoordinates(data.court_name, data.address);
+                if (!coordinates) {
+                    document.getElementById('map').innerHTML = '<div class="text-center py-5"><p class="text-muted">无法获取位置信息</p></div>';
+                    return;
+                }
+                
+                // 初始化地图
+                map = L.map('map').setView([coordinates.lat, coordinates.lng], 15);
+                
+                // 添加地图图层
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '© OpenStreetMap contributors'
+                }).addTo(map);
+                
+                // 添加场馆标记
+                const courtMarker = L.marker([coordinates.lat, coordinates.lng]).addTo(map);
+                courtMarker.bindPopup(`<b>${data.court_name}</b><br>${data.address || ''}`).openPopup();
+                
+            } catch (error) {
+                console.error('地图初始化失败:', error);
+                document.getElementById('map-loading').style.display = 'none';
+                document.getElementById('map').style.display = 'block';
+                document.getElementById('map').innerHTML = '<div class="text-center py-5"><p class="text-muted">地图加载失败</p></div>';
+            }
+        }
+        
+        async function getCourtCoordinates(courtName, address) {
+            try {
+                // 首先尝试从API获取场馆的经纬度信息
+                const response = await fetch(`/api/courts/${courtId}/coordinates`);
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.latitude && data.longitude) {
+                        return {
+                            lat: parseFloat(data.longitude),  // 数据库中longitude存储纬度
+                            lng: parseFloat(data.latitude)    // 数据库中latitude存储经度
+                        };
+                    }
+                }
+                
+                // 如果没有经纬度数据，使用默认的北京坐标
+                console.log('使用默认坐标，场馆:', courtName);
+                return {
+                    lat: 39.9042,
+                    lng: 116.4074
+                };
+            } catch (error) {
+                console.error('获取坐标失败:', error);
+                return {
+                    lat: 39.9042,
+                    lng: 116.4074
+                };
+            }
+        }
+        
+
+    </script>
+</body>
+</html> 

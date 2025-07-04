@@ -165,11 +165,16 @@ class CourtDetail(Base):
     # 图片信息
     dianping_images = Column(Text)   # 点评图片（JSON格式）
     meituan_images = Column(Text)    # 美团图片（JSON格式）
+    map_image = Column(String(500))  # 地图图片路径
     
     # 缓存信息
     last_dianping_update = Column(DateTime)  # 最后更新点评数据时间
     last_meituan_update = Column(DateTime)   # 最后更新美团数据时间
     cache_expires_at = Column(DateTime)      # 缓存过期时间
+    
+    # 人工价格和备注
+    manual_prices = Column(Text)      # 人工录入价格（JSON格式，含黄金/非黄金/会员/标准/备注）
+    manual_remark = Column(Text)      # 人工备注
     
     # 时间戳
     created_at = Column(DateTime, default=func.now())

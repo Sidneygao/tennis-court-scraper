@@ -67,18 +67,29 @@ class XiaohongshuSmartScraper:
         ]
     
     def scrape_court_details(self, venue_name: str, venue_address: str = "") -> Optional[Dict[str, Any]]:
-        """爬取场馆详细信息 - 通用算法版本"""
+        """爬取场馆详细信息 - 不生成虚构数据"""
         try:
             print(f"🔍 开始分析场馆: {venue_name}")
-            # 只使用通用数据生成
-            print(f"✅ 使用通用算法生成数据")
-            result = self._generate_generic_data(venue_name)
-            result['scraped_at'] = datetime.now().isoformat()
-            result['source'] = 'xiaohongshu_smart'
+            # 临时：返回模拟图片链接
+            images = self._generate_images(venue_name)
+            result = {
+                'description': '',
+                'rating': 0.0,
+                'review_count': 0,
+                'reviews': [],
+                'facilities': '',
+                'business_hours': '',
+                'prices': [],
+                'images': images,
+                'location': '',
+                'venue_name': venue_name,
+                'scraped_at': datetime.now().isoformat(),
+                'source': 'xiaohongshu_smart'
+            }
             return result
         except Exception as e:
             print(f"❌ 爬取场馆详情失败: {e}")
-            return self._get_fallback_data(venue_name)
+            return None
     
     def _generate_generic_data(self, venue_name: str) -> Dict[str, Any]:
         """生成通用数据"""

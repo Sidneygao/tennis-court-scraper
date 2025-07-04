@@ -136,6 +136,22 @@ def get_areas():
         ]
     }
 
+@router.get("/{court_id}/coordinates")
+def get_court_coordinates(court_id: int, db: Session = Depends(get_db)):
+    """获取场馆坐标信息"""
+    court = db.query(TennisCourt).filter(TennisCourt.id == court_id).first()
+    if not court:
+        raise HTTPException(status_code=404, detail="网球场馆不存在")
+    
+    # 返回坐标信息（注意：latitude存储经度，longitude存储纬度）
+    return {
+        "court_id": court_id,
+        "court_name": court.name,
+        "latitude": court.latitude,  # 经度
+        "longitude": court.longitude,  # 纬度
+        "address": court.address
+    }
+
 @router.get("/stats/summary")
 def get_courts_summary(db: Session = Depends(get_db)):
     """获取网球场馆统计信息"""

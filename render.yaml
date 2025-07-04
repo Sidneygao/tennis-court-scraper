@@ -3,7 +3,11 @@ services:
     name: tennis-court-scraper
     env: python
     buildCommand: pip install -r requirements.txt
-    startCommand: cd app && uvicorn main:app --host 0.0.0.0 --port $PORT
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHONUNBUFFERED
+        value: '1'
+    plan: free
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.7

@@ -24,10 +24,8 @@ class DetailScraper:
         return (datetime.now() - last_update) < timedelta(hours=24)
     
     async def scrape_all_platforms(self, venue_name: str, venue_address: str = "") -> Dict[str, Any]:
-        """爬取所有平台的数据"""
+        """爬取所有平台的数据（异步）"""
         logger.info(f"开始爬取场馆详情: {venue_name}")
-        
-        # 只用智能小红书爬虫
         keywords = [venue_name]
         all_data = {
             'venue_name': venue_name,
@@ -36,7 +34,16 @@ class DetailScraper:
             'summary': {}
         }
         # 只跑小红书
-        result = self._scrape_xiaohongshu(venue_name)
+        # 支持异步
+        if hasattr(self.xiaohongshu_scraper, 'scrape_court_details') and hasattr(self.xiaohongshu_scraper.scrape_court_details, "__call__"):
+            # 判断是否为协程
+            import inspect
+            if inspect.iscoroutinefunction(self.xiaohongshu_scraper.scrape_court_details):
+                result = await self.xiaohongshu_scraper.scrape_court_details(venue_name)
+            else:
+                result = self.xiaohongshu_scraper.scrape_court_details(venue_name)
+        else:
+            result = None
         if result:
             all_data['platforms']['xiaohongshu'] = {'status': 'success', 'data': result}
         else:

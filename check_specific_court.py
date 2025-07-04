@@ -5,16 +5,17 @@
 """
 import sqlite3
 import json
+import os
 
 def main():
-    print("🔍 检查浩生体育网球俱乐部(望京店)的详细信息...")
+    print("🔍 检查茂华UHN国际村-网球场的详细信息...")
     
     # 连接数据库
     conn = sqlite3.connect('data/courts.db')
     cursor = conn.cursor()
     
     # 查找这个场馆
-    court_name = "浩生体育网球俱乐部(望京店)"
+    court_name = "茂华UHN国际村-网球场"
     
     cursor.execute("""
         SELECT id, name, address, court_type, area, latitude, longitude
@@ -36,74 +37,50 @@ def main():
         
         # 检查详情数据
         cursor.execute("""
-            SELECT prices, predict_prices, bing_prices
+            SELECT merged_prices, predict_prices
             FROM court_details
             WHERE court_id = ?
         """, (court_id,))
         
         detail_result = cursor.fetchone()
         if detail_result:
-            prices, predict_prices, bing_prices = detail_result
-            print(f"\n💰 价格信息:")
-            print(f"   真实价格: {prices}")
-            print(f"   预测价格: {predict_prices}")
-            print(f"   BING价格: {bing_prices}")
-        
-        # 分析地址中的关键字
-        print(f"\n🔍 地址分析:")
-        address_lower = address.lower()
-        
-        # 第一层关键字
-        indoor_keywords = ['室内', '气膜', '馆']
-        outdoor_keywords = ['室外', '露天', '场']
-        
-        # 第二层关键字
-        tennis_keywords = ['网球馆', '网球场']
-        
-        print(f"   地址: {address}")
-        print(f"   地址(小写): {address_lower}")
-        
-        # 检查第一层关键字
-        indoor_found = [kw for kw in indoor_keywords if kw in address_lower]
-        outdoor_found = [kw for kw in outdoor_keywords if kw in address_lower]
-        
-        print(f"   第一层室内关键字: {indoor_found}")
-        print(f"   第一层室外关键字: {outdoor_found}")
-        
-        # 检查第二层关键字
-        tennis_found = [kw for kw in tennis_keywords if kw in address_lower]
-        print(f"   第二层网球关键字: {tennis_found}")
-        
-        # 判断逻辑
-        print(f"\n🎯 类型判断逻辑:")
-        if indoor_found:
-            print(f"   ✅ 发现室内关键字: {indoor_found}")
-            print(f"   应该判断为: 室内")
-        elif outdoor_found:
-            print(f"   ✅ 发现室外关键字: {outdoor_found}")
-            print(f"   应该判断为: 室外")
-        elif tennis_found:
-            print(f"   ✅ 发现网球关键字: {tennis_found}")
-            if '场' in address_lower:
-                print(f"   包含'场'字，应该判断为: 室外")
-            elif '馆' in address_lower:
-                print(f"   包含'馆'字，应该判断为: 室内")
-            else:
-                print(f"   默认判断为: 室外")
+            merged_prices, predict_prices = detail_result
+            print(f"\n💰 merged_prices: {merged_prices}")
+            print(f"💡 predict_prices: {predict_prices}")
         else:
-            print(f"   ⚠️  未发现明确关键字")
-        
-        print(f"\n📝 结论:")
-        if '网球场' in address_lower:
-            print(f"   ❌ 当前类型错误: {court_type}")
-            print(f"   ✅ 应该修改为: 室外")
-        else:
-            print(f"   ✅ 当前类型正确: {court_type}")
-            
+            print('  ❌ 未找到court_details记录')
     else:
-        print(f"❌ 未找到场馆: {court_name}")
-    
+        print('未找到该场馆')
     conn.close()
 
 if __name__ == "__main__":
-    main() 
+    main()
+
+def main_new():
+    conn = sqlite3.connect('data/courts.db')
+    cursor = conn.cursor()
+    cursor.execute("SELECT id, name, latitude, longitude FROM tennis_courts WHERE name LIKE '%茂华UHN国际村-网球场%'")
+    rows = cursor.fetchall()
+    if not rows:
+        print('未找到该场馆')
+    for court_id, name, lat, lng in rows:
+        print(f'场馆: {name}\n  id: {court_id}\n  纬度: {lat}\n  经度: {lng}')
+        # 查map_image
+        cursor.execute("SELECT map_image FROM court_details WHERE court_id=?", (court_id,))
+        map_row = cursor.fetchone()
+        if map_row:
+            map_image = map_row[0]
+            print(f'  map_image: {map_image}')
+            # 检查文件存在性
+            if map_image:
+                file_path = map_image.lstrip('/')
+                if os.path.exists(file_path):
+                    print(f'  ✅ 文件存在: {file_path}')
+                else:
+                    print(f'  ❌ 文件不存在: {file_path}')
+        else:
+            print('  ❌ 未找到court_details记录')
+    conn.close()
+
+if __name__ == '__main__':
+    main_new() 
