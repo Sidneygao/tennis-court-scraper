@@ -70,6 +70,56 @@ def get_courts(
     predictor = PricePredictor()
     for court in courts:
         court.court_type = predictor.determine_court_type(court.name, court.address)
+        
+        # 从详情表中获取价格数据
+        from ..models import CourtDetail
+        detail = db.query(CourtDetail).filter(CourtDetail.court_id == court.id).first()
+        if detail:
+            # 优先使用手动录入的价格
+            if detail.manual_prices:
+                try:
+                    import json
+                    manual_prices = json.loads(detail.manual_prices)
+                    if isinstance(manual_prices, dict):
+                        court.peak_price = str(manual_prices.get('peak_price', '')) if manual_prices.get('peak_price') else None
+                        court.off_peak_price = str(manual_prices.get('off_peak_price', '')) if manual_prices.get('off_peak_price') else None
+                        court.member_price = str(manual_prices.get('member_price', '')) if manual_prices.get('member_price') else None
+                        court.price_unit = manual_prices.get('price_unit', '元/小时')
+                except:
+                    pass
+            # 其次使用融合价格
+            elif detail.merged_prices:
+                try:
+                    import json
+                    merged_prices = json.loads(detail.merged_prices)
+                    if isinstance(merged_prices, list) and merged_prices:
+                        # 取第一个价格作为主要价格
+                        first_price = merged_prices[0]
+                        if isinstance(first_price, dict):
+                            price_value = first_price.get('price', '')
+                            price_type = first_price.get('type', '')
+                            if '黄金' in price_type or '高峰' in price_type:
+                                court.peak_price = str(price_value)
+                            elif '非黄金' in price_type or 'off' in price_type:
+                                court.off_peak_price = str(price_value)
+                            else:
+                                court.peak_price = str(price_value)
+                            court.price_unit = first_price.get('unit', '元/小时')
+                except:
+                    pass
+            # 最后使用预测价格
+            elif detail.predict_prices:
+                try:
+                    import json
+                    predict_prices = json.loads(detail.predict_prices)
+                    if isinstance(predict_prices, dict):
+                        if predict_prices.get('peak_price'):
+                            court.peak_price = str(predict_prices['peak_price'])
+                        if predict_prices.get('off_peak_price'):
+                            court.off_peak_price = str(predict_prices['off_peak_price'])
+                        court.price_unit = '元/小时'
+                except:
+                    pass
     
     return courts
 

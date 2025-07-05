@@ -119,7 +119,9 @@ Thumbs.db
 *.db
 *.sqlite
 *.sqlite3
-data/
+data/*.db
+data/*.sqlite
+data/*.sqlite3
 logs/
 *.log
 test_*.json

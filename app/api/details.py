@@ -168,7 +168,7 @@ async def preview_court_detail(court_id: int, db: Session = Depends(get_db)):
     
     detail = db.query(CourtDetail).filter(CourtDetail.court_id == court_id).first()
     
-    # 新增：只要有价格就返回has_detail: True
+    # 新增：只要有价格或地图图片就返回has_detail: True
     def safe_json_loads(val):
         if not val:
             return []
@@ -179,7 +179,10 @@ async def preview_court_detail(court_id: int, db: Session = Depends(get_db)):
     merged_prices = safe_json_loads(detail.merged_prices) if detail else []
     predict_prices = safe_json_loads(detail.predict_prices) if detail else []
     has_price = (merged_prices and len(merged_prices) > 0) or (predict_prices and isinstance(predict_prices, dict) and (predict_prices.get('peak_price') or predict_prices.get('off_peak_price')))
-    if not detail or (not detail.merged_description and not has_price):
+    has_map = detail and detail.map_image and detail.map_image.strip()
+    has_description = detail and detail.merged_description and detail.merged_description.strip()
+    
+    if not detail or (not has_description and not has_price and not has_map):
         return {
             "court_id": court_id,
             "court_name": court.name,
@@ -204,6 +207,7 @@ async def preview_court_detail(court_id: int, db: Session = Depends(get_db)):
             "manual_remark": detail.manual_remark,
             "reviews": safe_json_loads(detail.dianping_reviews)[:3],
             "images": safe_json_loads(detail.dianping_images)[:3],
+            "map_image": detail.map_image,  # 添加地图图片字段
             "last_update": detail.updated_at.isoformat() if detail.updated_at else None
         }
     }
