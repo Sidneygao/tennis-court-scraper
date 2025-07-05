@@ -84,25 +84,39 @@ async def import_initial_data():
     try:
         import json
         from .database import get_db
-        from .models import TennisCourt
+        from .models import TennisCourt, CourtDetail
         from datetime import datetime
         
-        # 检查数据文件是否存在
-        data_file = "courts_data.json"
+        # 优先使用完整数据文件
+        data_file = "complete_courts_data.json"
         if not os.path.exists(data_file):
-            print(f"数据文件 {data_file} 不存在，跳过导入")
-            return
+            data_file = "courts_data.json"
+            if not os.path.exists(data_file):
+                print(f"数据文件不存在，跳过导入")
+                return
         
         # 读取数据
         with open(data_file, 'r', encoding='utf-8') as f:
-            courts_data = json.load(f)
+            data = json.load(f)
         
-        print(f"读取到 {len(courts_data)} 个场馆数据")
+        # 判断数据格式
+        if 'courts' in data and 'details' in data:
+            # 完整数据格式
+            courts_data = data['courts']
+            details_data = data['details']
+            print(f"读取到完整数据: {len(courts_data)} 个场馆, {len(details_data)} 个详情")
+        else:
+            # 旧格式，只有场馆数据
+            courts_data = data
+            details_data = []
+            print(f"读取到场馆数据: {len(courts_data)} 个场馆")
         
         # 导入数据
         db = next(get_db())
-        imported_count = 0
+        imported_courts = 0
+        imported_details = 0
         
+        # 导入场馆数据
         for court_data in courts_data:
             try:
                 # 处理时间字段
@@ -115,6 +129,7 @@ async def import_initial_data():
                 
                 # 创建场馆对象
                 court = TennisCourt(
+                    id=court_data.get('id'),  # 保持原有ID
                     name=court_data.get('name'),
                     address=court_data.get('address'),
                     area=court_data.get('area'),
@@ -123,21 +138,88 @@ async def import_initial_data():
                     phone=court_data.get('phone'),
                     latitude=court_data.get('latitude'),
                     longitude=court_data.get('longitude'),
+                    has_roof=court_data.get('has_roof', False),
+                    court_count=court_data.get('court_count', 1),
+                    business_hours=court_data.get('business_hours'),
+                    is_open=court_data.get('is_open', True),
+                    peak_price=court_data.get('peak_price'),
+                    off_peak_price=court_data.get('off_peak_price'),
+                    member_price=court_data.get('member_price'),
+                    price_unit=court_data.get('price_unit'),
+                    description=court_data.get('description'),
+                    facilities=court_data.get('facilities'),
+                    traffic_info=court_data.get('traffic_info'),
                     data_source=court_data.get('data_source'),
+                    source_url=court_data.get('source_url'),
                     created_at=created_at,
-                    updated_at=updated_at
+                    updated_at=updated_at,
+                    price_updated_at=court_data.get('price_updated_at')
                 )
                 
                 db.add(court)
-                imported_count += 1
+                imported_courts += 1
                 
             except Exception as e:
                 print(f"导入场馆 {court_data.get('name', 'unknown')} 失败: {e}")
                 continue
         
-        # 提交数据
+        # 提交场馆数据
         db.commit()
-        print(f"✅ 数据导入完成: {imported_count} 个场馆")
+        print(f"✅ 场馆数据导入完成: {imported_courts} 个场馆")
+        
+        # 导入详情数据
+        for detail_data in details_data:
+            try:
+                # 处理时间字段
+                created_at = None
+                updated_at = None
+                if detail_data.get('created_at'):
+                    created_at = datetime.fromisoformat(detail_data['created_at'])
+                if detail_data.get('updated_at'):
+                    updated_at = datetime.fromisoformat(detail_data['updated_at'])
+                
+                # 创建详情对象
+                detail = CourtDetail(
+                    id=detail_data.get('id'),  # 保持原有ID
+                    court_id=detail_data.get('court_id'),
+                    merged_description=detail_data.get('merged_description'),
+                    merged_facilities=detail_data.get('merged_facilities'),
+                    merged_traffic_info=detail_data.get('merged_traffic_info'),
+                    merged_business_hours=detail_data.get('merged_business_hours'),
+                    prices=detail_data.get('prices'),
+                    dianping_prices=detail_data.get('dianping_prices'),
+                    meituan_prices=detail_data.get('meituan_prices'),
+                    merged_prices=detail_data.get('merged_prices'),
+                    predict_prices=detail_data.get('predict_prices'),
+                    bing_prices=detail_data.get('bing_prices'),
+                    dianping_rating=detail_data.get('dianping_rating'),
+                    meituan_rating=detail_data.get('meituan_rating'),
+                    merged_rating=detail_data.get('merged_rating'),
+                    dianping_reviews=detail_data.get('dianping_reviews'),
+                    meituan_reviews=detail_data.get('meituan_reviews'),
+                    dianping_images=detail_data.get('dianping_images'),
+                    meituan_images=detail_data.get('meituan_images'),
+                    map_image=detail_data.get('map_image'),
+                    last_dianping_update=detail_data.get('last_dianping_update'),
+                    last_meituan_update=detail_data.get('last_meituan_update'),
+                    cache_expires_at=detail_data.get('cache_expires_at'),
+                    manual_prices=detail_data.get('manual_prices'),
+                    manual_remark=detail_data.get('manual_remark'),
+                    created_at=created_at,
+                    updated_at=updated_at
+                )
+                
+                db.add(detail)
+                imported_details += 1
+                
+            except Exception as e:
+                print(f"导入详情 {detail_data.get('court_id', 'unknown')} 失败: {e}")
+                continue
+        
+        # 提交详情数据
+        db.commit()
+        print(f"✅ 详情数据导入完成: {imported_details} 个详情")
+        print(f"✅ 总导入完成: {imported_courts} 个场馆, {imported_details} 个详情")
         
     except Exception as e:
         print(f"数据导入失败: {e}")
