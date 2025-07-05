@@ -15,4 +15,5 @@ httpx>=0.25.2
 fake-useragent>=1.4.0
 webdriver-manager>=4.0.1
 pandas>=2.2.0
-numpy>=1.26.0 
+numpy>=1.26.0
+pillow>=10.0.0 

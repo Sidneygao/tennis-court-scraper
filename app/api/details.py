@@ -5,7 +5,7 @@ from ..database import get_db
 from ..models import TennisCourt, CourtDetail, CourtDetailResponse, CourtDetailCreate
 from ..scrapers.detail_scraper import DetailScraper
 from ..scrapers.price_predictor import PricePredictor
-from ..scrapers.map_generator import MapGenerator
+# from ..scrapers.map_generator import MapGenerator  # 暂时注释，避免PIL依赖问题
 from datetime import datetime, timedelta
 import json
 import logging
