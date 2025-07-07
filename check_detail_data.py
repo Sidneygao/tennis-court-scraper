@@ -1,46 +1,46 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-检查本地详情数据
+检查详情数据
 """
 
-from app.database import get_db, init_db
-from app.models import TennisCourt, CourtDetail
+from app.database import get_db
+from app.models import CourtDetail
 
 def check_detail_data():
-    """检查本地详情数据"""
-    print("检查本地详情数据...")
+    print("🔍 检查详情数据...")
     
-    # 初始化数据库
-    init_db()
-    
-    # 获取数据库会话
     db = next(get_db())
     
-    # 查询场馆总数
-    total_courts = db.query(TennisCourt).count()
-    print(f"场馆总数: {total_courts}")
+    # 检查有地图图片的详情
+    details_with_map = db.query(CourtDetail).filter(
+        CourtDetail.map_image.isnot(None),
+        CourtDetail.map_image != ''
+    ).limit(5).all()
     
-    # 查询详情总数
-    total_details = db.query(CourtDetail).count()
-    print(f"详情总数: {total_details}")
+    print(f"📊 有地图图片的详情数量: {len(details_with_map)}")
+    for detail in details_with_map:
+        print(f"  场馆ID: {detail.court_id}, 地图: {detail.map_image}")
     
-    # 查询有详情的场馆
-    courts_with_details = db.query(TennisCourt).join(CourtDetail).count()
-    print(f"有详情的场馆数: {courts_with_details}")
+    # 检查有手动价格的详情
+    details_with_manual = db.query(CourtDetail).filter(
+        CourtDetail.manual_prices.isnot(None),
+        CourtDetail.manual_prices != ''
+    ).limit(5).all()
     
-    # 显示前几个详情
-    if total_details > 0:
-        print("\n前3个详情:")
-        details = db.query(CourtDetail).limit(3).all()
-        for detail in details:
-            court = db.query(TennisCourt).filter(TennisCourt.id == detail.court_id).first()
-            print(f"  - {court.name if court else 'Unknown'} (ID: {detail.court_id})")
-            print(f"    地图图片: {detail.map_image}")
-            print(f"    评分: {detail.merged_rating}")
-            print(f"    价格: {detail.merged_prices[:100] if detail.merged_prices else 'None'}...")
-    else:
-        print("\n没有详情数据")
+    print(f"📊 有手动价格的详情数量: {len(details_with_manual)}")
+    for detail in details_with_manual:
+        print(f"  场馆ID: {detail.court_id}, 手动价格: {detail.manual_prices[:100] if detail.manual_prices else None}")
+    
+    # 检查有手动备注的详情
+    details_with_remark = db.query(CourtDetail).filter(
+        CourtDetail.manual_remark.isnot(None),
+        CourtDetail.manual_remark != ''
+    ).limit(5).all()
+    
+    print(f"📊 有手动备注的详情数量: {len(details_with_remark)}")
+    for detail in details_with_remark:
+        print(f"  场馆ID: {detail.court_id}, 手动备注: {detail.manual_remark[:100] if detail.manual_remark else None}")
 
 if __name__ == "__main__":
     check_detail_data() 

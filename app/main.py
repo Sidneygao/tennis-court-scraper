@@ -1,9 +1,10 @@
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Form
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, FileResponse
 import os
+import requests
 
 print('>>> main.py 启动')
 try:
@@ -17,7 +18,7 @@ from .api import courts, scraper, details
 
 # 创建FastAPI应用
 app = FastAPI(
-    title=settings.app_name,
+    title="Another Favorite",
     version=settings.version,
     description="北京网球场馆信息抓取系统",
     docs_url="/api/docs",
@@ -43,6 +44,23 @@ templates = Jinja2Templates(directory="app/templates")
 app.include_router(courts.router)
 app.include_router(scraper.router)
 app.include_router(details.router)
+
+@app.get("/", response_class=HTMLResponse)
+async def index(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request, "recommendations": None, "input_artist": "Grace Potter"})
+
+@app.post("/recommend", response_class=HTMLResponse)
+async def recommend(request: Request, artist: str = Form(...)):
+    # 这里只做静态推荐，后续可接入真实API
+    # 示例：用Last.FM的API获取相似歌手
+    try:
+        url = f"https://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist={artist}&api_key=demo&format=json&limit=10"
+        resp = requests.get(url)
+        data = resp.json()
+        recs = [item['name'] for item in data.get('similarartists', {}).get('artist', [])]
+    except Exception as e:
+        recs = [f"获取推荐失败: {e}"]
+    return templates.TemplateResponse("index.html", {"request": request, "recommendations": recs, "input_artist": artist})
 
 @app.get("/data/map_cache/{filename:path}")
 async def serve_map_image(filename: str):
